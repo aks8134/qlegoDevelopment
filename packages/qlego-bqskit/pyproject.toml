@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qlego-bqskit"
+version = "0.1.0"
+dependencies = [
+    "qlego-core",
+    "bqskit"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

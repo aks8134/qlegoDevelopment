@@ -1,0 +1,1 @@
+"OPENQASM 2.0;\ninclude \"qelib1.inc\";\nqreg q[65];\ncreg meas[5];\nrz(pi/2) q[39];\nsx q[39];\nrz(pi/2) q[39];\ncx q[39],q[45];\ncx q[45],q[44];\ncx q[44],q[43];\ncx q[43],q[52];\nbarrier q[52],q[43],q[44],q[45],q[39];\nmeasure q[52] -> meas[0];\nmeasure q[43] -> meas[1];\nmeasure q[44] -> meas[2];\nmeasure q[45] -> meas[3];\nmeasure q[39] -> meas[4];"

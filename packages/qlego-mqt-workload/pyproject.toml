@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qlego-mqt-workload"
+version = "0.1.0"
+dependencies = [
+    "qlego-core",
+    "mqt.bench"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

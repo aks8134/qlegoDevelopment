@@ -1,0 +1,8 @@
+qiskit
+qiskit-ibm-runtime
+pytket
+pytket-qiskit
+bqskit
+cirq
+mqt.bench
+mqt.qcec

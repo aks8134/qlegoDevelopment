@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qlego-evaluation"
+version = "0.1.0"
+dependencies = [
+    "qlego-core"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
