@@ -28,24 +28,27 @@ class Template:
             self.pass_mapping[stage_name] = []
         self.pass_mapping[stage_name].append(pass_instance)
 
-    def compile(self, qasm_in: str = None, ctx: Optional[QPassContext] = None) -> QPassContext:
+    def compile(self, qasm_in: str = None, ctx: Optional[QPassContext] = None,
+                env_config_path: Optional[str] = None) -> QPassContext:
         """
         Execute the template using a QPipeline sequentially through all defined stages.
+        env_config_path: path to env_config.json so QPipeline can route each pass
+        to the correct SDK virtualenv.
         """
         flat_passes = []
         for stage in self.stages:
             if stage in self.pass_mapping:
                 # Add the passes for this stage type to the flow
                 flat_passes.extend(self.pass_mapping[stage])
-                
-        pipeline = QPipeline(flat_passes)
-        
+
+        pipeline = QPipeline(flat_passes, env_config_path=env_config_path)
+
         if qasm_in is None:
             if ctx is not None and getattr(ctx, "qasm", None) is not None:
                 qasm_in = ctx.qasm
             else:
                 qasm_in = ""
-                
+
         return pipeline.run(qasm_in, ctx=ctx)
 
 

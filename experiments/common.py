@@ -105,7 +105,7 @@ subprocess.run = _subprocess_run_with_timeout
 
 def initialize_circuit(generator_cls, num_qubits: int) -> str:
     """Generate a circuit as QASM string."""
-    pipeline = QPipeline([generator_cls(num_qubits)])
+    pipeline = QPipeline([generator_cls(num_qubits)], env_config_path=ENV_CONFIG_PATH)
     ctx = QPassContext()
     ctx = pipeline.run("", ctx)
     return ctx.qasm
@@ -113,7 +113,7 @@ def initialize_circuit(generator_cls, num_qubits: int) -> str:
 
 def evaluate(qasm: str) -> dict:
     """Evaluate a compiled circuit and return metrics dict."""
-    pipeline = QPipeline([EvaluationPass()])
+    pipeline = QPipeline([EvaluationPass()], env_config_path=ENV_CONFIG_PATH)
     ctx = QPassContext(qasm=qasm)
     ctx = pipeline.run("", ctx)
     return ctx.metadata["evaluation_metrics"]
@@ -154,7 +154,7 @@ def safe_run_pipeline(template, initial_qasm, backend_json, extra_result=None):
     result = dict(extra_result or {})
     try:
         ctx = QPassContext(qasm=initial_qasm, hardware=backend_json)
-        compiled_ctx = template.compile(ctx=ctx)
+        compiled_ctx = template.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
         metrics = evaluate(compiled_ctx.qasm)
         result["status"] = "success"
         result["error"] = ""

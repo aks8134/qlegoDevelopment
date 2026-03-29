@@ -1,0 +1,41 @@
+Layout passes: 14 — ['qlego-qiskit_TrivialLayoutPass', 'qlego-qiskit_DenseLayoutPass', 'qlego-qiskit_SabreLayoutPass', 'qlego-qiskit_VF2LayoutPass', 'qlego-qiskit_CSPLayoutPass', 'qlego-qiskit_PresetLayoutPass', 'qlego-tket_LinePlacementPass', 'qlego-tket_GraphPlacementPass', 'qlego-tket_NoiseAwarePlacementPass', 'qlego-bqskit_GeneralizedSabrePass', 'qlego-bqskit_TrivialPlacementPass', 'qlego-bqskit_GreedyPlacementPass', 'qlego-bqskit_PAMLayoutPass', 'qlego-bqskit_SubtopologySelectionPass']
+circuit_type                      num_qubits
+Amplitude Estimation Circuit      5               qlego-qiskit_SabreLayoutPass
+                                  10             qlego-qiskit_PresetLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20             qlego-qiskit_PresetLayoutPass
+BV Circuit                        5               qlego-qiskit_SabreLayoutPass
+                                  10              qlego-qiskit_SabreLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20              qlego-qiskit_SabreLayoutPass
+DJ Circuit                        5               qlego-qiskit_SabreLayoutPass
+                                  10             qlego-qiskit_PresetLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20             qlego-qiskit_PresetLayoutPass
+GHZ Circuit                       5             qlego-qiskit_TrivialLayoutPass
+                                  10            qlego-qiskit_TrivialLayoutPass
+                                  15                qlego-qiskit_VF2LayoutPass
+                                  20                qlego-qiskit_VF2LayoutPass
+Graph State Circuit               5              qlego-qiskit_PresetLayoutPass
+                                  10             qlego-qiskit_PresetLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20              qlego-qiskit_SabreLayoutPass
+Grover Circuit                    5              qlego-qiskit_PresetLayoutPass
+                                  10             qlego-qiskit_PresetLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20            qlego-qiskit_TrivialLayoutPass
+Half Adder Circuit                5               qlego-qiskit_SabreLayoutPass
+                                  15              qlego-qiskit_SabreLayoutPass
+QFT Circuit                       5              qlego-qiskit_PresetLayoutPass
+                                  10              qlego-qiskit_SabreLayoutPass
+                                  15              qlego-qiskit_SabreLayoutPass
+                                  20              qlego-qiskit_SabreLayoutPass
+Quantum Phase Estimation Circuit  5               qlego-qiskit_SabreLayoutPass
+                                  10             qlego-qiskit_PresetLayoutPass
+                                  15             qlego-qiskit_PresetLayoutPass
+                                  20             qlego-qiskit_PresetLayoutPass
+W State Circuit                   5             qlego-qiskit_TrivialLayoutPass
+                                  10            qlego-qiskit_TrivialLayoutPass
+                                  15                qlego-qiskit_VF2LayoutPass
+                                  20                qlego-qiskit_VF2LayoutPass
+Saved /Users/abhishekshringi/Documents/Quantum Research/qlego/experiments/results/exp1_layout.csv (532 rows)
