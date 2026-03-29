@@ -1,0 +1,19 @@
+routing_strategy,circuit_type,num_qubits,error,status
+qlego-cirq_RouteCQCPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Grover Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,QFT Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed
+qlego-cirq_RouteCQCPass,W State Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Half Adder Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Grover Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,QFT Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed
+qlego-cirq_RouteCQCPass,W State Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_RouteCQCPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed

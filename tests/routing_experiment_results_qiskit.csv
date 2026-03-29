@@ -1,0 +1,91 @@
+routing_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-qiskit_PresetRoutingPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_PresetRoutingPass,Grover Circuit,5,,success,1940.0,1143.0,350.0,320.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,5,,success,1950.0,1092.0,350.0,320.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,5,,success,1950.0,1092.0,350.0,320.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,5,,success,1950.0,1092.0,350.0,320.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,5,,success,1950.0,1092.0,350.0,320.0
+qlego-qiskit_PresetRoutingPass,QFT Circuit,5,,success,122.0,67.0,28.0,25.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,5,,success,125.0,68.0,28.0,25.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,5,,success,125.0,68.0,28.0,25.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,5,,success,125.0,68.0,28.0,25.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,5,,success,125.0,68.0,28.0,25.0
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,5,,success,124.0,76.0,28.0,28.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,5,,success,125.0,76.0,28.0,28.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,5,,success,125.0,76.0,28.0,28.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,5,,success,125.0,76.0,28.0,28.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,5,,success,125.0,76.0,28.0,28.0
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,5,,success,120.0,75.0,27.0,27.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,5,,success,118.0,74.0,27.0,27.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,5,,success,118.0,74.0,27.0,27.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,5,,success,118.0,74.0,27.0,27.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,5,,success,118.0,74.0,27.0,27.0
+qlego-qiskit_PresetRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_SabreSwapRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_BasicSwapRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_LookaheadRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_StochasticSwapRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,5,,success,109.0,75.0,30.0,29.0
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,5,,success,110.0,76.0,30.0,29.0
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,5,,success,110.0,76.0,30.0,29.0
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,5,,success,110.0,76.0,30.0,29.0
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,5,,success,110.0,76.0,30.0,29.0
+qlego-qiskit_PresetRoutingPass,DJ Circuit,10,,success,175.0,84.0,24.0,24.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,10,,success,176.0,81.0,24.0,24.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,10,,success,176.0,81.0,24.0,24.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,10,,success,176.0,81.0,24.0,24.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,10,,success,176.0,81.0,24.0,24.0
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_PresetRoutingPass,Grover Circuit,10,,success,157387.0,86279.0,28389.0,23146.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,10,,success,159418.0,85880.0,28389.0,23146.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,10,,success,159418.0,85880.0,28389.0,23146.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,10,,success,159418.0,85880.0,28389.0,23146.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,10,,success,159418.0,85880.0,28389.0,23146.0
+qlego-qiskit_PresetRoutingPass,QFT Circuit,10,,success,700.0,286.0,167.0,110.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,10,,success,705.0,286.0,167.0,110.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,10,,success,705.0,286.0,167.0,110.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,10,,success,705.0,286.0,167.0,110.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,10,,success,705.0,286.0,167.0,110.0
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,10,,success,704.0,310.0,165.0,120.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,10,,success,703.0,316.0,165.0,120.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,10,,success,703.0,316.0,165.0,120.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,10,,success,703.0,316.0,165.0,120.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,10,,success,703.0,316.0,165.0,120.0
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,10,,success,690.0,291.0,161.0,109.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,10,,success,682.0,294.0,161.0,109.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,10,,success,682.0,294.0,161.0,109.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,10,,success,682.0,294.0,161.0,109.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,10,,success,682.0,294.0,161.0,109.0
+qlego-qiskit_PresetRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_SabreSwapRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_BasicSwapRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_LookaheadRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_StochasticSwapRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,

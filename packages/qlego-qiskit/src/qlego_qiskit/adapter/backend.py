@@ -12,14 +12,15 @@ class QiskitBackend(QBackend):
         dt = getattr(backend, "dt", None)
 
         # gate_set as basis_gates strings
-        gate_set = set()
+        gate_set = []
         tgt = getattr(backend, "target", None)
         if tgt is not None:
-            gate_set.update({n.lower() for n in tgt.operation_names})
+            gate_set.extend([n.lower() for n in tgt.operation_names if n.lower() not in gate_set])
         else:
-            gate_set.update({n.lower() for n in (backend.configuration().basis_gates or [])})
+            gate_set.extend([n.lower() for n in (backend.configuration().basis_gates or []) if n.lower() not in gate_set])
 
-        gate_set.add("measure")
+        if "measure" not in gate_set:
+            gate_set.append("measure")
 
         # durations in seconds: iterate qargs from Target (stable)
         gate_durations = {}
@@ -34,7 +35,7 @@ class QiskitBackend(QBackend):
                         continue
                     # duration
                     if dt is not None and props.duration is not None:
-                        gate_durations[(opname, tuple(qargs))] = float(props.duration) * float(dt)
+                        gate_durations[(opname, tuple(qargs))] = float(props.duration)
                     # error
                     if props.error is not None:
                         gate_errors[(opname, tuple(qargs))] = float(props.error)
@@ -53,24 +54,28 @@ class QiskitBackend(QBackend):
         from qiskit.transpiler import CouplingMap
 
         from qiskit.circuit.library.standard_gates import XGate, SXGate, RZGate, CXGate, CZGate, IGate
-        from qiskit.circuit import Measure, Reset, Delay
+        from qiskit.circuit import Measure, Reset, Delay, Parameter
 
         name_to_inst = {
             "x": XGate(),
             "sx": SXGate(),
-            "rz": RZGate(0.0),
+            "rz": RZGate(Parameter("theta")),
             "cx": CXGate(),
             "cz": CZGate(),
             "id": IGate(),
             "measure": Measure(),
             "reset": Reset(),
-            "delay": Delay(1),
+            "delay": Delay(Parameter("t")),
             # add "ecr": ECRGate() etc if you include it in gate_set
         }
 
         tgt = Target(num_qubits=self.n_qubits)
         cm = CouplingMap(list(self.edges))
-        basis = {g.lower() for g in (self.gate_set or [])}
+        # Keep original order if gate_set is a list
+        basis = []
+        for g in (self.gate_set or []):
+            if g.lower() not in basis:
+                basis.append(g.lower())
 
         def dur(name: str, qargs: tuple[int, ...]):
             return self.durations.get((name, qargs))

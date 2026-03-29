@@ -1,0 +1,13 @@
+mapping_strategy,circuit_type,num_qubits,error,status
+qlego-cirq_LinePlacementStrategyPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_GreedySequenceSearchPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_AnnealSequenceSearchPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_LinePlacementStrategyPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_GreedySequenceSearchPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_AnnealSequenceSearchPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_LinePlacementStrategyPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_GreedySequenceSearchPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_AnnealSequenceSearchPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_LinePlacementStrategyPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_GreedySequenceSearchPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed
+qlego-cirq_AnnealSequenceSearchPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed

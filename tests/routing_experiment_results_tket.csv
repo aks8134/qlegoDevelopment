@@ -1,0 +1,33 @@
+routing_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,5,,success,63.0,33.0,8.0,8.0
+qlego-tket_AASRoutePass,DJ Circuit,5,RuntimeError: Invalid gate in input of AAS routing: Barrier,failed,,,,
+qlego-tket_LexiRoutePass,DJ Circuit,5,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,5,,success,57.0,33.0,7.0,7.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,5,,success,21.0,12.0,4.0,4.0
+qlego-tket_AASRoutePass,GHZ Circuit,5,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,5,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,5,,success,2119.0,1193.0,408.0,368.0
+qlego-tket_AASRoutePass,Grover Circuit,5,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,Grover Circuit,5,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,5,,success,1902.0,1131.0,350.0,320.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,5,,success,56.0,31.0,8.0,6.0
+qlego-tket_AASRoutePass,W State Circuit,5,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,W State Circuit,5,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,5,,success,58.0,25.0,8.0,6.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,10,,success,280.0,116.0,54.0,36.0
+qlego-tket_AASRoutePass,DJ Circuit,10,RuntimeError: Invalid gate in input of AAS routing: Barrier,failed,,,,
+qlego-tket_LexiRoutePass,DJ Circuit,10,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,10,,success,175.0,84.0,24.0,24.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,10,,success,34.0,20.0,9.0,9.0
+qlego-tket_AASRoutePass,GHZ Circuit,10,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,10,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,10,,success,34.0,20.0,9.0,9.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,10,,success,194622.0,103031.0,38422.0,30472.0
+qlego-tket_AASRoutePass,Grover Circuit,10,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,Grover Circuit,10,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,10,,success,159188.0,85902.0,28389.0,23146.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,10,,success,125.0,54.0,18.0,11.0
+qlego-tket_AASRoutePass,W State Circuit,10,RuntimeError: Circuit does not contain unit with id: c[0],failed,,,,
+qlego-tket_LexiRoutePass,W State Circuit,10,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),failed,,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,10,,success,127.0,54.0,18.0,11.0

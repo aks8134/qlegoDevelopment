@@ -1,0 +1,13 @@
+exact_equivalence,partial_equivalence,compiler,optimization_level,circuit_type,num_qubits,Gate Count,Circuit Depth,2Q Count,2Q Depth
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qiskit,0,QFT Circuit,5,106,78,56,43
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qlego_qiskit,0,QFT Circuit,5,106,78,56,43
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qlego_qiskit_compose,0,QFT Circuit,5,106,78,56,43
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qiskit,1,QFT Circuit,5,85,58,41,34
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qlego_qiskit,1,QFT Circuit,5,85,58,41,34
+EquivalenceCriterion.not_equivalent,EquivalenceCriterion.not_equivalent,qlego_qiskit_compose,1,QFT Circuit,5,85,58,41,34
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qiskit,2,QFT Circuit,5,83,49,28,25
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qlego_qiskit,2,QFT Circuit,5,83,49,28,25
+EquivalenceCriterion.not_equivalent,EquivalenceCriterion.not_equivalent,qlego_qiskit_compose,2,QFT Circuit,5,83,49,28,25
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qiskit,3,QFT Circuit,5,83,49,28,25
+EquivalenceCriterion.equivalent_up_to_global_phase,EquivalenceCriterion.equivalent_up_to_global_phase,qlego_qiskit,3,QFT Circuit,5,83,49,28,25
+EquivalenceCriterion.not_equivalent,EquivalenceCriterion.not_equivalent,qlego_qiskit_compose,3,QFT Circuit,5,83,49,28,25

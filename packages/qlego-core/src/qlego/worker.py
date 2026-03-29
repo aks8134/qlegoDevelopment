@@ -29,7 +29,8 @@ def _import_symbol(ref: str):
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="Qiskit plugin worker (run a QPass class)")
-    ap.add_argument("--pass-class", required=True, help="Dotted ref 'module:ClassName'")
+    ap.add_argument("--pass-class", required=False, help="Dotted ref 'module:ClassName'")
+    ap.add_argument("--group", action="store_true", help="Run a group of passes")
     args = ap.parse_args()
 
     payload = json.loads(sys.stdin.read())
@@ -42,7 +43,34 @@ def main() -> int:
     if "qasm" not in ctxd:
         raise ValueError("payload['ctx']['qasm'] is required")
 
-    # # --- pass payload ---
+    from qlego.qpass import QPassContext
+    ctx = QPassContext.from_dict(ctxd)
+
+    if args.group:
+        passes_cfg = payload.get("passes", [])
+        for p_info in passes_cfg:
+            PassCls = _import_symbol(p_info["class"])
+            cfg = p_info.get("cfg", {})
+            if hasattr(PassCls, "from_config") and callable(getattr(PassCls, "from_config")):
+                p = PassCls.from_config(cfg)
+            else:
+                p = PassCls(**cfg)
+            
+            with timer("algo_time") as algo_time:
+                print(f"Starting pass {p.name}", file=sys.stderr)
+                ctx = p.run(ctx)
+                print(f"Finished pass {p.name}", file=sys.stderr)
+            
+            if p.name not in ctx.metadata.get("time_profile", {}):
+                if "time_profile" not in ctx.metadata:
+                    ctx.metadata["time_profile"] = {}
+                ctx.metadata["time_profile"][p.name] = {}
+            ctx.metadata["time_profile"][p.name]["pass"] = {k : v for k,v in algo_time.items() if k in ["wall", "cpu", "non_cpu"]}
+        
+        sys.stdout.write(ctx.to_json())
+        return 0
+
+    # Old --pass-class behavior fallback
     cfg = payload.get("pass_cfg", {})
     if cfg is None:
         cfg = {}
@@ -59,27 +87,19 @@ def main() -> int:
         # fallback: treat cfg as kwargs
         p = PassCls(**cfg)
 
-    # Build QPassContext in the plugin env.
-    # This requires core.qpass to be importable in the plugin venv.
-    from qlego.qpass import QPassContext
-
-    # ctx = QPassContext(
-    #     seed=ctxd.get("seed", None),
-    #     hardware=ctxd.get("hardware", None),
-    #     metadata=ctxd.get("metadata", {}),
-    #     qasm=ctxd.get("qasm", None),
-    # )
-    ctx = QPassContext.from_dict(ctxd)
     with timer("algo_time") as algo_time:
         out_ctx = p.run(ctx)
 
+    if p.name not in out_ctx.metadata.get("time_profile", {}):
+        if "time_profile" not in out_ctx.metadata:
+            out_ctx.metadata["time_profile"] = {}
+        out_ctx.metadata["time_profile"][p.name] = {}
     out_ctx.metadata["time_profile"][p.name]["pass"] = {k : v for k,v in algo_time.items() if k in ["wall", "cpu", "non_cpu"]}
 
     sys.stdout.write(
         out_ctx.to_json()
     )
     return 0
-
 
 if __name__ == "__main__":
     try:

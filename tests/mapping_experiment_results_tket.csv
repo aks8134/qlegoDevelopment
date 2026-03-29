@@ -1,0 +1,13 @@
+mapping_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-tket_LinePlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_LinePlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0

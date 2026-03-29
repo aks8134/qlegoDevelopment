@@ -6,8 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "qlego-cirq"
 version = "0.1.0"
 dependencies = [
-    "qlego-core",
-    "cirq"
+    "qlego-core"
 ]
 
 [tool.setuptools.packages.find]

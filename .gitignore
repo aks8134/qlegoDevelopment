@@ -9,9 +9,13 @@ dist/
 build/
 
 # Virtual environments
-packages/*/.venv/
-.venv/
-venv/
+**/.venv/
+**/venv/
+**/envs/
+**/.env
+**/.bak
+**/*.pyc
+**/__pycache__/
 
 # IDEs
 .vscode/

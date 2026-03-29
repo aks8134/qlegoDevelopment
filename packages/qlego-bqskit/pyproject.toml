@@ -6,8 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "qlego-bqskit"
 version = "0.1.0"
 dependencies = [
-    "qlego-core",
-    "bqskit"
+    "qlego-core"
 ]
 
 [tool.setuptools.packages.find]

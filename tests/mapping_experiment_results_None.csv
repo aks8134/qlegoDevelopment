@@ -1,0 +1,307 @@
+mapping_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-qiskit_TrivialLayoutPass,DJ Circuit,5,,success,106.0,56.0,19.0,16.0
+qlego-qiskit_DenseLayoutPass,DJ Circuit,5,,success,106.0,56.0,19.0,16.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,5,,success,60.0,33.0,7.0,7.0
+qlego-qiskit_VF2LayoutPass,DJ Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+qlego-tket_LinePlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,5,,success,72.0,38.0,10.0,9.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,5,,success,99.0,55.0,19.0,16.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,5,,success,80.0,49.0,13.0,13.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,5,,success,99.0,55.0,19.0,16.0
+qlego-cirq_LinePlacementStrategyPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_DenseLayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_SabreLayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_PresetLayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_LinePlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,5,,success,16.0,11.0,4.0,4.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,5,,success,16.0,11.0,4.0,4.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,5,,success,37.0,24.0,8.0,8.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,5,,success,16.0,11.0,4.0,4.0
+qlego-cirq_LinePlacementStrategyPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Grover Circuit,5,,success,1892.0,1035.0,349.0,306.0
+qlego-qiskit_DenseLayoutPass,Grover Circuit,5,,success,1892.0,1035.0,349.0,306.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,5,,success,1927.0,1204.0,357.0,332.0
+qlego-qiskit_VF2LayoutPass,Grover Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Grover Circuit,5,,success,1940.0,1143.0,350.0,320.0
+qlego-tket_LinePlacementPass,Grover Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,5,,success,1762.0,983.0,339.0,296.0
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,5,,success,1800.0,1010.0,349.0,306.0
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,5,,success,1760.0,992.0,338.0,298.0
+qlego-bqskit_PAMLayoutPass,Grover Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,5,,success,1800.0,1010.0,349.0,306.0
+qlego-cirq_LinePlacementStrategyPass,Grover Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Grover Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Grover Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,QFT Circuit,5,,success,210.0,109.0,50.0,40.0
+qlego-qiskit_DenseLayoutPass,QFT Circuit,5,,success,210.0,109.0,50.0,40.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,5,,success,128.0,72.0,30.0,27.0
+qlego-qiskit_VF2LayoutPass,QFT Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,QFT Circuit,5,,success,122.0,67.0,28.0,25.0
+qlego-tket_LinePlacementPass,QFT Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,5,,success,127.0,66.0,30.0,23.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,5,,success,205.0,108.0,50.0,40.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,5,,success,157.0,89.0,37.0,32.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,5,,success,205.0,108.0,50.0,40.0
+qlego-cirq_LinePlacementStrategyPass,QFT Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,QFT Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,QFT Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,5,,success,200.0,116.0,46.0,43.0
+qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,5,,success,200.0,116.0,46.0,43.0
+qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,5,,success,138.0,82.0,30.0,30.0
+qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,5,,success,124.0,76.0,28.0,28.0
+qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,5,,success,162.0,81.0,37.0,29.0
+qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,5,,success,195.0,115.0,46.0,43.0
+qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,5,,success,156.0,88.0,35.0,33.0
+qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,5,,success,195.0,115.0,46.0,43.0
+qlego-cirq_LinePlacementStrategyPass,Amplitude Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Amplitude Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Amplitude Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,5,,success,195.0,116.0,45.0,42.0
+qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,5,,success,195.0,116.0,45.0,42.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,5,,success,137.0,79.0,29.0,29.0
+qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,5,,success,120.0,75.0,27.0,27.0
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,5,,success,165.0,85.0,38.0,30.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,5,,success,184.0,108.0,45.0,42.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,5,,success,164.0,98.0,36.0,34.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,5,,success,184.0,108.0,45.0,42.0
+qlego-cirq_LinePlacementStrategyPass,Quantum Phase Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Quantum Phase Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Quantum Phase Estimation Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_DenseLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_SabreLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_VF2LayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_CSPLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_PresetLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_LinePlacementPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_GraphPlacementPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_TrivialPlacementPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GreedyPlacementPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_PAMLayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_LinePlacementStrategyPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_TrivialLayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_DenseLayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_SabreLayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_VF2LayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_CSPLayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_PresetLayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-tket_LinePlacementPass,W State Circuit,5,,success,56.0,26.0,8.0,6.0
+qlego-tket_GraphPlacementPass,W State Circuit,5,,success,56.0,26.0,8.0,6.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,5,,success,56.0,26.0,8.0,6.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,5,,success,50.0,28.0,8.0,6.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,5,,success,50.0,28.0,8.0,6.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,5,,success,85.0,45.0,17.0,15.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,5,,success,50.0,28.0,8.0,6.0
+qlego-cirq_LinePlacementStrategyPass,W State Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,W State Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,W State Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Half Adder Circuit,5,,success,154.0,94.0,41.0,37.0
+qlego-qiskit_DenseLayoutPass,Half Adder Circuit,5,,success,154.0,94.0,41.0,37.0
+qlego-qiskit_SabreLayoutPass,Half Adder Circuit,5,,success,130.0,81.0,36.0,32.0
+qlego-qiskit_VF2LayoutPass,Half Adder Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Half Adder Circuit,5,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Half Adder Circuit,5,,success,109.0,75.0,30.0,29.0
+qlego-tket_LinePlacementPass,Half Adder Circuit,5,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,Half Adder Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,5,,success,137.0,81.0,39.0,32.0
+qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,5,,success,149.0,93.0,41.0,37.0
+qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,5,,success,162.0,96.0,42.0,35.0
+qlego-bqskit_PAMLayoutPass,Half Adder Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,5,,success,149.0,93.0,41.0,37.0
+qlego-cirq_LinePlacementStrategyPass,Half Adder Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Half Adder Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Half Adder Circuit,5,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,DJ Circuit,10,,success,315.0,139.0,66.0,43.0
+qlego-qiskit_DenseLayoutPass,DJ Circuit,10,,success,283.0,131.0,57.0,41.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,10,,success,188.0,93.0,27.0,27.0
+qlego-qiskit_VF2LayoutPass,DJ Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,DJ Circuit,10,,success,175.0,84.0,24.0,24.0
+qlego-tket_LinePlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,10,,success,257.0,98.0,49.0,31.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,10,,success,306.0,138.0,66.0,43.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,10,,success,269.0,131.0,53.0,41.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,10,,success,306.0,138.0,66.0,43.0
+qlego-cirq_LinePlacementStrategyPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_DenseLayoutPass,GHZ Circuit,10,,success,43.0,25.0,10.0,10.0
+qlego-qiskit_SabreLayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_PresetLayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-tket_LinePlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,10,,success,21.0,16.0,9.0,9.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,10,,success,21.0,16.0,9.0,9.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,10,,success,194.0,113.0,45.0,42.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,10,,success,21.0,16.0,9.0,9.0
+qlego-cirq_LinePlacementStrategyPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Grover Circuit,10,,success,184835.0,88031.0,34884.0,25666.0
+qlego-qiskit_DenseLayoutPass,Grover Circuit,10,,success,181349.0,91350.0,33802.0,25900.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,10,,success,176746.0,94671.0,32714.0,26464.0
+qlego-qiskit_VF2LayoutPass,Grover Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Grover Circuit,10,,success,157387.0,86279.0,28389.0,23146.0
+qlego-tket_LinePlacementPass,Grover Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,10,,success,174327.0,85374.0,34995.0,25736.0
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,10,,success,173902.0,85283.0,34884.0,25666.0
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,10,,success,165860.0,88316.0,33139.0,26764.0
+qlego-bqskit_PAMLayoutPass,Grover Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,10,,success,173902.0,85283.0,34884.0,25666.0
+qlego-cirq_LinePlacementStrategyPass,Grover Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Grover Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Grover Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,QFT Circuit,10,,success,967.0,345.0,234.0,127.0
+qlego-qiskit_DenseLayoutPass,QFT Circuit,10,,success,725.0,251.0,168.0,96.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,10,,success,775.0,258.0,181.0,96.0
+qlego-qiskit_VF2LayoutPass,QFT Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,QFT Circuit,10,,success,700.0,286.0,167.0,110.0
+qlego-tket_LinePlacementPass,QFT Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,10,,success,1196.0,373.0,286.0,136.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,10,,success,957.0,344.0,234.0,127.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,10,,success,1000.0,392.0,234.0,140.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,10,,success,957.0,344.0,234.0,127.0
+qlego-cirq_LinePlacementStrategyPass,QFT Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,QFT Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,QFT Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,10,,success,1125.0,453.0,268.0,162.0
+qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,10,,success,1142.0,469.0,273.0,175.0
+qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,10,,success,767.0,298.0,180.0,115.0
+qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,10,,success,704.0,310.0,165.0,120.0
+qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,10,,success,1198.0,402.0,286.0,150.0
+qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,10,,success,1115.0,452.0,268.0,162.0
+qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,10,,success,1022.0,446.0,244.0,165.0
+qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,10,,success,1115.0,452.0,268.0,162.0
+qlego-cirq_LinePlacementStrategyPass,Amplitude Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Amplitude Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Amplitude Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,10,,success,1215.0,496.0,288.0,180.0
+qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,10,,success,1092.0,448.0,257.0,162.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,10,,success,797.0,317.0,189.0,119.0
+qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,10,"qiskit.transpiler.exceptions.TranspilerError: 'FullAncillaAllocation pass requires property_set[""layout""].'",failed,,,,
+qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,10,,success,690.0,291.0,161.0,109.0
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',failed,,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,10,RuntimeError: TKET placement failed: Circuit topology strictly rejected by Target constraint graph (unplaced nodes generated),failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,10,,success,1110.0,421.0,260.0,155.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,10,,success,1206.0,495.0,288.0,180.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,10,,success,1003.0,420.0,242.0,155.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,10,,success,1206.0,495.0,288.0,180.0
+qlego-cirq_LinePlacementStrategyPass,Quantum Phase Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Quantum Phase Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Quantum Phase Estimation Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_DenseLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_SabreLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_VF2LayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_CSPLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_PresetLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_LinePlacementPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_GraphPlacementPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_TrivialPlacementPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GreedyPlacementPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_PAMLayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_LinePlacementStrategyPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_TrivialLayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_DenseLayoutPass,W State Circuit,10,,success,138.0,65.0,21.0,15.0
+qlego-qiskit_SabreLayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_VF2LayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_CSPLayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_PresetLayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-tket_LinePlacementPass,W State Circuit,10,,success,128.0,54.0,18.0,11.0
+qlego-tket_GraphPlacementPass,W State Circuit,10,,success,128.0,54.0,18.0,11.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,10,,success,128.0,54.0,18.0,11.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,10,,success,117.0,53.0,18.0,11.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,10,,success,117.0,53.0,18.0,11.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,10,,success,317.0,113.0,68.0,35.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,10,,success,117.0,53.0,18.0,11.0
+qlego-cirq_LinePlacementStrategyPass,W State Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_GreedySequenceSearchPass,W State Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,W State Circuit,10,ModuleNotFoundError: No module named 'cirq.routing',failed,,,,
+qlego-qiskit_TrivialLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_DenseLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_SabreLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_VF2LayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_CSPLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-qiskit_PresetLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-tket_LinePlacementPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-tket_GraphPlacementPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_PAMLayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-cirq_LinePlacementStrategyPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-cirq_GreedySequenceSearchPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-cirq_AnnealSequenceSearchPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,

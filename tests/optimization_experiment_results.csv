@@ -1,0 +1,205 @@
+opt_category,opt_sequence,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+Standalone,qlego-qiskit_PresetOptimizationPass,DJ Circuit,5,,success,55.0,28.0,7.0,7.0
+Standalone,qlego-qiskit_Optimize1qGatesPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_Optimize1qGateDecompositionPass,DJ Circuit,5,,success,38.0,17.0,7.0,7.0
+Standalone,qlego-qiskit_Optimize1qGateSimpleCommutationPass,DJ Circuit,5,,success,48.0,21.0,7.0,7.0
+Standalone,qlego-qiskit_CommutativeCancellationPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_CommutationAnalysisPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_CommutativeOptimizationPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_OptimizeCliffordsPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_OptimizeCliffordTPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_CollectCliffordsPass,DJ Circuit,5,,success,31.0,18.0,7.0,7.0
+Standalone,qlego-qiskit_Collect2qBlocksPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_CollectMultiQBlocksPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_RemoveIdentityEquivalentPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_OptimizeSwapBeforeMeasurePass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_RemoveFinalResetPass,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-tket_SquashTK1Pass,DJ Circuit,5,,success,56.0,23.0,7.0,7.0
+Standalone,qlego-tket_SquashRzPhasedXPass,DJ Circuit,5,,success,56.0,23.0,7.0,7.0
+Standalone,qlego-tket_DecomposeSingleQubitsTK1Pass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_FullPeepholeOptimizePass,DJ Circuit,5,,success,53.0,15.0,4.0,4.0
+Standalone,qlego-tket_CliffordSimpPass,DJ Circuit,5,,success,53.0,15.0,4.0,4.0
+Standalone,qlego-tket_PeepholeOptimize2QPass,DJ Circuit,5,,success,53.0,15.0,4.0,4.0
+Standalone,qlego-tket_KAKDecompositionPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_RemoveRedundanciesPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_RemovePhaseOpsPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_DelayMeasuresPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_SimplifyMeasuresPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_RemoveDiscardedPass,DJ Circuit,5,,success,81.0,36.0,7.0,7.0
+Standalone,qlego-tket_SynthesiseTketPass,DJ Circuit,5,,success,56.0,23.0,7.0,7.0
+Standalone,qlego-bqskit_GroupSingleQuditGatePassPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Standalone,qlego-bqskit_ScanningGateRemovalPassPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Standalone,qlego-bqskit_IterativeScanningGateRemovalPassPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Standalone,qlego-bqskit_TreeScanningGateRemovalPassPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Standalone,qlego-bqskit_QuickPartitionerPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Standalone,qlego-cirq_MergeSingleQubitGatesToPhxzPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectZPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectPhasedPaulisPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeKQubitUnitariesPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropNegligibleOperationsPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropEmptyMomentsPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DeferMeasurementsPass,DJ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_OptimizeForTargetGatesetPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_AlignLeftPass,DJ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_AlignRightPass,DJ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_StratifiedCircuitPass,DJ Circuit,5,ImportError: cannot import name 'stratified_circuit' from 'cirq.circuits' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/cirq/circuits/__init__.py),failed,,,,
+Full SDK Chain,qlego-qiskit_PresetOptimizationPass -> qlego-qiskit_Optimize1qGatesPass -> qlego-qiskit_Optimize1qGateDecompositionPass -> qlego-qiskit_Optimize1qGateSimpleCommutationPass -> qlego-qiskit_CommutativeCancellationPass -> qlego-qiskit_CommutationAnalysisPass -> qlego-qiskit_CommutativeOptimizationPass -> qlego-qiskit_OptimizeCliffordsPass -> qlego-qiskit_OptimizeCliffordTPass -> qlego-qiskit_CollectCliffordsPass -> qlego-qiskit_Collect2qBlocksPass -> qlego-qiskit_CollectMultiQBlocksPass -> qlego-qiskit_RemoveIdentityEquivalentPass -> qlego-qiskit_OptimizeSwapBeforeMeasurePass -> qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass -> qlego-qiskit_RemoveFinalResetPass,DJ Circuit,5,,success,117.0,51.0,7.0,7.0
+Full SDK Chain,qlego-tket_SquashTK1Pass -> qlego-tket_SquashRzPhasedXPass -> qlego-tket_DecomposeSingleQubitsTK1Pass -> qlego-tket_FullPeepholeOptimizePass -> qlego-tket_CliffordSimpPass -> qlego-tket_PeepholeOptimize2QPass -> qlego-tket_KAKDecompositionPass -> qlego-tket_RemoveRedundanciesPass -> qlego-tket_RemovePhaseOpsPass -> qlego-tket_DelayMeasuresPass -> qlego-tket_SimplifyMeasuresPass -> qlego-tket_RemoveDiscardedPass -> qlego-tket_SynthesiseTketPass,DJ Circuit,5,,success,53.0,15.0,4.0,4.0
+Full SDK Chain,qlego-bqskit_GroupSingleQuditGatePassPass -> qlego-bqskit_ScanningGateRemovalPassPass -> qlego-bqskit_IterativeScanningGateRemovalPassPass -> qlego-bqskit_TreeScanningGateRemovalPassPass -> qlego-bqskit_QuickPartitionerPass,DJ Circuit,5,,success,39.0,18.0,7.0,7.0
+Full SDK Chain,qlego-cirq_MergeSingleQubitGatesToPhxzPass -> qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass -> qlego-cirq_EjectZPass -> qlego-cirq_EjectPhasedPaulisPass -> qlego-cirq_MergeKQubitUnitariesPass -> qlego-cirq_DropNegligibleOperationsPass -> qlego-cirq_DropEmptyMomentsPass -> qlego-cirq_DeferMeasurementsPass -> qlego-cirq_OptimizeForTargetGatesetPass -> qlego-cirq_AlignLeftPass -> qlego-cirq_AlignRightPass -> qlego-cirq_StratifiedCircuitPass,DJ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Baseline,None,DJ Circuit,5,,success,43.0,19.0,7.0,7.0
+Standalone,qlego-qiskit_PresetOptimizationPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+Standalone,qlego-qiskit_Optimize1qGatesPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_Optimize1qGateDecompositionPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_Optimize1qGateSimpleCommutationPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_CommutativeCancellationPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_CommutationAnalysisPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_CommutativeOptimizationPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_OptimizeCliffordsPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_OptimizeCliffordTPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_CollectCliffordsPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_Collect2qBlocksPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_CollectMultiQBlocksPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_RemoveIdentityEquivalentPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_OptimizeSwapBeforeMeasurePass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_RemoveFinalResetPass,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-tket_SquashTK1Pass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_SquashRzPhasedXPass,GHZ Circuit,5,,success,19.0,12.0,4.0,4.0
+Standalone,qlego-tket_DecomposeSingleQubitsTK1Pass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_FullPeepholeOptimizePass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_CliffordSimpPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_PeepholeOptimize2QPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_KAKDecompositionPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_RemoveRedundanciesPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_RemovePhaseOpsPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_DelayMeasuresPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_SimplifyMeasuresPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_RemoveDiscardedPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-tket_SynthesiseTketPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Standalone,qlego-bqskit_GroupSingleQuditGatePassPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Standalone,qlego-bqskit_ScanningGateRemovalPassPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Standalone,qlego-bqskit_IterativeScanningGateRemovalPassPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Standalone,qlego-bqskit_TreeScanningGateRemovalPassPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Standalone,qlego-bqskit_QuickPartitionerPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Standalone,qlego-cirq_MergeSingleQubitGatesToPhxzPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectZPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectPhasedPaulisPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeKQubitUnitariesPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropNegligibleOperationsPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropEmptyMomentsPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DeferMeasurementsPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_OptimizeForTargetGatesetPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_AlignLeftPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_AlignRightPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_StratifiedCircuitPass,GHZ Circuit,5,ImportError: cannot import name 'stratified_circuit' from 'cirq.circuits' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/cirq/circuits/__init__.py),failed,,,,
+Full SDK Chain,qlego-qiskit_PresetOptimizationPass -> qlego-qiskit_Optimize1qGatesPass -> qlego-qiskit_Optimize1qGateDecompositionPass -> qlego-qiskit_Optimize1qGateSimpleCommutationPass -> qlego-qiskit_CommutativeCancellationPass -> qlego-qiskit_CommutationAnalysisPass -> qlego-qiskit_CommutativeOptimizationPass -> qlego-qiskit_OptimizeCliffordsPass -> qlego-qiskit_OptimizeCliffordTPass -> qlego-qiskit_CollectCliffordsPass -> qlego-qiskit_Collect2qBlocksPass -> qlego-qiskit_CollectMultiQBlocksPass -> qlego-qiskit_RemoveIdentityEquivalentPass -> qlego-qiskit_OptimizeSwapBeforeMeasurePass -> qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass -> qlego-qiskit_RemoveFinalResetPass,GHZ Circuit,5,,success,29.0,15.0,4.0,4.0
+Full SDK Chain,qlego-tket_SquashTK1Pass -> qlego-tket_SquashRzPhasedXPass -> qlego-tket_DecomposeSingleQubitsTK1Pass -> qlego-tket_FullPeepholeOptimizePass -> qlego-tket_CliffordSimpPass -> qlego-tket_PeepholeOptimize2QPass -> qlego-tket_KAKDecompositionPass -> qlego-tket_RemoveRedundanciesPass -> qlego-tket_RemovePhaseOpsPass -> qlego-tket_DelayMeasuresPass -> qlego-tket_SimplifyMeasuresPass -> qlego-tket_RemoveDiscardedPass -> qlego-tket_SynthesiseTketPass,GHZ Circuit,5,,success,14.0,10.0,4.0,4.0
+Full SDK Chain,qlego-bqskit_GroupSingleQuditGatePassPass -> qlego-bqskit_ScanningGateRemovalPassPass -> qlego-bqskit_IterativeScanningGateRemovalPassPass -> qlego-bqskit_TreeScanningGateRemovalPassPass -> qlego-bqskit_QuickPartitionerPass,GHZ Circuit,5,,success,7.0,7.0,4.0,4.0
+Full SDK Chain,qlego-cirq_MergeSingleQubitGatesToPhxzPass -> qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass -> qlego-cirq_EjectZPass -> qlego-cirq_EjectPhasedPaulisPass -> qlego-cirq_MergeKQubitUnitariesPass -> qlego-cirq_DropNegligibleOperationsPass -> qlego-cirq_DropEmptyMomentsPass -> qlego-cirq_DeferMeasurementsPass -> qlego-cirq_OptimizeForTargetGatesetPass -> qlego-cirq_AlignLeftPass -> qlego-cirq_AlignRightPass -> qlego-cirq_StratifiedCircuitPass,GHZ Circuit,5,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Baseline,None,GHZ Circuit,5,,success,12.0,8.0,4.0,4.0
+Standalone,qlego-qiskit_PresetOptimizationPass,DJ Circuit,10,,success,175.0,84.0,24.0,24.0
+Standalone,qlego-qiskit_Optimize1qGatesPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_Optimize1qGateDecompositionPass,DJ Circuit,10,,success,90.0,36.0,24.0,24.0
+Standalone,qlego-qiskit_Optimize1qGateSimpleCommutationPass,DJ Circuit,10,,success,116.0,42.0,24.0,24.0
+Standalone,qlego-qiskit_CommutativeCancellationPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_CommutationAnalysisPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_CommutativeOptimizationPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_OptimizeCliffordsPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_OptimizeCliffordTPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_CollectCliffordsPass,DJ Circuit,10,,success,46.0,20.0,24.0,15.0
+Standalone,qlego-qiskit_Collect2qBlocksPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_CollectMultiQBlocksPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_RemoveIdentityEquivalentPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_OptimizeSwapBeforeMeasurePass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_RemoveFinalResetPass,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-tket_SquashTK1Pass,DJ Circuit,10,,success,128.0,44.0,24.0,24.0
+Standalone,qlego-tket_SquashRzPhasedXPass,DJ Circuit,10,,success,148.0,49.0,24.0,24.0
+Standalone,qlego-tket_DecomposeSingleQubitsTK1Pass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_FullPeepholeOptimizePass,DJ Circuit,10,,success,113.0,40.0,9.0,9.0
+Standalone,qlego-tket_CliffordSimpPass,DJ Circuit,10,,success,113.0,20.0,9.0,9.0
+Standalone,qlego-tket_PeepholeOptimize2QPass,DJ Circuit,10,,success,113.0,20.0,9.0,9.0
+Standalone,qlego-tket_KAKDecompositionPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_RemoveRedundanciesPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_RemovePhaseOpsPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_DelayMeasuresPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_SimplifyMeasuresPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_RemoveDiscardedPass,DJ Circuit,10,,success,193.0,59.0,24.0,24.0
+Standalone,qlego-tket_SynthesiseTketPass,DJ Circuit,10,,success,128.0,44.0,24.0,24.0
+Standalone,qlego-bqskit_GroupSingleQuditGatePassPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Standalone,qlego-bqskit_ScanningGateRemovalPassPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Standalone,qlego-bqskit_IterativeScanningGateRemovalPassPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Standalone,qlego-bqskit_TreeScanningGateRemovalPassPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Standalone,qlego-bqskit_QuickPartitionerPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Standalone,qlego-cirq_MergeSingleQubitGatesToPhxzPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectZPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectPhasedPaulisPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeKQubitUnitariesPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropNegligibleOperationsPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropEmptyMomentsPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DeferMeasurementsPass,DJ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_OptimizeForTargetGatesetPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_AlignLeftPass,DJ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_AlignRightPass,DJ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_StratifiedCircuitPass,DJ Circuit,10,ImportError: cannot import name 'stratified_circuit' from 'cirq.circuits' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/cirq/circuits/__init__.py),failed,,,,
+Full SDK Chain,qlego-qiskit_PresetOptimizationPass -> qlego-qiskit_Optimize1qGatesPass -> qlego-qiskit_Optimize1qGateDecompositionPass -> qlego-qiskit_Optimize1qGateSimpleCommutationPass -> qlego-qiskit_CommutativeCancellationPass -> qlego-qiskit_CommutationAnalysisPass -> qlego-qiskit_CommutativeOptimizationPass -> qlego-qiskit_OptimizeCliffordsPass -> qlego-qiskit_OptimizeCliffordTPass -> qlego-qiskit_CollectCliffordsPass -> qlego-qiskit_Collect2qBlocksPass -> qlego-qiskit_CollectMultiQBlocksPass -> qlego-qiskit_RemoveIdentityEquivalentPass -> qlego-qiskit_OptimizeSwapBeforeMeasurePass -> qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass -> qlego-qiskit_RemoveFinalResetPass,DJ Circuit,10,,success,329.0,152.0,24.0,23.0
+Full SDK Chain,qlego-tket_SquashTK1Pass -> qlego-tket_SquashRzPhasedXPass -> qlego-tket_DecomposeSingleQubitsTK1Pass -> qlego-tket_FullPeepholeOptimizePass -> qlego-tket_CliffordSimpPass -> qlego-tket_PeepholeOptimize2QPass -> qlego-tket_KAKDecompositionPass -> qlego-tket_RemoveRedundanciesPass -> qlego-tket_RemovePhaseOpsPass -> qlego-tket_DelayMeasuresPass -> qlego-tket_SimplifyMeasuresPass -> qlego-tket_RemoveDiscardedPass -> qlego-tket_SynthesiseTketPass,DJ Circuit,10,,success,113.0,40.0,9.0,9.0
+Full SDK Chain,qlego-bqskit_GroupSingleQuditGatePassPass -> qlego-bqskit_ScanningGateRemovalPassPass -> qlego-bqskit_IterativeScanningGateRemovalPassPass -> qlego-bqskit_TreeScanningGateRemovalPassPass -> qlego-bqskit_QuickPartitionerPass,DJ Circuit,10,,success,94.0,38.0,24.0,24.0
+Full SDK Chain,qlego-cirq_MergeSingleQubitGatesToPhxzPass -> qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass -> qlego-cirq_EjectZPass -> qlego-cirq_EjectPhasedPaulisPass -> qlego-cirq_MergeKQubitUnitariesPass -> qlego-cirq_DropNegligibleOperationsPass -> qlego-cirq_DropEmptyMomentsPass -> qlego-cirq_DeferMeasurementsPass -> qlego-cirq_OptimizeForTargetGatesetPass -> qlego-cirq_AlignLeftPass -> qlego-cirq_AlignRightPass -> qlego-cirq_StratifiedCircuitPass,DJ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Baseline,None,DJ Circuit,10,,success,103.0,39.0,24.0,24.0
+Standalone,qlego-qiskit_PresetOptimizationPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+Standalone,qlego-qiskit_Optimize1qGatesPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_Optimize1qGateDecompositionPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_Optimize1qGateSimpleCommutationPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_CommutativeCancellationPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_CommutationAnalysisPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_CommutativeOptimizationPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_OptimizeCliffordsPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_OptimizeCliffordTPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_CollectCliffordsPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_Collect2qBlocksPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_CollectMultiQBlocksPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_RemoveIdentityEquivalentPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_OptimizeSwapBeforeMeasurePass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-qiskit_RemoveFinalResetPass,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0
+Standalone,qlego-tket_SquashTK1Pass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_SquashRzPhasedXPass,GHZ Circuit,10,,success,29.0,15.0,9.0,9.0
+Standalone,qlego-tket_DecomposeSingleQubitsTK1Pass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_FullPeepholeOptimizePass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_CliffordSimpPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_PeepholeOptimize2QPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_KAKDecompositionPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_RemoveRedundanciesPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_RemovePhaseOpsPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_DelayMeasuresPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_SimplifyMeasuresPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_RemoveDiscardedPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-tket_SynthesiseTketPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Standalone,qlego-bqskit_GroupSingleQuditGatePassPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Standalone,qlego-bqskit_ScanningGateRemovalPassPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Standalone,qlego-bqskit_IterativeScanningGateRemovalPassPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Standalone,qlego-bqskit_TreeScanningGateRemovalPassPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Standalone,qlego-bqskit_QuickPartitionerPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Standalone,qlego-cirq_MergeSingleQubitGatesToPhxzPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectZPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_EjectPhasedPaulisPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_MergeKQubitUnitariesPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropNegligibleOperationsPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DropEmptyMomentsPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_DeferMeasurementsPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_OptimizeForTargetGatesetPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Standalone,qlego-cirq_AlignLeftPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_AlignRightPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'ply',failed,,,,
+Standalone,qlego-cirq_StratifiedCircuitPass,GHZ Circuit,10,ImportError: cannot import name 'stratified_circuit' from 'cirq.circuits' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/cirq/circuits/__init__.py),failed,,,,
+Full SDK Chain,qlego-qiskit_PresetOptimizationPass -> qlego-qiskit_Optimize1qGatesPass -> qlego-qiskit_Optimize1qGateDecompositionPass -> qlego-qiskit_Optimize1qGateSimpleCommutationPass -> qlego-qiskit_CommutativeCancellationPass -> qlego-qiskit_CommutationAnalysisPass -> qlego-qiskit_CommutativeOptimizationPass -> qlego-qiskit_OptimizeCliffordsPass -> qlego-qiskit_OptimizeCliffordTPass -> qlego-qiskit_CollectCliffordsPass -> qlego-qiskit_Collect2qBlocksPass -> qlego-qiskit_CollectMultiQBlocksPass -> qlego-qiskit_RemoveIdentityEquivalentPass -> qlego-qiskit_OptimizeSwapBeforeMeasurePass -> qlego-qiskit_RemoveDiagonalGatesBeforeMeasurePass -> qlego-qiskit_RemoveFinalResetPass,GHZ Circuit,10,,success,39.0,20.0,9.0,9.0
+Full SDK Chain,qlego-tket_SquashTK1Pass -> qlego-tket_SquashRzPhasedXPass -> qlego-tket_DecomposeSingleQubitsTK1Pass -> qlego-tket_FullPeepholeOptimizePass -> qlego-tket_CliffordSimpPass -> qlego-tket_PeepholeOptimize2QPass -> qlego-tket_KAKDecompositionPass -> qlego-tket_RemoveRedundanciesPass -> qlego-tket_RemovePhaseOpsPass -> qlego-tket_DelayMeasuresPass -> qlego-tket_SimplifyMeasuresPass -> qlego-tket_RemoveDiscardedPass -> qlego-tket_SynthesiseTketPass,GHZ Circuit,10,,success,24.0,15.0,9.0,9.0
+Full SDK Chain,qlego-bqskit_GroupSingleQuditGatePassPass -> qlego-bqskit_ScanningGateRemovalPassPass -> qlego-bqskit_IterativeScanningGateRemovalPassPass -> qlego-bqskit_TreeScanningGateRemovalPassPass -> qlego-bqskit_QuickPartitionerPass,GHZ Circuit,10,,success,12.0,12.0,9.0,9.0
+Full SDK Chain,qlego-cirq_MergeSingleQubitGatesToPhxzPass -> qlego-cirq_MergeSingleQubitGatesPhasedXAndZPass -> qlego-cirq_EjectZPass -> qlego-cirq_EjectPhasedPaulisPass -> qlego-cirq_MergeKQubitUnitariesPass -> qlego-cirq_DropNegligibleOperationsPass -> qlego-cirq_DropEmptyMomentsPass -> qlego-cirq_DeferMeasurementsPass -> qlego-cirq_OptimizeForTargetGatesetPass -> qlego-cirq_AlignLeftPass -> qlego-cirq_AlignRightPass -> qlego-cirq_StratifiedCircuitPass,GHZ Circuit,10,ModuleNotFoundError: No module named 'cirq.optimizers',failed,,,,
+Baseline,None,GHZ Circuit,10,,success,22.0,13.0,9.0,9.0

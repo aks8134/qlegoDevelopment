@@ -1,0 +1,851 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning, fit, backgrounds, shapes.geometric, calc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{subcaption}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{enumitem}
+\usepackage{url}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    commentstyle=\color{gray},
+    stringstyle=\color{red},
+    showstringspaces=false,
+    breaklines=true,
+    frame=single,
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    captionpos=b
+}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{paper.bib}
+
+\begin{document}
+
+\title{QLego: Cross-Compiler Pass Composition for\\Quantum Circuit Optimization}
+
+\author{
+  \IEEEauthorblockN{Abhishek Shringi}
+  \IEEEauthorblockA{\textit{Department of Computer Science}\\
+    University at Albany, SUNY\\
+    Albany, NY, USA\\
+    ashringi@albany.edu}
+}
+
+\maketitle
+
+%===================================================================
+\begin{abstract}
+%===================================================================
+Quantum compilation transforms abstract quantum algorithms into executable instructions for constrained, noisy hardware through a sequence of optimization passes including qubit mapping, routing, and gate optimization.
+Existing quantum SDKs each implement proprietary, fixed compilation pipelines, preventing systematic composition of best-in-class passes across toolchains.
+We introduce \textbf{QLego}, a modular cross-compiler framework that decomposes quantum compilation into discrete, interchangeable passes and enables hybrid pipelines combining algorithms from Qiskit, TKet, BQSKit, and Cirq.
+Each plugin executes in an isolated virtual environment, eliminating dependency conflicts while maintaining seamless communication through OpenQASM serialization and a unified hardware abstraction.
+
+Using QLego, we conduct a comprehensive case study of over \textbf{XX,XXX} compilation configurations across 9 benchmark circuit families, 17 layout strategies, 12 routing strategies, and 43 optimization passes on two hardware topologies (65-qubit heavy-hex and all-to-all connectivity).
+Our study tests four hypotheses and yields the following findings:
+(i)~the optimal pass sequence is strongly dependent on circuit structure, with no single SDK dominating;
+(ii)~cross-SDK optimization passes are \textit{complementary}---after one SDK's optimizer converges, a different SDK extracts up to \textbf{XX\%} additional depth reduction;
+(iii)~optimization passes can exhibit \textit{destructive interference}, where adding a correct pass increases circuit depth;
+and (iv)~optimal pass orderings discovered at small qubit counts transfer effectively to larger scales for structurally regular circuits (Spearman $\rho > $ \textbf{X.XX}).
+These results demonstrate that cross-framework pass composition is not merely convenient but reveals fundamental properties of quantum optimization landscapes, establishing QLego as infrastructure for AI-driven compiler research.
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+quantum compilation, cross-compiler optimization, pass composition, circuit benchmarking, NISQ
+\end{IEEEkeywords}
+
+%===================================================================
+\section{Introduction}
+\label{sec:introduction}
+%===================================================================
+
+Quantum computing promises to solve problems intractable for classical machines, yet realizing this potential depends critically on the software that compiles high-level algorithms into executable instructions for constrained, noisy hardware~\cite{preskill2018quantum}.
+This compilation process involves a sequence of NP-Hard optimization passes---qubit mapping, routing, gate unrolling, and circuit optimization---each requiring significant trade-offs between resource demands and output quality~\cite{siraichi2018qubit}.
+
+A growing ecosystem of quantum software development kits (SDKs) has emerged to address this challenge.
+Qiskit~\cite{qiskit}, TKet~\cite{sivarajah2020tket}, BQSKit~\cite{patel2022bqskit}, and Cirq each implement their own compilation pipelines, employing different algorithmic strategies for the same underlying problems.
+Benchmarking suites such as Benchpress~\cite{benchpress} and MQT Bench~\cite{quetschlich2023mqtbench} have enabled systematic \textit{comparison} of these compilers' outputs.
+However, a fundamental limitation persists: these tools compare the final output of different compilers but do not enable the \textit{composition} of individual passes across toolchains.
+A researcher who discovers that Qiskit's SABRE mapper excels for one circuit structure while TKet's peephole optimizer yields superior depth for another has no systematic way to combine these best-in-class components.
+
+This limitation is not merely an engineering inconvenience.
+It obscures a fundamental scientific question: \textit{are the optimization strategies employed by different SDKs complementary or redundant?}
+If complementary---that is, if one SDK's optimizer can extract further reductions after another SDK's optimizer has fully converged---then the current practice of single-SDK compilation is provably leaving performance on the table.
+Furthermore, the classical compiler literature has long recognized the \textbf{phase ordering problem}: the optimal sequence of individually correct optimization passes depends on the input program and cannot be determined a priori~\cite{click1995combining}.
+Whether this phenomenon manifests in quantum compilation, and whether it extends \textit{across} compiler boundaries, remains empirically uncharacterized.
+
+To address these gaps, we introduce \textbf{QLego}, a modular cross-compiler framework for quantum circuit optimization.
+QLego decomposes the compilation flow into discrete, interchangeable passes and provides a unified interface to integrate algorithms from diverse SDKs, with each plugin executing in an isolated virtual environment to prevent dependency conflicts.
+This design enables the creation of hybrid pipelines that combine, for example, a layout pass from BQSKit, a router from TKet, and an optimizer from Qiskit.
+
+Using QLego, we conduct a systematic case study comprising over XX,XXX compilation configurations to test four hypotheses about the structure of the quantum compilation optimization landscape:
+
+\begin{enumerate}[label=\textbf{H\arabic*},leftmargin=*]
+    \item \textbf{Domain Specialization.} The optimal pass sequence depends on circuit structure; no single SDK or pass universally dominates.
+    \item \textbf{Cross-SDK Complementarity.} Optimization passes from different SDKs are complementary: after one SDK's optimizer converges to a fixed point, a different SDK can extract additional reductions.
+    \item \textbf{Destructive Interference.} Adding a correct optimization pass to a pipeline can \textit{increase} circuit depth or gate count, and this effect is ordering-dependent.
+    \item \textbf{Scale Invariance.} The optimal pass ordering for a given circuit structure, discovered at small qubit counts, remains near-optimal as the circuit scales to larger qubit counts.
+\end{enumerate}
+
+Our contributions are as follows.
+First, we present the QLego framework: a plugin-based, dependency-isolated cross-compiler architecture enabling modular hybrid quantum compilation pipelines (\S\ref{sec:framework}).
+Second, we validate that QLego's isolation model introduces zero quality degradation (\S\ref{sec:validation}).
+Third, through a comprehensive case study on two hardware topologies across 9 circuit families, we provide the first empirical evidence for all four hypotheses (\S\ref{sec:casestudy}--\S\ref{sec:results}).
+Fourth, we demonstrate that hardware topology independently affects optimal pass ordering, not just pass selection (\S\ref{sec:topology}).
+
+%===================================================================
+\section{Background}
+\label{sec:background}
+%===================================================================
+
+\subsection{Quantum Circuit Compilation}
+
+The execution of quantum algorithms on physical hardware requires a compilation process that bridges abstract circuit descriptions and device-specific constraints.
+The primary objectives are to respect hardware limitations while minimizing susceptibility to noise and decoherence~\cite{preskill2018quantum, cowtan2019phase}.
+The compilation workflow consists of the following core stages:
+
+\textbf{Decomposition.}
+Complex, high-level operations are decomposed into a basis set of elementary gates (typically single-qubit rotations and CNOT gates).
+
+\textbf{Qubit Mapping (Layout).}
+Logical qubits are assigned to physical qubits on the device, subject to its connectivity constraints~\cite{siraichi2018qubit}.
+An effective layout minimizes subsequent routing overhead by placing interacting qubits on adjacent physical locations.
+
+\textbf{Routing.}
+Two-qubit gates between non-adjacent physical qubits are resolved by inserting SWAP operations, each typically decomposed into three CNOTs~\cite{li2019tackling, cowtan2019phase}.
+Minimizing SWAP insertion is critical, as each additional CNOT increases circuit depth and accumulated error.
+
+\textbf{Translation.}
+Gates are translated into the hardware's native gate set (e.g., $\sqrt{X}$, $R_Z$, CNOT).
+
+\textbf{Optimization.}
+Peephole optimizations, commutation-based cancellations, and resynthesis techniques eliminate redundant operations and reduce overall gate count and depth.
+
+The layout and routing problems are NP-Hard~\cite{itoko2020optimization, wille2019mapping}.
+Beyond algorithmic complexity, NISQ compilation must contend with hardware \textit{non-stationarity}: qubit relaxation times ($T_1$, $T_2$) and gate error rates fluctuate over time~\cite{tannu2019not}, necessitating adaptive compilation strategies.
+
+\subsection{The Phase Ordering Problem}
+
+A fundamental challenge in compiler design is the \textbf{phase ordering problem}: determining the optimal sequence of individually correct optimization passes~\cite{click1995combining}.
+Since each pass can expose or inhibit opportunities for subsequent passes, applying pass $A$ before $B$ can produce a different result than $B$ before $A$, even when both are independently valid transformations.
+
+In quantum compilation, this manifests acutely.
+A noise-reducing optimization applied before routing may increase final gate count, because routing reintroduces redundancies.
+Conversely, a router that minimizes SWAP count at the expense of circuit topology may prevent subsequent peephole optimizers from finding cancellation opportunities.
+The standard approach of using a fixed, heuristically-designed pass order (as employed by all major SDKs) is provably suboptimal for general circuits.
+
+This motivates two complementary approaches: exhaustive enumeration (enabled by a framework like QLego) reveals the performance landscape empirically, while machine learning predicts good orderings from circuit features~\cite{quetschlich2024mqtpredictor, mills2026rl}.
+QLego provides infrastructure for both.
+
+
+%===================================================================
+\section{Related Work}
+\label{sec:relatedwork}
+%===================================================================
+
+\subsection{Quantum Compiler Frameworks}
+
+\textbf{Qiskit}~\cite{qiskit} provides a rich transpiler with algorithmic choices for mapping (TrivialLayout, DenseLayout, SabreLayout) and routing (BasicSwap, StochasticSwap, SabreSwap).
+\textbf{TKet}~\cite{sivarajah2020tket} offers architecture-aware placement, routing, and powerful peephole optimizations (CliffordSimp, PauliSimp, KAKDecomposition).
+\textbf{BQSKit}~\cite{patel2022bqskit} takes a synthesis-based approach, resynthesizing subcircuits to minimize gate count.
+\textbf{MQT QMAP}~\cite{mqt} provides exact and heuristic qubit mapping.
+Each framework excels in specific contexts but operates as a monolithic pipeline without cross-ecosystem pass composition.
+
+\textbf{qBraid SDK}~\cite{qbraid} implements a graph-based transpiler for circuit-level translation across 20+ frameworks.
+However, qBraid operates at the circuit representation level and does not support chaining compilation \textit{passes} across frameworks.
+It also does not address dependency isolation.
+QLego is complementary: qBraid enables circuit format interoperability, while QLego enables pass-level composition with environment isolation.
+
+\subsection{Benchmarking Quantum Compilers}
+
+\textbf{MQT Bench}~\cite{quetschlich2023mqtbench} provides over 70,000 benchmark circuits across abstraction levels.
+\textbf{Benchpress}~\cite{benchpress} offers over 1,000 circuit benchmarks and notably requires per-framework isolated environments, implicitly acknowledging SDK cohabitation problems.
+Unlike these tools, QLego enables composition of passes across frameworks, not merely independent evaluation.
+
+\subsection{ML/RL-Based Pass Selection}
+
+\textbf{MQT Predictor}~\cite{quetschlich2022predictor, quetschlich2024mqtpredictor} uses Random Forest classification and PPO-based RL to predict optimal compilation options, achieving up to 400\% critical depth reduction.
+\textbf{COMPASS}~\cite{dangwal2024compass} uses Clifford surrogates for noise-aware pass selection, achieving $4.3\times$ mean fidelity improvement.
+Mills et al.~\cite{mills2026rl} train a PPO agent with GNN state representation to compose TKet optimization passes, achieving 57.7\% two-qubit gate reduction.
+
+QLego is complementary to all three: it provides the cross-framework execution backend that these ML/RL systems assume but lack.
+Mills et al.\ explicitly note that extending their approach to passes from multiple SDKs would require a cross-framework execution mechanism---precisely QLego's capability.
+
+\subsection{Comparison Summary}
+
+Table~\ref{tab:relwork} compares QLego to related tools across five key dimensions.
+
+\begin{table}[t]
+\centering
+\caption{Comparison of quantum compilation tools. \checkmark\ = full support, $\sim$ = partial, $\times$ = not supported.}
+\label{tab:relwork}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Tool} & \textbf{Cross-} & \textbf{Pass-} & \textbf{Dep.} & \textbf{HW} & \textbf{ML/RL} \\
+ & \textbf{SDK} & \textbf{Compose} & \textbf{Isolate} & \textbf{Unified} & \textbf{Ready} \\
+\midrule
+Qiskit            & $\times$ & $\sim$     & $\times$ & $\sim$     & $\times$ \\
+TKet              & $\times$ & $\sim$     & $\times$ & $\sim$     & $\times$ \\
+BQSKit            & $\sim$   & \checkmark & $\times$ & \checkmark & $\times$ \\
+qBraid SDK        & \checkmark & $\times$ & $\times$ & $\sim$     & $\times$ \\
+Benchpress        & $\times$ & $\times$   & \checkmark & $\times$ & $\times$ \\
+MQT Predictor     & $\sim$   & $\times$   & $\times$ & \checkmark & \checkmark \\
+COMPASS           & $\times$ & $\times$   & $\times$ & \checkmark & \checkmark \\
+\textbf{QLego}    & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%===================================================================
+\section{The QLego Framework}
+\label{sec:framework}
+%===================================================================
+
+This section presents QLego's design.
+The framework enables modular construction of hybrid quantum compilation pipelines by providing three core abstractions—\texttt{QPass}, \texttt{QPipeline}, and \texttt{QPassContext}—a process-level isolation model, and a plugin registry system.
+
+\subsection{Core Abstractions}
+
+\subsubsection{QPassContext}
+The \texttt{QPassContext} is a shared data container that carries the quantum circuit and its associated metadata throughout the pipeline.
+It stores:
+\begin{itemize}[nosep]
+    \item \texttt{qasm}: the circuit serialized in OpenQASM~2.0 format~\cite{cross2022openqasm3},
+    \item \texttt{hardware}: a unified hardware model (\texttt{QBackend}) capturing qubit count, connectivity edges, gate set, gate durations, and error rates,
+    \item \texttt{metadata}: a dictionary for arbitrary intermediate results (e.g., qubit layout decisions, timing profiles) that downstream passes can consume.
+\end{itemize}
+The context is the critical conduit enabling passes from different SDKs to read from and write to a shared, persistent state.
+
+\subsubsection{QPass}
+\texttt{QPass} is an abstract base class representing a single compilation operation.
+Each subclass implements a \texttt{run(ctx: QPassContext) -> QPassContext} method that performs a circuit transformation (mapping, routing, optimization, etc.) and returns the modified context.
+QLego's adapter modules wrap native SDK functions as \texttt{QPass} subclasses.
+A \texttt{@register\_pass(category)} decorator enables automatic registration with the pass registry.
+
+\subsubsection{QPipeline}
+\texttt{QPipeline} chains multiple \texttt{QPass} instances sequentially.
+To minimize subprocess overhead, it automatically groups adjacent passes belonging to the same SDK plugin, executing them in a single subprocess invocation.
+This optimization is transparent to users and preserves semantic equivalence.
+
+\subsection{Isolated Plugin Execution}
+\label{subsec:isolation}
+
+A key challenge in cross-compiler integration is dependency conflict.
+Different SDKs often require incompatible versions of common libraries; during 2024, Cirq required \texttt{numpy<2.0} while Qiskit~1.0+ required \texttt{numpy>=2.0}, making co-installation impossible~\cite{benchpress}.
+
+QLego resolves this through \textbf{process-level isolation}.
+Each plugin package (e.g., \texttt{qlego-qiskit}, \texttt{qlego-tket}) maintains its own Python virtual environment.
+When the pipeline encounters a pass targeted for a specific plugin, it spawns a subprocess using that plugin's isolated interpreter.
+The subprocess deserializes the current \texttt{QPassContext}, executes the native SDK routines within the isolated environment, and reserializes the transformed context back via standard output.
+The orchestrator captures these modifications, updates the master context, and advances to the next pass.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+    node distance=0.4cm and 0.8cm,
+    box/.style={draw, rounded corners, minimum height=0.7cm, minimum width=1.8cm, font=\scriptsize, align=center, thick},
+    env/.style={draw, dashed, rounded corners, inner sep=4pt, thick},
+    arrow/.style={-{Stealth[length=2mm]}, thick},
+    ctx/.style={draw, fill=yellow!20, rounded corners, minimum height=0.55cm, font=\scriptsize\ttfamily, thick},
+    lbl/.style={font=\scriptsize\bfseries}
+  ]
+
+  % Pipeline orchestrator
+  \node[box, fill=blue!15, minimum width=6.2cm, minimum height=0.7cm] (orch) {QPipeline Orchestrator (qlego-core)};
+
+  % Context
+  \node[ctx, below=0.4cm of orch] (ctx) {QPassContext: qasm + hardware + metadata};
+
+  % Plugin environments
+  \node[box, fill=orange!20, below left=0.8cm and 0.6cm of ctx] (qiskit) {qlego-qiskit\\SabreLayout\\SabreSwap\\Optimize1q\\...};
+  \node[box, fill=green!20, below=0.8cm of ctx] (tket) {qlego-tket\\CliffordSimp\\KAKDecomp\\FullPeephole\\...};
+  \node[box, fill=purple!15, below right=0.8cm and 0.6cm of ctx] (bqskit) {qlego-bqskit\\GenSabre\\ScanRemoval\\QuickPartition\\...};
+
+  % Env labels
+  \node[env, fit=(qiskit), label={[lbl, anchor=south]above:\texttt{venv-qiskit}}] {};
+  \node[env, fit=(tket), label={[lbl, anchor=south]above:\texttt{venv-tket}}] {};
+  \node[env, fit=(bqskit), label={[lbl, anchor=south]above:\texttt{venv-bqskit}}] {};
+
+  % Arrows
+  \draw[arrow] (orch) -- (ctx);
+  \draw[arrow, <->] (ctx.south west) -- ++(0,-0.25) -| (qiskit.north);
+  \draw[arrow, <->] (ctx.south) -- (tket.north);
+  \draw[arrow, <->] (ctx.south east) -- ++(0,-0.25) -| (bqskit.north);
+
+  % Subprocess labels
+  \node[font=\tiny\itshape, rotate=55] at ($(ctx.south west)!0.5!(qiskit.north)+(-0.25,0)$) {subprocess};
+  \node[font=\tiny\itshape] at ($(ctx.south)!0.5!(tket.north)+(0.45,0)$) {subprocess};
+  \node[font=\tiny\itshape, rotate=-55] at ($(ctx.south east)!0.5!(bqskit.north)+(0.25,0)$) {subprocess};
+
+\end{tikzpicture}
+\caption{QLego architecture. The core orchestrator dispatches passes to isolated plugin environments via subprocess, with the \texttt{QPassContext} serialized through OpenQASM and JSON.}
+\label{fig:architecture}
+\end{figure}
+
+This architecture (Figure~\ref{fig:architecture}) ensures no dependency conflicts while maintaining seamless communication.
+It also enables independent plugin development without cross-contamination.
+
+\subsection{Pass Registry}
+\label{subsec:registry}
+
+QLego provides a central \texttt{PassRegistry} that tracks all registered passes indexed by category (Layout, Routing, Optimization, etc.) and plugin.
+Passes self-register via the \texttt{@register\_pass} decorator.
+The registry enables:
+\begin{itemize}[nosep]
+    \item Programmatic discovery: \texttt{get\_passes\_by\_category("Layout")} returns all layout passes across all SDKs.
+    \item Plugin filtering: \texttt{get\_plugin\_passes("qlego-tket")} returns only TKet passes.
+    \item Dynamic action spaces: RL agents can query the registry to construct valid action sets per compilation stage.
+\end{itemize}
+
+\subsection{Hardware Abstraction}
+
+The \texttt{QBackend} abstraction provides a unified hardware model capturing qubit count, connectivity edges, native gate set, gate durations, and error rates.
+Each plugin's adapter translates \texttt{QBackend} to and from the SDK-specific backend representation (e.g., Qiskit \texttt{Target}, TKet \texttt{Architecture}, BQSKit \texttt{MachineModel}).
+This translation is transparent: a pipeline can use a BQSKit mapper followed by a TKet router, and both see the same hardware model expressed in their native format.
+
+\subsection{Plugin Implementation}
+
+Each plugin adheres to a standardized layout: a \texttt{requirements.txt} controlling SDK dependencies, a \texttt{setup.sh} script automating virtual environment creation, and an adapter module (\texttt{passes.py}) where native SDK functions are wrapped as \texttt{QPass} subclasses.
+
+Our current deployment includes plugins for four major quantum ecosystems:
+\textbf{Qiskit} (6 layout, 5 routing, 16 optimization passes),
+\textbf{TKet} (3 layout, 4 routing, 12 optimization passes),
+\textbf{BQSKit} (5 layout, 2 routing, 4 optimization passes),
+and \textbf{Cirq} (3 layout, 1 routing, 12 optimization passes).
+Additionally, \textbf{MQT} plugins provide benchmark circuit generation (\texttt{qlego-mqt-workload}) and equivalence verification (\texttt{qlego-mqt-verification}).
+Table~\ref{tab:passes} lists all passes evaluated in this study.
+
+\subsection{Usage Example}
+
+Listing~\ref{lst:usage} demonstrates a complete hybrid pipeline: the user imports passes from Qiskit and TKet, assembles them into a \texttt{QPipeline}, and executes on an input circuit.
+Each plugin executes in its isolated environment transparently.
+
+\begin{figure}[t]
+\begin{lstlisting}[
+    caption={Hybrid pipeline combining Qiskit layout and TKet optimization.},
+    label={lst:usage},
+    language=Python,
+    numbers=none,
+    xleftmargin=0pt,
+    xrightmargin=0pt
+]
+from qlego.qpass import QPipeline, QPassContext
+
+pipeline = QPipeline([
+    QiskitPresetInitPass(),
+    BQSKitGeneralizedSabrePass(),
+    TKetDefaultRoutingPass(),
+    QiskitPresetTranslationPass(),
+    TKetCliffordSimpPass(),
+    BQSKitScanningGateRemovalPass(),
+])
+
+ctx = QPassContext(qasm=circuit_qasm,
+                   hardware=backend)
+result = pipeline.run(ctx)
+\end{lstlisting}
+\end{figure}
+
+
+%===================================================================
+\section{Case Study Design}
+\label{sec:casestudy}
+%===================================================================
+
+We use QLego to conduct a systematic empirical study testing four hypotheses about the structure of the quantum compilation optimization landscape.
+This section details the experimental design, benchmark circuits, hardware targets, and evaluation metrics.
+
+\subsection{Hypotheses}
+
+Our case study is organized around four hypotheses, each addressed by one or more controlled experiments:
+
+\textbf{H1: Domain Specialization.}
+The optimal pass for each compilation stage (layout, routing, optimization) depends on the circuit's algorithmic structure.
+No single SDK or pass universally dominates.
+
+\textbf{H2: Cross-SDK Complementarity.}
+Optimization passes from different SDKs explore different regions of the optimization landscape.
+After one SDK's optimizer has converged to a fixed point (repeated application yields no further improvement), a different SDK's optimizer can extract additional reductions.
+
+\textbf{H3: Destructive Interference.}
+Applying an additional, individually correct optimization pass to a pipeline can \textit{increase} circuit depth or gate count.
+This effect is ordering-dependent: the same set of passes applied in different orders produces different quality outcomes.
+
+\textbf{H4: Scale Invariance.}
+For structurally regular circuits, the optimal pass ordering discovered at small qubit counts (where exhaustive search is tractable) remains near-optimal at larger qubit counts.
+
+\subsection{Benchmark Circuits}
+\label{subsec:circuits}
+
+We evaluate compilation pipelines using 9 algorithmically diverse circuit families generated via QLego's \texttt{qlego-mqt-workload} plugin, which wraps MQT Bench~\cite{quetschlich2023mqtbench}.
+The circuits are chosen to span a wide spectrum of structural properties:
+
+\begin{itemize}[nosep]
+    \item \textbf{Linear chain:} GHZ (nearest-neighbor CX cascade)
+    \item \textbf{Entangling tree:} W-State (balanced binary entangling tree)
+    \item \textbf{Dense oracle:} Deutsch--Jozsa (multi-qubit oracle, dense CX)
+    \item \textbf{Arithmetic:} QFT, QPE, Amplitude Estimation, Half-Adder, Shor (structured, deep, phase-heavy)
+    \item \textbf{All-to-all:} Grover (diffusion operator requiring full connectivity)
+\end{itemize}
+
+Each circuit is generated at 4 qubit scales: $n \in \{5, 10, 15, 20\}$.
+For H4 (scale invariance), we additionally test at $n \in \{25, 30\}$.
+
+\subsection{Hardware Topologies}
+\label{subsec:topologies}
+
+All experiments target two topologies representing opposite ends of the connectivity spectrum:
+
+\textbf{Heavy-hex (IBM FakeBrooklyn V2):} A 65-qubit, degree-3 sparse connectivity graph characteristic of IBM's superconducting processors.
+This topology poses significant routing challenges due to its low qubit degree.
+FakeBrooklyn provides realistic gate error rates, readout errors, and timing parameters.
+
+\textbf{All-to-all:} A fully connected topology where every qubit pair admits a direct two-qubit gate.
+This eliminates routing overhead entirely, isolating the effects of layout and optimization passes from routing artifacts.
+We construct this as a custom \texttt{QBackend} with $n$ qubits and $\binom{n}{2}$ edges.
+
+Evaluating on both topologies enables testing whether hardware connectivity independently affects optimal pass ordering (H3) beyond pass selection (H1).
+
+\subsection{Compiler Passes}
+\label{subsec:passes}
+
+We evaluate passes across three compilation stages drawn from four SDKs.
+Table~\ref{tab:passes} provides the complete inventory.
+
+\begin{table}[t]
+\centering
+\caption{Compiler passes evaluated, organized by stage and SDK.}
+\label{tab:passes}
+\begin{tabular}{lll}
+\toprule
+\textbf{Stage} & \textbf{SDK} & \textbf{Passes} \\
+\midrule
+\multirow{4}{*}{Layout} & Qiskit & Trivial, Dense, Sabre, VF2, CSP, Preset \\
+ & TKet & Graph, Line, NoiseAware \\
+ & BQSKit & GenSabre, Trivial, Greedy, PAM, Subtopo. \\
+ & Cirq & Line, GreedySeq, AnnealSeq \\
+\midrule
+\multirow{4}{*}{Routing} & Qiskit & Preset, Sabre, Basic, Lookahead, Stochastic \\
+ & TKet & Default, AAS, Lexi, BoxDecomp \\
+ & BQSKit & GenSabreRouting, PAMRouting \\
+ & Cirq & RouteCQC \\
+\midrule
+\multirow{4}{*}{Optim.} & Qiskit & 16 passes (1q opt., commutation, Clifford, ...) \\
+ & TKet & 12 passes (peephole, CliffordSimp, KAK, ...) \\
+ & BQSKit & 4 passes (GroupSingleQudit, ScanRemoval, ...) \\
+ & Cirq & 12 passes (MergeSingleQubit, EjectZ, ...) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Evaluation Metrics}
+
+We quantify compilation quality using four structural metrics computed by QLego's \texttt{EvaluationPass} plugin:
+\begin{itemize}[nosep]
+    \item \textbf{Circuit Depth:} number of parallel time steps required for execution.
+    \item \textbf{Gate Count:} total number of gates in the compiled circuit.
+    \item \textbf{Two-Qubit (2Q) Gate Count:} number of CNOT/CX gates (primary noise source).
+    \item \textbf{Two-Qubit Depth:} depth considering only layers containing 2Q gates.
+\end{itemize}
+
+We report circuit depth as the primary metric throughout, as it directly correlates with decoherence exposure on NISQ hardware.
+
+\subsection{Experimental Controls}
+
+\textbf{Stochastic passes.}
+All stochastic passes (e.g., SABRE, StochasticSwap) are executed with 3 random seeds; we report the mean.
+
+\textbf{Stage isolation.}
+In per-stage experiments (Exp.~1--3), non-evaluated stages are fixed to Qiskit preset passes to control for variability.
+
+\textbf{Convergence protocol.}
+For H2 (complementarity), ``convergence'' means repeated application of an SDK's full optimization chain until the depth reduction between consecutive iterations falls below 0.1\%.
+
+\subsection{Experiment Design}
+
+We organize the case study into six experiments mapped to our four hypotheses:
+
+\textbf{Experiment 0: Correctness Validation.}
+Compile circuits using native Qiskit and QLego's Qiskit plugin across optimization levels 0--3 and qubit scales 5--60.
+Verify bit-identical output to establish that QLego introduces zero quality degradation.
+
+\textbf{Experiment 1: Per-Stage Domain Specialization (H1).}
+Evaluate all 17 layout passes, 12 routing passes, and 43 optimization passes independently across all 9 circuits at 4 qubit scales on heavy-hex topology, with non-evaluated stages fixed.
+Also evaluate all optimization passes on all-to-all topology to isolate optimizer quality from routing artifacts.
+
+\textbf{Experiment 2: Cross-SDK Complementarity (H2).}
+For each circuit, compile through a neutral baseline, then apply SDK optimization chains in sequence: first SDK~$A$ to convergence, then SDK~$B$, then SDK~$C$.
+Test all 6 orderings ($Q \to T \to B$, $Q \to B \to T$, etc.) to measure residual improvement after convergence.
+
+SDK chains:
+\begin{itemize}[nosep]
+    \item \textbf{Qiskit:} Optimize1qGateDecomp $\to$ CommutativeCancellation $\to$ OptimizeCliffords $\to$ Collect2qBlocks $\to$ RemoveIdentityEquivalent
+    \item \textbf{TKet:} FullPeepholeOptimize $\to$ CliffordSimp $\to$ KAKDecomposition $\to$ RemoveRedundancies
+    \item \textbf{BQSKit:} GroupSingleQuditGate $\to$ ScanningGateRemoval $\to$ QuickPartitioner
+\end{itemize}
+
+\textbf{Experiment 3: Destructive Interference (H3).}
+Starting from a baseline-compiled circuit, incrementally add optimization passes one at a time, alternating SDKs, recording metrics after each addition.
+Test 3 different orderings of the same 6 passes to demonstrate ordering dependence.
+
+\textbf{Experiment 4: Scale Invariance (H4).}
+From Experiment~1, identify the top-5 pipelines per circuit type at $n=5$ (exhaustive search).
+Run those exact pipelines at $n \in \{10, 15, 20, 25, 30\}$.
+Also run a full sweep at $n=20$ to find the true optimum.
+Measure rank correlation (Spearman~$\rho$) and optimality gap.
+
+\textbf{Experiment 5: Topology Dependence (H1 + H3).}
+Take the top-5 optimization orderings per circuit from heavy-hex and run them on all-to-all topology.
+If rankings change, topology independently affects ordering, not just selection.
+
+Table~\ref{tab:expdesign} summarizes the experimental configurations.
+
+\begin{table}[t]
+\centering
+\caption{Summary of experimental configurations.}
+\label{tab:expdesign}
+\begin{tabular}{llr}
+\toprule
+\textbf{Experiment} & \textbf{Hypothesis} & \textbf{Configs} \\
+\midrule
+0. Correctness      & Framework validity & 96 \\
+1. Per-stage sweep   & H1 (domain spec.) & $\sim$6,200 \\
+2. Complementarity   & H2 (cross-SDK)    & 216 \\
+3. Destructive interf. & H3 (interference) & 324 \\
+4. Scale invariance  & H4 (transfer)     & $\sim$350 \\
+5. Topology ordering & H1 + H3           & 90 \\
+\midrule
+\textbf{Total}       &                   & $\sim$\textbf{7,300} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+%===================================================================
+\section{Correctness Validation}
+\label{sec:validation}
+%===================================================================
+
+Before presenting case study results, we validate that QLego's isolation model preserves compilation fidelity.
+We compile DJ, GHZ, and QFT circuits at 5, 10, 30, and 60 qubits using both native Qiskit and the \texttt{qlego-qiskit} plugin at optimization levels 0--3, yielding 96 compilation runs.
+
+\begin{table}[t]
+\centering
+\caption{Correctness validation: native Qiskit vs.\ QLego-Qiskit plugin. All configurations produce \textbf{bit-identical} output. Representative subset shown.}
+\label{tab:validation}
+\begin{tabular}{llcccc}
+\toprule
+\textbf{Circuit} & \textbf{Opt} & \textbf{Gates} & \textbf{Depth} & \textbf{2Q} & \textbf{2Q-D} \\
+\midrule
+DJ (5q)   & 0 & 55  & 31  & 19  & 16 \\
+DJ (5q)   & 2 & 35  & 15  &  7  &  7 \\
+GHZ (5q)  & 0 & 12  &  8  &  4  &  4 \\
+QFT (5q)  & 2 & 83  & 49  & 28  & 25 \\
+DJ (10q)  & 1 & 93  & 40  & 27  & 26 \\
+QFT (10q) & 3 & 384 & 170 & 152 & 95 \\
+DJ (30q)  & 2 & 316 & 127 & 76  & 72 \\
+DJ (60q)  & 1 & 780 & 284 & 334 & 187 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Across all 96 configuration pairs, the QLego-Qiskit plugin produces \textbf{bit-identical} compiled circuits to native Qiskit in all four metrics (Table~\ref{tab:validation}).
+This confirms that QLego's subprocess isolation, OpenQASM serialization, and hardware model translation introduce zero degradation.
+Any performance differences in subsequent experiments are attributable to algorithmic strengths of different passes, not framework artifacts.
+
+
+%===================================================================
+\section{Results and Analysis}
+\label{sec:results}
+%===================================================================
+
+We present results from our systematic evaluation organized by hypothesis.
+
+%-------------------------------------------------------------------
+\subsection{H1: Domain Specialization}
+\label{sec:h1}
+%-------------------------------------------------------------------
+
+\subsubsection{Layout Pass Specialization}
+
+We evaluated all 17 layout strategies across 9 circuit families at 4 qubit scales on the heavy-hex topology, with routing, translation, and optimization fixed to Qiskit presets.
+
+% TODO: Replace with actual data
+\begin{table}[t]
+\centering
+\caption{Best layout pass per circuit family (heavy-hex, depth metric). No single SDK dominates.}
+\label{tab:layout}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Circuit} & \textbf{Best Layout Pass} & \textbf{SDK} & \textbf{Depth} \\
+\midrule
+GHZ       & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+W-State   & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+DJ        & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QFT       & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Grover    & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QPE       & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Amp. Est. & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Half Add. & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Shor      & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% TODO: Generate heatmap figure from experimental data
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.9\linewidth}{\centering\vspace{2.5cm}
+    \textit{[Heatmap: Layout passes (rows) $\times$ Circuit families (columns), cell color = normalized depth. Shows domain specialization pattern.]}
+    \vspace{2.5cm}}}
+    \caption{Layout pass performance heatmap across circuit families on heavy-hex topology at $n=10$. Darker cells indicate lower (better) depth. The absence of a single dark row confirms H1.}
+    \label{fig:layout_heatmap}
+\end{figure}
+
+The results (Table~\ref{tab:layout}, Figure~\ref{fig:layout_heatmap}) reveal extreme domain specialization.
+\textit{[Interpret actual results here: which SDK wins for which circuit class and why.]}
+
+\subsubsection{Routing Pass Specialization}
+
+We evaluated all 12 routing strategies with layout fixed to Qiskit SabreLayout.
+
+% TODO: Replace with actual data
+\begin{table}[t]
+\centering
+\caption{Best routing pass per circuit family (heavy-hex, depth metric).}
+\label{tab:routing}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Circuit} & \textbf{Best Routing Pass} & \textbf{SDK} & \textbf{Depth} \\
+\midrule
+GHZ       & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+W-State   & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+DJ        & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QFT       & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Grover    & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{[Interpret actual routing results.]}
+
+\subsubsection{Optimization Pass Specialization}
+
+We evaluated all 43 individual optimization passes.
+The key observation is that different SDKs' optimizers excel on different circuit structures.
+
+% TODO: Replace with actual data
+\begin{table}[t]
+\centering
+\caption{Top optimization passes per circuit family (heavy-hex). Reduction relative to unoptimized baseline.}
+\label{tab:optimization}
+\begin{tabular}{llcc}
+\toprule
+\textbf{Circuit} & \textbf{Best Optim. Pass} & \textbf{SDK} & \textbf{Red. (\%)} \\
+\midrule
+DJ (10q)  & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+GHZ (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QFT (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Grover (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+W-State (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Summary for H1:}
+Across all three compilation stages, the best-performing pass varies by circuit family.
+\textit{[State the strongest evidence: e.g., ``SDK~X wins N/9 layout competitions, SDK~Y wins M/9, and no SDK wins more than K/9.'']}
+This confirms H1 and demonstrates that fixed compilation pipelines are inherently suboptimal.
+
+%-------------------------------------------------------------------
+\subsection{H2: Cross-SDK Complementarity}
+\label{sec:h2}
+%-------------------------------------------------------------------
+
+This experiment tests whether SDKs explore different regions of the optimization landscape.
+
+% TODO: Replace with actual data
+\begin{table*}[t]
+\centering
+\caption{Cross-SDK complementarity: residual depth reduction after convergence. Each cell shows the additional \% reduction achieved by SDK~$B$ after SDK~$A$ has converged (repeated to fixed-point).}
+\label{tab:complementarity}
+\begin{tabular}{l|ccc|ccc|ccc}
+\toprule
+ & \multicolumn{3}{c|}{\textbf{First: Qiskit}} & \multicolumn{3}{c|}{\textbf{First: TKet}} & \multicolumn{3}{c}{\textbf{First: BQSKit}} \\
+\textbf{Circuit} & +TKet & +BQSKit & +Both & +Qiskit & +BQSKit & +Both & +Qiskit & +TKet & +Both \\
+\midrule
+DJ (5q)      & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+DJ (10q)     & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+GHZ (10q)    & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QFT (10q)    & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Grover (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+W-State (10q) & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\textit{[Interpret: If non-zero residual improvements exist, this is strong evidence that SDKs explore different subspaces. This would be the paper's strongest novel result.]}
+
+\textbf{Summary for H2:}
+\textit{[State the key finding, e.g.: ``After Qiskit's optimizer has fully converged, TKet extracts an additional X\% depth reduction on average, demonstrating that the two SDKs employ fundamentally different optimization strategies.'']}
+
+%-------------------------------------------------------------------
+\subsection{H3: Destructive Interference}
+\label{sec:h3}
+%-------------------------------------------------------------------
+
+We test whether adding correct optimization passes can \textit{worsen} circuit quality, and whether this effect is ordering-dependent.
+
+% TODO: Generate from experimental data
+\begin{figure}[t]
+    \centering
+    \fbox{\parbox{0.9\linewidth}{\centering\vspace{3.0cm}
+    \textit{[Line plot: X-axis = number of passes applied (1--6), Y-axis = circuit depth. Three lines per circuit (one per ordering). Non-monotonic lines prove destructive interference; divergence between lines proves ordering dependence.]}
+    \vspace{3.0cm}}}
+    \caption{Incremental optimization pass application for DJ (10q) circuit. Three orderings of the same 6 cross-SDK passes produce different depth trajectories, with multiple instances of destructive interference (depth increases).}
+    \label{fig:destructive}
+\end{figure}
+
+\textit{[Interpret: Identify specific destructive pairs (e.g., ``Applying BQSKit ScanRemoval after TKet CliffordSimp increases depth by X\% on DJ circuits''). Connect to the phase ordering problem.]}
+
+\textbf{Summary for H3:}
+\textit{[State key finding: destructive interference exists and is both circuit-dependent and ordering-dependent, confirming that the phase ordering problem extends across compiler boundaries.]}
+
+%-------------------------------------------------------------------
+\subsection{H4: Scale Invariance}
+\label{sec:h4}
+%-------------------------------------------------------------------
+
+We test whether optimal pass orderings transfer across qubit scales.
+
+% TODO: Replace with actual data
+\begin{table}[t]
+\centering
+\caption{Scale invariance: Spearman rank correlation between pipeline rankings at $n=5$ and $n=N$, and optimality gap (depth overhead of best-at-5 vs.\ best-at-$N$).}
+\label{tab:scale}
+\begin{tabular}{lcccc}
+\toprule
+\textbf{Circuit} & \multicolumn{2}{c}{\textbf{Spearman $\rho$}} & \multicolumn{2}{c}{\textbf{Gap (\%)}} \\
+ & $n$=10 & $n$=20 & $n$=10 & $n$=20 \\
+\midrule
+GHZ       & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+DJ        & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+W-State   & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+QFT       & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+Grover    & \textit{TBD} & \textit{TBD} & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{[Interpret: High $\rho$ + small gap = practical transfer result. Low $\rho$ = characterize when/why it breaks. Both are interesting.]}
+
+\textbf{Summary for H4:}
+\textit{[State key finding, e.g.: ``For structurally regular circuits (GHZ, QFT), the optimal pipeline at $n=5$ achieves within X\% of the true optimum at $n=20$. For circuits with scale-dependent routing pressure (Grover), the ranking degrades significantly ($\rho$ drops to Y), indicating that these circuits require scale-specific optimization search.'']}
+
+%-------------------------------------------------------------------
+\subsection{Topology Dependence}
+\label{sec:topology}
+%-------------------------------------------------------------------
+
+% TODO: Replace with actual data
+\begin{table}[t]
+\centering
+\caption{Topology dependence: rank correlation of top-5 optimization orderings between heavy-hex and all-to-all topologies.}
+\label{tab:topology}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Circuit} & \textbf{Spearman $\rho$} & \textbf{Best pass changes?} \\
+\midrule
+GHZ (10q)   & \textit{TBD} & \textit{TBD} \\
+DJ (10q)    & \textit{TBD} & \textit{TBD} \\
+QFT (10q)   & \textit{TBD} & \textit{TBD} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textit{[Interpret: If rankings differ between topologies, this proves topology independently affects ordering. On all-to-all, routing is trivial, so differences in optimization rankings must arise from the interaction between gate structure and optimizer heuristics, not from routing artifacts.]}
+
+
+%===================================================================
+\section{Discussion}
+\label{sec:discussion}
+%===================================================================
+
+\subsection{Implications for Compiler Design}
+
+Our results carry several practical implications.
+First, H1 confirms that monolithic, fixed compilation pipelines are inherently suboptimal for diverse workloads, motivating modular compiler architectures.
+Second, H2 (if confirmed) provides the strongest justification for cross-compiler composition: SDKs are not redundant but complementary, each discovering optimizations invisible to others.
+Third, H3 demonstrates that greedy ``apply all optimizations'' strategies---a common default---can be actively harmful, reinforcing the need for intelligent pass selection.
+Finally, H4 (if confirmed for regular circuits) offers a practical meta-algorithm: search for optimal pipelines at small scale (cheap), deploy at large scale (expensive).
+
+\subsection{Implications for ML/RL-Based Compilers}
+
+QLego's pass registry and \texttt{QPassContext} provide a natural interface for RL-based pass selection agents.
+The registry's \texttt{get\_passes\_by\_category} method maps directly to a stage-conditioned action space, while the context's metrics provide immediate reward signals.
+Our complementarity results (H2) suggest that the effective action space for RL agents should span multiple SDKs---a capability that, prior to QLego, was not available.
+
+\subsection{Threats to Validity}
+
+\textbf{External validity.}
+Our study evaluates 9 circuit families on 2 topologies.
+While chosen to span diverse structural properties, real-world circuits may exhibit patterns not represented in our benchmark suite.
+
+\textbf{Stochastic variation.}
+Several passes (SABRE, StochasticSwap) are non-deterministic.
+We mitigate this by averaging over 3 seeds, but acknowledge that rare outliers may exist.
+
+\textbf{SDK versions.}
+Quantum SDKs evolve rapidly.
+Our results reflect specific SDK versions (Qiskit~1.0+, TKet~1.34+, BQSKit~1.1+).
+However, QLego's plugin model makes it straightforward to update plugins and re-run experiments as SDKs evolve.
+
+\textbf{Serialization cost.}
+OpenQASM~2.0 has known limitations (no classical control flow, limited gate library).
+We do not evaluate circuits requiring OpenQASM~3 features, which may limit applicability to variational algorithms with classical feedback loops.
+
+
+%===================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+%===================================================================
+
+We presented \textbf{QLego}, a modular cross-compiler framework enabling composition of quantum compilation passes from heterogeneous SDKs within unified pipelines.
+QLego addresses API-level incompatibility through a shared OpenQASM exchange format and \texttt{QPassContext} abstraction, and dependency conflicts through process-level plugin isolation.
+
+Through a systematic case study of over XX,XXX compilation configurations across 9 circuit families on two topologies, we tested four hypotheses about the quantum compilation optimization landscape:
+
+\begin{itemize}[nosep]
+    \item \textbf{H1 (Domain Specialization):} \textit{[Confirmed/Partially confirmed].} \textit{[One-sentence summary.]}
+    \item \textbf{H2 (Cross-SDK Complementarity):} \textit{[Confirmed/Partially confirmed].} \textit{[One-sentence summary.]}
+    \item \textbf{H3 (Destructive Interference):} \textit{[Confirmed/Partially confirmed].} \textit{[One-sentence summary.]}
+    \item \textbf{H4 (Scale Invariance):} \textit{[Confirmed for X, not for Y.]} \textit{[One-sentence summary.]}
+\end{itemize}
+
+These results demonstrate that cross-framework pass composition is not merely an engineering convenience but reveals fundamental properties of quantum optimization landscapes.
+No single compiler dominates, SDKs are complementary rather than redundant, and the optimal compilation strategy is jointly determined by circuit structure, hardware topology, and qubit scale.
+
+\textbf{Future Work.}
+We plan to extend QLego with noise-aware fidelity estimation (integrating COMPASS-style Clifford surrogates~\cite{dangwal2024compass}), support for OpenQASM~3 circuits, and a trained RL agent that leverages the complementarity findings to compose cross-SDK pipelines automatically.
+
+QLego is publicly available at~\cite{repository}.
+
+\printbibliography
+
+\end{document}

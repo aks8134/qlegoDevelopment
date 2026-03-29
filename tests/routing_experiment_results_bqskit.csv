@@ -1,0 +1,37 @@
+routing_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,5,,success,51.0,27.0,7.0,7.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,5,,success,19.0,14.0,4.0,4.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,5,,success,1849.0,1048.0,350.0,320.0
+qlego-bqskit_PAMRoutingPass,Grover Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,5,,success,120.0,67.0,28.0,25.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,5,,success,120.0,75.0,28.0,28.0
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,5,,success,114.0,73.0,27.0,27.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_PAMRoutingPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,5,,success,52.0,26.0,8.0,6.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,5,,success,105.0,75.0,30.0,29.0
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,5,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,10,,success,167.0,80.0,24.0,24.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,10,,success,21.0,16.0,9.0,9.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,10,,success,145984.0,79667.0,28389.0,23146.0
+qlego-bqskit_PAMRoutingPass,Grover Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,10,,success,695.0,285.0,167.0,110.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,10,,success,693.0,315.0,165.0,120.0
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,10,,success,673.0,293.0,161.0,109.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_PAMRoutingPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,10,,success,117.0,53.0,18.0,11.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,10,RuntimeError: Server connection unexpectedly closed.,failed,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,

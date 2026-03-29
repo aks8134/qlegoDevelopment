@@ -6,9 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "qlego-tket"
 version = "0.1.0"
 dependencies = [
-    "qlego-core",
-    "pytket",
-    "pytket-qiskit"
+    "qlego-core"
 ]
 
 [tool.setuptools.packages.find]

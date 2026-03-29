@@ -1,0 +1,25 @@
+mapping_strategy,circuit_type,num_qubits,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-qiskit_TrivialLayoutPass,DJ Circuit,5,success,106.0,56.0,19.0,16.0
+qlego-qiskit_DenseLayoutPass,DJ Circuit,5,success,106.0,56.0,19.0,16.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,5,success,60.0,28.0,7.0,5.0
+qlego-qiskit_VF2LayoutPass,DJ Circuit,5,failed,,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,5,failed,,,,
+qlego-qiskit_PresetLayoutPass,DJ Circuit,5,success,55.0,28.0,7.0,7.0
+qlego-qiskit_TrivialLayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_DenseLayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_SabreLayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_PresetLayoutPass,GHZ Circuit,5,success,24.0,15.0,4.0,4.0
+qlego-qiskit_TrivialLayoutPass,DJ Circuit,10,success,315.0,139.0,66.0,43.0
+qlego-qiskit_DenseLayoutPass,DJ Circuit,10,success,283.0,131.0,57.0,41.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,10,success,167.0,84.0,25.0,24.0
+qlego-qiskit_VF2LayoutPass,DJ Circuit,10,failed,,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,10,failed,,,,
+qlego-qiskit_PresetLayoutPass,DJ Circuit,10,success,175.0,84.0,24.0,24.0
+qlego-qiskit_TrivialLayoutPass,GHZ Circuit,10,success,31.0,17.0,9.0,9.0
+qlego-qiskit_DenseLayoutPass,GHZ Circuit,10,success,43.0,25.0,10.0,10.0
+qlego-qiskit_SabreLayoutPass,GHZ Circuit,10,success,31.0,17.0,9.0,9.0
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,10,success,31.0,17.0,9.0,9.0
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,10,success,31.0,17.0,9.0,9.0
+qlego-qiskit_PresetLayoutPass,GHZ Circuit,10,success,31.0,17.0,9.0,9.0

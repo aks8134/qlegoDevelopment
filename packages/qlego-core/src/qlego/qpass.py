@@ -125,13 +125,92 @@ class QPass(ABC):
 
 class QPipeline:
     """Simple sequential runner for QPass objects."""
-    def __init__(self, passes: List[QPass]) -> None:
+    def __init__(self, passes: List[QPass], env_config_path: Optional[str] = "envs/env_config.json") -> None:
+        import os
         self.passes = passes
+        self.env_config = {}
+        if env_config_path and os.path.exists(env_config_path):
+            try:
+                with open(env_config_path, "r") as f:
+                    self.env_config = json.load(f)
+            except Exception as e:
+                print(f"Warning: could not read env config from {env_config_path}: {e}")
 
     def run(self, qasm_in: str, ctx: Optional[QPassContext] = None) -> QPassContext:
+        import sys
         if ctx is None:
-            ctx = QPassContext(qasm = qasm_in)
+            ctx = QPassContext(qasm=qasm_in)
         ctx.metadata["time_profile"] = {}
+        
+        # Resolve venv_path for each pass based on origin package
         for p in self.passes:
-            ctx = p(ctx)
+            module_name = p.__class__.__module__.partition(".")[0]
+            resolved = False
+            if module_name in self.env_config:
+                p.venv_path = self.env_config[module_name]["venv_path"]
+                resolved = True
+            else:
+                for base in p.__class__.__mro__:
+                    b_mod = base.__module__.partition(".")[0]
+                    if b_mod in self.env_config:
+                        p.venv_path = self.env_config[b_mod]["venv_path"]
+                        resolved = True
+                        break
+            
+            if not resolved:
+                if p.venv_path == "random_string" or ".venv/bin/python" in getattr(p, "venv_path", "") or not os.path.exists(p.venv_path):
+                    # Fallback to current execution environment
+                    p.venv_path = sys.executable
+
+        # Group contiguous passes by venv_path
+        groups = []
+        for p in self.passes:
+            if not groups:
+                groups.append({"venv_path": p.venv_path, "passes": [p]})
+            else:
+                if groups[-1]["venv_path"] == p.venv_path:
+                    groups[-1]["passes"].append(p)
+                else:
+                    groups.append({"venv_path": p.venv_path, "passes": [p]})
+
+        for group in groups:
+            ctx = self._run_group(group["passes"], group["venv_path"], ctx)
+            
+        return ctx
+
+    def _run_group(self, passes: List[QPass], venv_path: str, ctx: QPassContext) -> QPassContext:
+        if not passes:
+            return ctx
+            
+        with timer("total") as total_t:
+            payload = {
+                "passes": [{"class": p.c_name(), "cfg": p.to_config()} for p in passes],
+                "ctx": ctx.to_dict(),
+            }
+            
+            group_names = ", ".join(p.name for p in passes)
+            # print(f"Running group [{group_names}] in {venv_path}")
+            
+            proc = subprocess.run(
+                [venv_path, "-m", "qlego.worker", "--group"],
+                input=json.dumps(payload),
+                text=True,
+                capture_output=True,
+            )
+            
+            if proc.returncode != 0:
+                raise RuntimeError(f"Worker subprocess failed with code {proc.returncode}\nSTDERR: {proc.stderr}\nSTDOUT: {proc.stdout}")
+                
+            if not proc.stdout.strip():
+                raise RuntimeError(f"Worker subprocess returned no output\nSTDERR: {proc.stderr}")
+                
+            out = json.loads(proc.stdout)
+            ctx = QPassContext.from_dict(out)
+            
+        time_res = {k:v for k, v in total_t.items() if k in ["wall", "cpu", "non_cpu"]}
+        for p in passes:
+            if p.name not in ctx.metadata["time_profile"]:
+                ctx.metadata["time_profile"][p.name] = {}
+            ctx.metadata["time_profile"][p.name]["total"] = time_res
+            
         return ctx

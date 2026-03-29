@@ -3,6 +3,9 @@ from qlego.qpass import QPass, QPassContext
 import json
 import subprocess
 
+from qlego.registry import register_pass
+
+@register_pass("Evaluation")
 class EvaluationPass(QPass):
     venv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../../.venv/bin/python"))
     name = "Evaluation Pass"

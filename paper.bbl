@@ -1,0 +1,895 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global/global}
+    \entry{benchpress}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{2}{}{%
+        {{hash=136f8b77faf5ea4ba7e7e7d894667c71}{%
+           family={Bello},
+           familyi={B\bibinitperiod},
+           given={Luis},
+           giveni={L\bibinitperiod}}}%
+        {{hash=18e9b26f0950d587e91a81069962248d}{%
+           family={Nation},
+           familyi={N\bibinitperiod},
+           given={Paul\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \strng{namehash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{fullhash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{fullhashraw}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{bibnamehash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{authorbibnamehash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{authornamehash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{authorfullhash}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \strng{authorfullhashraw}{be091e1f2abb42eefa87de7f1c9db7f2}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{arXiv preprint arXiv:2409.08844}
+      \field{title}{Benchpress: A robust, flexible, and extensible benchmarking tool for quantum computing}
+      \field{year}{2024}
+    \endentry
+    \entry{click1995combining}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=571f167a77aecc7f8501247f3a9071ce}{%
+           family={Click},
+           familyi={C\bibinitperiod},
+           given={Cliff},
+           giveni={C\bibinitperiod}}}%
+        {{hash=71f400e279a0a15beb329315b99759a1}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Keith\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{fullhash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{fullhashraw}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{bibnamehash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{authorbibnamehash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{authornamehash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{authorfullhash}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \strng{authorfullhashraw}{8d5c7b635b327e05700a5c1bb10b94a8}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Programming Languages and Systems}
+      \field{number}{2}
+      \field{title}{Combining Analyses, Combining Optimizations}
+      \field{volume}{17}
+      \field{year}{1995}
+      \field{pages}{181\bibrangedash 196}
+      \range{pages}{16}
+    \endentry
+    \entry{cowtan2019phase}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=f763f6aad69ada4ba6870502095fb5b1}{%
+           family={Cowtan},
+           familyi={C\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=352b906d4abc6bbffa167b04c6601c15}{%
+           family={Dilkes},
+           familyi={D\bibinitperiod},
+           given={Silas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=e9ac652a64f5dbf5f7c99e61db4aa4a7}{%
+           family={Duncan},
+           familyi={D\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=53273561b0377d2adffa7029b7a717f8}{%
+           family={Krajenbrink},
+           familyi={K\bibinitperiod},
+           given={Alexandre},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d5f84fc900c12423070c2f09e48913fb}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={Will},
+           giveni={W\bibinitperiod}}}%
+        {{hash=152467bf974fc4222dd002e96c8cfa02}{%
+           family={Sivarajah},
+           familyi={S\bibinitperiod},
+           given={Seyon},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bdcbe668a689507e11256871859896ce}
+      \strng{fullhash}{7eff4cf70f98daff163a35fe2d70c9ff}
+      \strng{fullhashraw}{7eff4cf70f98daff163a35fe2d70c9ff}
+      \strng{bibnamehash}{bdcbe668a689507e11256871859896ce}
+      \strng{authorbibnamehash}{bdcbe668a689507e11256871859896ce}
+      \strng{authornamehash}{bdcbe668a689507e11256871859896ce}
+      \strng{authorfullhash}{7eff4cf70f98daff163a35fe2d70c9ff}
+      \strng{authorfullhashraw}{7eff4cf70f98daff163a35fe2d70c9ff}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1902.08091}
+      \field{title}{On the qubit routing problem}
+      \field{year}{2019}
+    \endentry
+    \entry{cross2022openqasm3}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=c04493cf8499c58c15078120b5a6737a}{%
+           family={Cross},
+           familyi={C\bibinitperiod},
+           given={Andrew\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=1b3e8c12eb951bb269c85b45b91a44cc}{%
+           family={Bishop},
+           familyi={B\bibinitperiod},
+           given={Lev\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=ee29d69e7af05cf2b50732a66ad7aed7}{%
+           family={Sheldon},
+           familyi={S\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod}}}%
+        {{hash=18e9b26f0950d587e91a81069962248d}{%
+           family={Nation},
+           familyi={N\bibinitperiod},
+           given={Paul\bibnamedelima D.},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=13ffee31f58f6a53a6d6969d093862dc}{%
+           family={Gambetta},
+           familyi={G\bibinitperiod},
+           given={Jay\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{307603bf1cca1bd0f6176976ee66a2fe}
+      \strng{fullhash}{818129332b0d0df287218e02fa2366f9}
+      \strng{fullhashraw}{818129332b0d0df287218e02fa2366f9}
+      \strng{bibnamehash}{307603bf1cca1bd0f6176976ee66a2fe}
+      \strng{authorbibnamehash}{307603bf1cca1bd0f6176976ee66a2fe}
+      \strng{authornamehash}{307603bf1cca1bd0f6176976ee66a2fe}
+      \strng{authorfullhash}{818129332b0d0df287218e02fa2366f9}
+      \strng{authorfullhashraw}{818129332b0d0df287218e02fa2366f9}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Quantum Computing}
+      \field{number}{3}
+      \field{title}{Open{QASM} 3: A broader and deeper quantum assembly language}
+      \field{volume}{3}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 50}
+      \range{pages}{50}
+    \endentry
+    \entry{dangwal2024compass}{inproceedings}{}{}
+      \name{author}{6}{}{%
+        {{hash=146b90e400430c31f998dd5827e2f122}{%
+           family={Dangwal},
+           familyi={D\bibinitperiod},
+           given={Siddharth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5ccbee2a7738f95e869934110dbbebc5}{%
+           family={Ravi},
+           familyi={R\bibinitperiod},
+           given={Gokul\bibnamedelima Subramanian},
+           giveni={G\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=b5be499b0fcd40131eba52d46c03802a}{%
+           family={Seifert},
+           familyi={S\bibinitperiod},
+           given={Lennart\bibnamedelima Maximilian},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c4f5e2ab5efe3dfee949076bf771da90}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Poulami},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3e6f7ef389f4b905f4ba60558ad4f772}{%
+           family={Sud},
+           familyi={S\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3dc30ce8848da64646a981d48b5d2701}{%
+           family={Chong},
+           familyi={C\bibinitperiod},
+           given={Frederic\bibnamedelima T.},
+           giveni={F\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{4dc61f5b24449c6bdaf32be2cee65942}
+      \strng{fullhash}{ee2eda1ec6d84fc91dc3c241b1736fc9}
+      \strng{fullhashraw}{ee2eda1ec6d84fc91dc3c241b1736fc9}
+      \strng{bibnamehash}{4dc61f5b24449c6bdaf32be2cee65942}
+      \strng{authorbibnamehash}{4dc61f5b24449c6bdaf32be2cee65942}
+      \strng{authornamehash}{4dc61f5b24449c6bdaf32be2cee65942}
+      \strng{authorfullhash}{ee2eda1ec6d84fc91dc3c241b1736fc9}
+      \strng{authorfullhashraw}{ee2eda1ec6d84fc91dc3c241b1736fc9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 51st Annual International Symposium on Computer Architecture (ISCA)}
+      \field{title}{{COMPASS}: Compiler Pass Selection for Improving Fidelity of {NISQ} Applications}
+      \field{year}{2024}
+    \endentry
+    \entry{itoko2020optimization}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=bb403e882eb9ee06ea01b9916d860d44}{%
+           family={Itoko},
+           familyi={I\bibinitperiod},
+           given={Toshinari},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2dce7027c685c41a8627abb3b74dc36d}{%
+           family={Raymond},
+           familyi={R\bibinitperiod},
+           given={Rudy},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6c1352260ebdfc1d4a88bde42c2fc44c}{%
+           family={Imamichi},
+           familyi={I\bibinitperiod},
+           given={Takashi},
+           giveni={T\bibinitperiod}}}%
+        {{hash=61aa243d29076692980cd29f14e3b383}{%
+           family={Matsuo},
+           familyi={M\bibinitperiod},
+           given={Atsushi},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{b23a7fca269b5c012f4956faa6cb7f24}
+      \strng{fullhash}{45dcdb5a5e697eafc1d0b9c819c32054}
+      \strng{fullhashraw}{45dcdb5a5e697eafc1d0b9c819c32054}
+      \strng{bibnamehash}{b23a7fca269b5c012f4956faa6cb7f24}
+      \strng{authorbibnamehash}{b23a7fca269b5c012f4956faa6cb7f24}
+      \strng{authornamehash}{b23a7fca269b5c012f4956faa6cb7f24}
+      \strng{authorfullhash}{45dcdb5a5e697eafc1d0b9c819c32054}
+      \strng{authorfullhashraw}{45dcdb5a5e697eafc1d0b9c819c32054}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Integration}
+      \field{title}{Optimization of quantum circuit mapping using gate transformation and commutation}
+      \field{volume}{70}
+      \field{year}{2020}
+      \field{pages}{43\bibrangedash 56}
+      \range{pages}{14}
+    \endentry
+    \entry{li2019tackling}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c2b9d8eb5fd00705ccc285c25c5caee4}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Gushu},
+           giveni={G\bibinitperiod}}}%
+        {{hash=42e29a7207204f53824864549124067e}{%
+           family={Ding},
+           familyi={D\bibinitperiod},
+           given={Yufei},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=a2c3ce3ecb42479ac37df62916abfb5d}{%
+           family={Xie},
+           familyi={X\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{fullhash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{fullhashraw}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{bibnamehash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{authorbibnamehash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{authornamehash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{authorfullhash}{f3081324deda60c3f7a7c9cd10a51f02}
+      \strng{authorfullhashraw}{f3081324deda60c3f7a7c9cd10a51f02}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems}
+      \field{title}{Tackling the qubit mapping problem for {NISQ}-era quantum devices}
+      \field{year}{2019}
+      \field{pages}{1001\bibrangedash 1014}
+      \range{pages}{14}
+    \endentry
+    \entry{mills2026rl}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=368dd2d4292b6444b88f71d2436265c1}{%
+           family={Mills},
+           familyi={M\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=bb76c0c33ceec5d4d35c4f6647c3d241}{%
+           family={Williams},
+           familyi={W\bibinitperiod},
+           given={Ifan},
+           giveni={I\bibinitperiod}}}%
+        {{hash=0a9f513854176e7cfa0f4ba3f568745a}{%
+           family={Swain},
+           familyi={S\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5e7dd594a3ec4e86250ce782cd55dbca}{%
+           family={Matos},
+           familyi={M\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+        {{hash=992abb1422fd37859bdbf67fa7820812}{%
+           family={Rinaldi},
+           familyi={R\bibinitperiod},
+           given={Enrico},
+           giveni={E\bibinitperiod}}}%
+        {{hash=029aa91618f385b2d08935705332b859}{%
+           family={Koziell-Pipe},
+           familyi={K\bibinithyphendelim P\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a879dc2703ae02a2fa3b1ab11e00c7f5}
+      \strng{fullhash}{4c3c8a1758af608afdd2741938318c7b}
+      \strng{fullhashraw}{4c3c8a1758af608afdd2741938318c7b}
+      \strng{bibnamehash}{a879dc2703ae02a2fa3b1ab11e00c7f5}
+      \strng{authorbibnamehash}{a879dc2703ae02a2fa3b1ab11e00c7f5}
+      \strng{authornamehash}{a879dc2703ae02a2fa3b1ab11e00c7f5}
+      \strng{authorfullhash}{4c3c8a1758af608afdd2741938318c7b}
+      \strng{authorfullhashraw}{4c3c8a1758af608afdd2741938318c7b}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2601.21629}
+      \field{title}{Reinforcement Learning for Adaptive Composition of Quantum Circuit Optimisation Passes}
+      \field{year}{2026}
+    \endentry
+    \entry{patel2022bqskit}{inproceedings}{}{}
+      \name{author}{5}{}{%
+        {{hash=aa0607814db905503638802e77105fef}{%
+           family={Patel},
+           familyi={P\bibinitperiod},
+           given={Tyson},
+           giveni={T\bibinitperiod}}}%
+        {{hash=ba0ea41840e8ea1fc0d1e8800b1246f2}{%
+           family={Younis},
+           familyi={Y\bibinitperiod},
+           given={Ed},
+           giveni={E\bibinitperiod}}}%
+        {{hash=809d357763f8092c3f757f47bde53305}{%
+           family={Iancu},
+           familyi={I\bibinitperiod},
+           given={Costin},
+           giveni={C\bibinitperiod}}}%
+        {{hash=eeb1a5d5b953d375f5fbafa414f711d9}{%
+           family={De\bibnamedelima Jong},
+           familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Wibe},
+           giveni={W\bibinitperiod}}}%
+        {{hash=eb3352ded591687a6f8e4143987603fe}{%
+           family={Kubiatowicz},
+           familyi={K\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{a118e7af7bbc47dfa844a54777b1a23a}
+      \strng{fullhash}{21fcdb94c50bf616467eff8735f7bb0b}
+      \strng{fullhashraw}{21fcdb94c50bf616467eff8735f7bb0b}
+      \strng{bibnamehash}{a118e7af7bbc47dfa844a54777b1a23a}
+      \strng{authorbibnamehash}{a118e7af7bbc47dfa844a54777b1a23a}
+      \strng{authornamehash}{a118e7af7bbc47dfa844a54777b1a23a}
+      \strng{authorfullhash}{21fcdb94c50bf616467eff8735f7bb0b}
+      \strng{authorfullhashraw}{21fcdb94c50bf616467eff8735f7bb0b}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE/ACM Third International Workshop on Software Engineering for Scientific Computing (SESC)}
+      \field{title}{{BQSKit}: A platform for quantum circuit synthesis and optimization}
+      \field{year}{2022}
+      \field{pages}{1\bibrangedash 10}
+      \range{pages}{10}
+    \endentry
+    \entry{preskill2018quantum}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=fbe61da8813855105d0c727fa93b4b4d}{%
+           family={Preskill},
+           familyi={P\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{fullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{bibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorbibnamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authornamehash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhash}{fbe61da8813855105d0c727fa93b4b4d}
+      \strng{authorfullhashraw}{fbe61da8813855105d0c727fa93b4b4d}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum}
+      \field{title}{Quantum computing in the {NISQ} era and beyond}
+      \field{volume}{2}
+      \field{year}{2018}
+      \field{pages}{79}
+      \range{pages}{1}
+    \endentry
+    \entry{qbraid}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=f4694498198c97096aa3678a4c58ec6d}{%
+           family={{qBraid Team}},
+           familyi={q\bibinitperiod}}}%
+      }
+      \strng{namehash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{fullhash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{fullhashraw}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{bibnamehash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{authorbibnamehash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{authornamehash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{authorfullhash}{f4694498198c97096aa3678a4c58ec6d}
+      \strng{authorfullhashraw}{f4694498198c97096aa3678a4c58ec6d}
+      \field{sortinit}{q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/qBraid/qBraid}}
+      \field{title}{{qBraid-SDK}: A platform-agnostic quantum runtime framework for cross-framework interoperability}
+      \field{year}{2024}
+    \endentry
+    \entry{qiskit}{software}{}{}
+      \name{author}{1}{}{%
+        {{hash=7a2b3595e36a368ce9a04ebaa3bba1d1}{%
+           family={{Qiskit contributors}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{fullhash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{fullhashraw}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{bibnamehash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{authorbibnamehash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{authornamehash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{authorfullhash}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \strng{authorfullhashraw}{7a2b3595e36a368ce9a04ebaa3bba1d1}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Qiskit: An open-source framework for quantum computing}
+      \field{year}{2023}
+      \verb{urlraw}
+      \verb https://qiskit.org
+      \endverb
+      \verb{url}
+      \verb https://qiskit.org
+      \endverb
+    \endentry
+    \entry{quetschlich2023mqtbench}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=cd66ded2d3cc50770c0f18c67ec6b769}{%
+           family={Quetschlich},
+           familyi={Q\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1c8ffe47dbe942150e4ede0417928e4c}{%
+           family={Burgholzer},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=942bfb89eecd82018713153f8561459b}{%
+           family={Wille},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{bibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorbibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authornamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \field{extraname}{1}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Quantum}
+      \field{title}{{MQT Bench}: Benchmarking software and design automation tools for quantum computing}
+      \field{volume}{7}
+      \field{year}{2023}
+      \field{pages}{1062}
+      \range{pages}{1}
+    \endentry
+    \entry{quetschlich2024mqtpredictor}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=cd66ded2d3cc50770c0f18c67ec6b769}{%
+           family={Quetschlich},
+           familyi={Q\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1c8ffe47dbe942150e4ede0417928e4c}{%
+           family={Burgholzer},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=942bfb89eecd82018713153f8561459b}{%
+           family={Wille},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{bibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorbibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authornamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \field{extraname}{2}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Quantum Computing}
+      \field{number}{2}
+      \field{title}{{MQT Predictor}: Automatic Device Selection with Device-Specific Circuit Compilation for Quantum Computing}
+      \field{volume}{5}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 29}
+      \range{pages}{29}
+    \endentry
+    \entry{quetschlich2022predictor}{inproceedings}{}{}
+      \name{author}{3}{}{%
+        {{hash=cd66ded2d3cc50770c0f18c67ec6b769}{%
+           family={Quetschlich},
+           familyi={Q\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=1c8ffe47dbe942150e4ede0417928e4c}{%
+           family={Burgholzer},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=942bfb89eecd82018713153f8561459b}{%
+           family={Wille},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{fullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{bibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorbibnamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authornamehash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhash}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \strng{authorfullhashraw}{d9a787f57fab16ccc3120a35f1ce53d7}
+      \field{extraname}{3}
+      \field{sortinit}{Q}
+      \field{sortinithash}{ce69a400a872ddd02ee7fdb3b38c6abd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Quantum Software (QSW)}
+      \field{title}{Predicting Good Quantum Circuit Compilation Options}
+      \field{year}{2023}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{repository}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a2ebaadc49c46ce249c9975ba6dbb7df}{%
+           family={Shringi},
+           familyi={S\bibinitperiod},
+           given={Abhishek},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{fullhash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{fullhashraw}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{bibnamehash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{authorbibnamehash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{authornamehash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{authorfullhash}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \strng{authorfullhashraw}{a2ebaadc49c46ce249c9975ba6dbb7df}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://github.com/shringi/qlego}}
+      \field{title}{{QLego} Framework -- Source Code and Supplementary Materials}
+      \field{year}{2025}
+    \endentry
+    \entry{siraichi2018qubit}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=1d05f589be91663bdcbd3b2ec1ad95cc}{%
+           family={Siraichi},
+           familyi={S\bibinitperiod},
+           given={Marcos\bibnamedelima Yukio},
+           giveni={M\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=3692448c536804ea36201ef4bfe13957}{%
+           family={Santos},
+           familyi={S\bibinitperiod},
+           given={Vinícius\bibnamedelimb Fernandes\bibnamedelima dos},
+           giveni={V\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim d\bibinitperiod}}}%
+        {{hash=020e07b8c445272ebb63080199117cc7}{%
+           family={Collange},
+           familyi={C\bibinitperiod},
+           given={Sylvain},
+           giveni={S\bibinitperiod}}}%
+        {{hash=052be6be83c7014c35ff9324982603f7}{%
+           family={Pereira},
+           familyi={P\bibinitperiod},
+           given={Fernando\bibnamedelimb Magno\bibnamedelima Quintão},
+           giveni={F\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{eea47e922be24dbbd87ad313dd28d38e}
+      \strng{fullhash}{74a3f0427de117a2bd3bcf391d53ca43}
+      \strng{fullhashraw}{74a3f0427de117a2bd3bcf391d53ca43}
+      \strng{bibnamehash}{eea47e922be24dbbd87ad313dd28d38e}
+      \strng{authorbibnamehash}{eea47e922be24dbbd87ad313dd28d38e}
+      \strng{authornamehash}{eea47e922be24dbbd87ad313dd28d38e}
+      \strng{authorfullhash}{74a3f0427de117a2bd3bcf391d53ca43}
+      \strng{authorfullhashraw}{74a3f0427de117a2bd3bcf391d53ca43}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the 2018 International Symposium on Code Generation and Optimization}
+      \field{title}{Qubit allocation}
+      \field{year}{2018}
+      \field{pages}{113\bibrangedash 125}
+      \range{pages}{13}
+    \endentry
+    \entry{sivarajah2020tket}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=152467bf974fc4222dd002e96c8cfa02}{%
+           family={Sivarajah},
+           familyi={S\bibinitperiod},
+           given={Seyon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=352b906d4abc6bbffa167b04c6601c15}{%
+           family={Dilkes},
+           familyi={D\bibinitperiod},
+           given={Silas},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f763f6aad69ada4ba6870502095fb5b1}{%
+           family={Cowtan},
+           familyi={C\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d5f84fc900c12423070c2f09e48913fb}{%
+           family={Simmons},
+           familyi={S\bibinitperiod},
+           given={Will},
+           giveni={W\bibinitperiod}}}%
+        {{hash=61e6b7bec5fc5e50913b6ef19f0edef6}{%
+           family={Edgington},
+           familyi={E\bibinitperiod},
+           given={Alec},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e9ac652a64f5dbf5f7c99e61db4aa4a7}{%
+           family={Duncan},
+           familyi={D\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IOP Publishing}%
+      }
+      \strng{namehash}{788714b62840af7132a11b7d181bdf1e}
+      \strng{fullhash}{51e6e4c0b38b53560d82093ce5bb8a4f}
+      \strng{fullhashraw}{51e6e4c0b38b53560d82093ce5bb8a4f}
+      \strng{bibnamehash}{788714b62840af7132a11b7d181bdf1e}
+      \strng{authorbibnamehash}{788714b62840af7132a11b7d181bdf1e}
+      \strng{authornamehash}{788714b62840af7132a11b7d181bdf1e}
+      \strng{authorfullhash}{51e6e4c0b38b53560d82093ce5bb8a4f}
+      \strng{authorfullhashraw}{51e6e4c0b38b53560d82093ce5bb8a4f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Quantum Science and Technology}
+      \field{number}{1}
+      \field{title}{{tket}: A retargetable compiler for {NISQ} devices}
+      \field{volume}{6}
+      \field{year}{2021}
+      \field{pages}{014003}
+      \range{pages}{1}
+    \endentry
+    \entry{tannu2019not}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=c2c2ca857c452b2c102ff30354e52284}{%
+           family={Tannu},
+           familyi={T\bibinitperiod},
+           given={Swamit\bibnamedelima S.},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=dfdef60a424243feb8bd3e8293c4306f}{%
+           family={Qureshi},
+           familyi={Q\bibinitperiod},
+           given={Moinuddin\bibnamedelima K.},
+           giveni={M\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{fullhash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{fullhashraw}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{bibnamehash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{authorbibnamehash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{authornamehash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{authorfullhash}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \strng{authorfullhashraw}{6c2f1caa02ebb7bac3299a9b3d5b43e5}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Twenty-Fourth International Conference on Architectural Support for Programming Languages and Operating Systems}
+      \field{title}{Not all qubits are created equal: A case for variability-aware policies for {NISQ}-era quantum computers}
+      \field{year}{2019}
+      \field{pages}{987\bibrangedash 999}
+      \range{pages}{13}
+    \endentry
+    \entry{wille2019mapping}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=942bfb89eecd82018713153f8561459b}{%
+           family={Wille},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=1c8ffe47dbe942150e4ede0417928e4c}{%
+           family={Burgholzer},
+           familyi={B\bibinitperiod},
+           given={Lukas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=07c1f0a3d39041658a55608e05755118}{%
+           family={Zulehner},
+           familyi={Z\bibinitperiod},
+           given={Alwin},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ACM}%
+      }
+      \strng{namehash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{fullhash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{fullhashraw}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{bibnamehash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{authorbibnamehash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{authornamehash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{authorfullhash}{a292c76066bf7d77908cc17fbe862c17}
+      \strng{authorfullhashraw}{a292c76066bf7d77908cc17fbe862c17}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Proceedings of the 56th Annual Design Automation Conference}
+      \field{title}{Mapping Quantum Circuits to {IBM QX} Architectures Using the Minimal Number of {SWAP} and {H} Operations}
+      \field{year}{2019}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+    \endentry
+    \entry{mqt}{inproceedings}{}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=942bfb89eecd82018713153f8561459b}{%
+           family={Wille},
+           familyi={W\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=9807a0701b26deb106adb843db5dee8e}{%
+           family={Berent},
+           familyi={B\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a6c8a5a662315786ce2f3518c63748e5}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={Tobias},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e2ef429cd6b45ab25ddfed0e94f1cfe7}{%
+           family={Kunasaikaran},
+           familyi={K\bibinitperiod},
+           given={Jagatheesan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=eb82756c7b612673b11b6c2b997e4573}{%
+           family={Mato},
+           familyi={M\bibinitperiod},
+           given={Kevin},
+           giveni={K\bibinitperiod}}}%
+        {{hash=aa59057f3900b38dc71d8a608393d9b8}{%
+           family={Peham},
+           familyi={P\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+        {{hash=cd66ded2d3cc50770c0f18c67ec6b769}{%
+           family={Quetschlich},
+           familyi={Q\bibinitperiod},
+           given={Nils},
+           giveni={N\bibinitperiod}}}%
+        {{hash=aa2c542c004a219ea5d6d01dc07729d1}{%
+           family={Rovara},
+           familyi={R\bibinitperiod},
+           given={Damian},
+           giveni={D\bibinitperiod}}}%
+        {{hash=934a98c4d9d2154d39d3caac04c17ebf}{%
+           family={Sander},
+           familyi={S\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a5db41b1098b50cf217d9b724b58e537}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Ludwig},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7d6b3e4e1bb106080b747ef152ee8181}
+      \strng{fullhash}{697a6a511f02d6c1ba7cc37e514438e0}
+      \strng{fullhashraw}{697a6a511f02d6c1ba7cc37e514438e0}
+      \strng{bibnamehash}{7d6b3e4e1bb106080b747ef152ee8181}
+      \strng{authorbibnamehash}{7d6b3e4e1bb106080b747ef152ee8181}
+      \strng{authornamehash}{7d6b3e4e1bb106080b747ef152ee8181}
+      \strng{authorfullhash}{697a6a511f02d6c1ba7cc37e514438e0}
+      \strng{authorfullhashraw}{697a6a511f02d6c1ba7cc37e514438e0}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{IEEE International Conference on Quantum Software (QSW)}
+      \field{title}{The {MQT} Handbook: A Summary of Design Automation Tools and Libraries for Quantum Computing}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

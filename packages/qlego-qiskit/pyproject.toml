@@ -6,9 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "qlego-qiskit"
 version = "0.1.0"
 dependencies = [
-    "qlego-core",
-    "qiskit",
-    "qiskit-ibm-runtime"
+    "qlego-core"
 ]
 
 [tool.setuptools.packages.find]

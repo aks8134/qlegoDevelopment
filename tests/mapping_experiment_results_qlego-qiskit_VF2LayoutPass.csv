@@ -1,0 +1,19 @@
+mapping_strategy,circuit_type,num_qubits,error,status,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-qiskit_VF2LayoutPass,DJ Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,5,,success,24.0,15.0,4.0,4.0
+qlego-qiskit_VF2LayoutPass,Grover Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,QFT Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Shor Circuit,5,"ValueError: No Shor instance for circuit_size=5. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_VF2LayoutPass,W State Circuit,5,,success,57.0,27.0,8.0,6.0
+qlego-qiskit_VF2LayoutPass,Half Adder Circuit,5,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,DJ Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,GHZ Circuit,10,,success,31.0,17.0,9.0,9.0
+qlego-qiskit_VF2LayoutPass,Grover Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,QFT Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,10,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',failed,,,,
+qlego-qiskit_VF2LayoutPass,Shor Circuit,10,"ValueError: No Shor instance for circuit_size=10. Available: 18, 42, 58, 74.",failed,,,,
+qlego-qiskit_VF2LayoutPass,W State Circuit,10,,success,127.0,54.0,18.0,11.0
+qlego-qiskit_VF2LayoutPass,Half Adder Circuit,10,ValueError: num_qubits must be an odd integer ≥ 3.,failed,,,,

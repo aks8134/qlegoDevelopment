@@ -73,19 +73,17 @@ class CirqBackend(QBackend):
     
     def to_cirq_device(self):
         import cirq
-        import networkx as nx
         from cirq.contrib.graph_device import UndirectedGraphDevice, UndirectedHypergraph
 
         qs = list(cirq.LineQubit.range(self.n_qubits))
 
-        g = nx.Graph()
-        g.add_nodes_from(qs)
-
+        edges = {}
         # self.edges already contains canonical undirected pairs (a < b)
         for a, b in (self.edges or set()):
-            g.add_edge(qs[int(a)], qs[int(b)])
-
-        return UndirectedGraphDevice(device_graph=UndirectedHypergraph(g))
+            edges[frozenset([qs[int(a)], qs[int(b)]])] = None
+            
+        hg = UndirectedHypergraph(vertices=qs, labelled_edges=edges)
+        return UndirectedGraphDevice(device_graph=hg)
 
 
     def to_cirq_sampler(self):
