@@ -106,10 +106,18 @@ def run(args):
 
     pbar.close()
     df = pd.DataFrame(results)
-    print(df[df["status"] == "success"].groupby(
-        ["circuit_type", "num_qubits"]
-    ).apply(lambda g: g.loc[g["Circuit Depth"].idxmin(), "layout_pass"])
-    .to_string())
+
+    if "status" in df.columns:
+        success = df[df["status"] == "success"]
+        if not success.empty and "Circuit Depth" in success.columns:
+            print("\nBest layout pass per circuit:")
+            print(success.groupby(["circuit_type", "num_qubits"]).apply(
+                lambda g: g.loc[g["Circuit Depth"].idxmin(), "layout_pass"]
+            ).to_string())
+        else:
+            print("\nNo successful results to summarize.")
+    else:
+        print("\nNo results collected — all pipelines may have failed at setup.")
 
     if not args.no_save:
         suffix = f"_{args.sdk}" if args.sdk else ""
