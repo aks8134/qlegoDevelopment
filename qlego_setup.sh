@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 set -e
 
-git clone https://github.com/aks8134/qlegoDevelopment.git
-cd qlegoDevelopment
-
 python -m venv tests/.venv
 source tests/.venv/bin/activate
 
