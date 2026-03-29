@@ -16,6 +16,7 @@ from tqdm import tqdm
 from common import (
     ALL_CIRCUITS,
     STANDARD_QUBITS,
+    get_qubits_for_circuit,
     initialize_circuit,
     get_heavy_hex_backend,
     ensure_registry,
@@ -31,12 +32,15 @@ from qlego_qiskit.adapter.passes import SabreLayoutPass
 
 
 def get_routing_templates(sdk=None):
-    """Build templates for all registered routing passes."""
+    """Build templates for all registered routing passes (Cirq excluded)."""
     ensure_registry()
     routing_passes = PassRegistry.get_passes_by_category("Routing")
 
-    if sdk:
-        routing_passes = {k: v for k, v in routing_passes.items() if sdk in k}
+    # Filter by SDK if specified; always exclude Cirq
+    routing_passes = {
+        k: v for k, v in routing_passes.items()
+        if "cirq" not in k.lower() and (not sdk or sdk in k)
+    }
 
     templates = []
     for pass_key, pass_cls in routing_passes.items():
@@ -65,11 +69,14 @@ def run(args):
     qubit_scales = args.qubits or STANDARD_QUBITS
     results = []
 
-    total = len(qubit_scales) * len(ALL_CIRCUITS) * len(templates)
+    total = sum(
+        len(get_qubits_for_circuit(c, qubit_scales)) for c in ALL_CIRCUITS
+    ) * len(templates)
     pbar = tqdm(total=total, desc="Exp 1B: Routing")
 
-    for num_qubits in qubit_scales:
-        for circuit_cls in ALL_CIRCUITS:
+    for circuit_cls in ALL_CIRCUITS:
+        valid_qubits = get_qubits_for_circuit(circuit_cls, qubit_scales)
+        for num_qubits in valid_qubits:
             initial_qasm = None
             try:
                 initial_qasm = initialize_circuit(circuit_cls, num_qubits)

@@ -79,5 +79,15 @@ class WStateCircuitInitialization(CircuitInitialization):
 @register_pass("Circuit Creation")
 class HalfAdderCircuitInitialization(CircuitInitialization):
     name = "Half Adder Circuit"
-    benchmark = "half_adder" 
+    benchmark = "half_adder"
+
+@register_pass("Circuit Creation")
+class BVCircuitInitialization(CircuitInitialization):
+    name = "BV Circuit"
+    benchmark = "bv"
+
+@register_pass("Circuit Creation")
+class GraphStateCircuitInitialization(CircuitInitialization):
+    name = "Graph State Circuit"
+    benchmark = "graphstate"
 

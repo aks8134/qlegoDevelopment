@@ -1,0 +1,379 @@
+routing_pass,circuit_type,num_qubits,topology,status,error,Gate Count,Circuit Depth,2Q Count,2Q Depth
+qlego-qiskit_PresetRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,17.0,7.0,5.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,18.0,7.0,7.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,5,heavy_hex,success,,831.0,664.0,405.0,366.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,810.0,630.0,384.0,349.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,825.0,669.0,399.0,375.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,5,heavy_hex,success,,819.0,674.0,393.0,370.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,816.0,634.0,390.0,357.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,85.0,55.0,35.0,31.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,88.0,60.0,38.0,34.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,245.0,54.0,54.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,243.0,57.0,57.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,243.0,57.0,55.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,246.0,57.0,57.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,240.0,54.0,54.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,59.0,32.0,32.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,94.0,62.0,35.0,32.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,94.0,63.0,35.0,33.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,58.0,40.0,36.0
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,60.0,40.0,37.0
+qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,45.0,27.0,24.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,37.0,24.0,21.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,45.0,24.0,24.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,44.0,27.0,27.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,109.0,47.0,30.0,30.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,10,heavy_hex,success,,59265.0,45063.0,31602.0,25107.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,63930.0,48996.0,36267.0,29921.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,64134.0,49092.0,36471.0,29881.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,10,heavy_hex,success,,64182.0,48840.0,36519.0,29789.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,61911.0,46719.0,34248.0,27060.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,10,heavy_hex,success,,379.0,197.0,204.0,124.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,379.0,173.0,204.0,112.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,373.0,186.0,198.0,117.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,10,heavy_hex,success,,382.0,202.0,207.0,126.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,391.0,160.0,216.0,102.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8025.0,6803.0,1205.0,1124.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8016.0,6799.0,1196.0,1122.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8034.0,6799.0,1214.0,1127.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8031.0,6834.0,1211.0,1145.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8019.0,6804.0,1199.0,1126.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,387.0,214.0,200.0,141.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,393.0,179.0,206.0,113.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,399.0,194.0,212.0,128.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,402.0,200.0,215.0,127.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,390.0,171.0,203.0,107.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,82.0,47.0,47.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,168.0,79.0,50.0,47.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,70.0,47.0,45.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,77.0,47.0,45.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,64.0,47.0,39.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,15,heavy_hex,success,,1185679.0,936532.0,642121.0,510936.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1220956.0,958571.0,677398.0,537892.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1187605.0,938276.0,644047.0,512171.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,15,heavy_hex,success,,1197583.0,946383.0,654025.0,521572.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1221925.0,961801.0,678367.0,539621.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,15,heavy_hex,success,,894.0,369.0,519.0,254.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,933.0,343.0,558.0,239.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,912.0,363.0,537.0,248.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,15,heavy_hex,success,,927.0,406.0,552.0,284.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,891.0,327.0,516.0,219.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246616.0,213315.0,33260.0,33004.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246622.0,213314.0,33266.0,33002.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246592.0,213294.0,33236.0,32986.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246625.0,213354.0,33269.0,33029.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246643.0,213320.0,33287.0,33009.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,939.0,423.0,525.0,289.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,897.0,408.0,483.0,256.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,921.0,433.0,507.0,289.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,948.0,430.0,534.0,289.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,894.0,400.0,480.0,262.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,15,heavy_hex,success,,286.0,148.0,46.0,34.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,15,heavy_hex,success,,277.0,139.0,37.0,22.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,15,heavy_hex,success,,295.0,149.0,55.0,37.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,15,heavy_hex,success,,641.0,278.0,384.0,205.0
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,650.0,302.0,393.0,227.0
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,629.0,284.0,372.0,195.0
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,15,heavy_hex,success,,659.0,291.0,402.0,219.0
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,656.0,288.0,399.0,213.0
+qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,104.0,67.0,65.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,94.0,67.0,62.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,96.0,67.0,60.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,20,heavy_hex,success,,215.0,82.0,58.0,55.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,103.0,67.0,65.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
+qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,20,heavy_hex,success,,14497322.0,11825975.0,8110084.0,6514701.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,20,heavy_hex,success,,14501378.0,11829271.0,8114140.0,6519047.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,20,heavy_hex,failed,"Worker subprocess failed with code -9
+STDERR: Starting pass Preset Init Pass
+Finished pass Preset Init Pass
+Starting pass Sabre Layout
+Finished pass Sabre Layout
+Starting pass Basic Swap Routing Pass
+",,,,
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,20,heavy_hex,failed,"Worker subprocess failed with code -9
+STDERR: Starting pass Preset Init Pass
+Finished pass Preset Init Pass
+Starting pass Sabre Layout
+Finished pass Sabre Layout
+Starting pass Lookahead Routing Pass
+
+",,,,
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,20,heavy_hex,failed,"Worker subprocess failed with code -9
+STDERR: Starting pass Preset Init Pass
+Finished pass Preset Init Pass
+Starting pass Sabre Layout
+Finished pass Sabre Layout
+Starting pass Stochastic Swap Routing ",,,,
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,20,heavy_hex,success,,1663.0,620.0,1013.0,439.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1657.0,590.0,1007.0,415.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1702.0,498.0,1052.0,364.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,20,heavy_hex,success,,1702.0,594.0,1052.0,409.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1678.0,627.0,1028.0,441.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865956.0,6816283.0,1049573.0,1048978.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865998.0,6816337.0,1049615.0,1049016.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865959.0,6816298.0,1049576.0,1048992.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865929.0,6816197.0,1049546.0,1048906.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7866001.0,6816276.0,1049618.0,1048985.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1699.0,665.0,995.0,454.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1747.0,600.0,1043.0,436.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1738.0,651.0,1034.0,455.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1696.0,650.0,992.0,454.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1762.0,587.0,1058.0,402.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,20,heavy_hex,success,,414.0,196.0,89.0,54.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,20,heavy_hex,success,,414.0,196.0,89.0,54.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,20,heavy_hex,success,,375.0,190.0,50.0,34.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_AASRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_LexiRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-bqskit_PAMRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-cirq_RouteCQCPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,

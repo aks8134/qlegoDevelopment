@@ -21,9 +21,10 @@ from qlego_mqt_workload.adapter.passes import (
     QFTCircuitInitialization,
     AECircuitInitialization,
     QPECircuitInitialization,
-    ShorCircuitInitialization,
     WStateCircuitInitialization,
     HalfAdderCircuitInitialization,
+    BVCircuitInitialization,
+    GraphStateCircuitInitialization,
 )
 from qlego_evaluation.adapter.passes import EvaluationPass
 from qlego_qiskit.adapter.passes import (
@@ -49,7 +50,8 @@ ENV_CONFIG_PATH = os.path.join(TESTS_DIR, "envs", "env_config.json")
 RESULTS_DIR = os.path.join(os.path.dirname(__file__), "results")
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
-# All 9 circuit families
+# All circuit families (Shor removed — fixed qubit sizes only, incompatible with sweep)
+# Cirq passes removed from all experiments per design decision
 ALL_CIRCUITS = [
     DJCircuitInitialization,
     GHZCircuitInitialization,
@@ -57,10 +59,20 @@ ALL_CIRCUITS = [
     QFTCircuitInitialization,
     AECircuitInitialization,
     QPECircuitInitialization,
-    ShorCircuitInitialization,
     WStateCircuitInitialization,
     HalfAdderCircuitInitialization,
+    BVCircuitInitialization,
+    GraphStateCircuitInitialization,
 ]
+
+# HalfAdder requires odd num_qubits >= 3; use this set for circuits with constraints
+HALF_ADDER_QUBITS = [5, 15, 25]
+
+def get_qubits_for_circuit(circuit_cls, qubit_scales):
+    """Return valid qubit scales for a given circuit class."""
+    if circuit_cls is HalfAdderCircuitInitialization:
+        return [q for q in qubit_scales if q in HALF_ADDER_QUBITS]
+    return qubit_scales
 
 # Qubit scales
 STANDARD_QUBITS = [5, 10, 15, 20]

@@ -9,6 +9,7 @@ Hypothesis: QLego introduces zero quality degradation.
 """
 
 import argparse
+import time
 import pandas as pd
 from tqdm import tqdm
 from qiskit.transpiler import generate_preset_pass_manager
@@ -34,23 +35,27 @@ from common import (
 
 
 def native_qiskit_compile(qasm_str, optimization_level, backend):
-    """Compile using native Qiskit (no QLego)."""
+    """Compile using native Qiskit (no QLego). Returns (qasm, elapsed_seconds)."""
     qc = loads(qasm_str, custom_instructions=LEGACY_CUSTOM_INSTRUCTIONS)
     pm = generate_preset_pass_manager(
         optimization_level=optimization_level,
         backend=backend,
         seed_transpiler=0,
     )
+    t0 = time.perf_counter()
     compiled = pm.run(qc)
-    return dumps(compiled)
+    elapsed = time.perf_counter() - t0
+    return dumps(compiled), elapsed
 
 
 def qlego_qiskit_compile(qasm_str, optimization_level, backend_json):
-    """Compile using QLego's Qiskit plugin."""
+    """Compile using QLego's Qiskit plugin. Returns (qasm, elapsed_seconds)."""
     pipeline = QPipeline([PresetPasses(optimization_level=optimization_level)])
     ctx = QPassContext(qasm=qasm_str, hardware=backend_json)
+    t0 = time.perf_counter()
     ctx = pipeline.run("", ctx)
-    return ctx.qasm
+    elapsed = time.perf_counter() - t0
+    return ctx.qasm, elapsed
 
 
 def run(args):
@@ -79,13 +84,13 @@ def run(args):
                     initial_qasm = initialize_circuit(circuit_cls, num_qubits)
 
                     # Native Qiskit
-                    native_qasm = native_qiskit_compile(
+                    native_qasm, native_time = native_qiskit_compile(
                         initial_qasm, opt_level, backend
                     )
                     native_metrics = evaluate(native_qasm)
 
                     # QLego Qiskit plugin
-                    qlego_qasm = qlego_qiskit_compile(
+                    qlego_qasm, qlego_time = qlego_qiskit_compile(
                         initial_qasm, opt_level, backend_json
                     )
                     qlego_metrics = evaluate(qlego_qasm)
@@ -96,11 +101,19 @@ def run(args):
                         for k in native_metrics
                     )
 
+                    overhead_pct = (
+                        100.0 * (qlego_time - native_time) / native_time
+                        if native_time > 0 else None
+                    )
+
                     row = {
                         "circuit_type": circuit_cls.name,
                         "num_qubits": num_qubits,
                         "optimization_level": opt_level,
                         "identical": identical,
+                        "native_time_s": round(native_time, 4),
+                        "qlego_time_s": round(qlego_time, 4),
+                        "overhead_pct": round(overhead_pct, 1) if overhead_pct is not None else None,
                     }
                     for k, v in native_metrics.items():
                         row[f"native_{k}"] = v
@@ -128,6 +141,21 @@ def run(args):
         total_pairs = df["identical"].notna().sum()
         identical_count = df["identical"].sum()
         print(f"\nBit-identical: {identical_count}/{total_pairs}")
+
+    if "overhead_pct" in df.columns:
+        valid = df[df["overhead_pct"].notna()]
+        print(f"\n--- Runtime: QLego vs Native Qiskit ---")
+        print(f"  Mean overhead:   {valid['overhead_pct'].mean():.1f}%")
+        print(f"  Median overhead: {valid['overhead_pct'].median():.1f}%")
+        print(f"  Max overhead:    {valid['overhead_pct'].max():.1f}%")
+        print(f"  Mean native:     {valid['native_time_s'].mean():.3f}s")
+        print(f"  Mean qlego:      {valid['qlego_time_s'].mean():.3f}s")
+        print("\n  Overhead by optimization level:")
+        print(valid.groupby("optimization_level")["overhead_pct"]
+              .mean().round(1).to_string())
+        print("\n  Overhead by circuit type:")
+        print(valid.groupby("circuit_type")["overhead_pct"]
+              .mean().round(1).to_string())
 
     if not args.no_save:
         save_results(df, "exp0_correctness.csv")
