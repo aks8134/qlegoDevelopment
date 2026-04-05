@@ -531,13 +531,8 @@ class OptimizeSwapBeforeMeasurePass(BaseOptimizationPass):
         from qiskit.transpiler.passes import OptimizeSwapBeforeMeasure
         return OptimizeSwapBeforeMeasure(**kwargs)
 
-@register_pass("Optimization")
-@register_pass("Bundle: Measurement & Terminal Cleanup")
-class RemoveDiagonalGatesBeforeMeasurePass(BaseOptimizationPass):
-    name = "Remove Diagonal Gates Before Measure"
-    def get_optimization_algo(self, backend, **kwargs):
-        from qiskit.transpiler.passes import RemoveDiagonalGatesBeforeMeasure
-        return RemoveDiagonalGatesBeforeMeasure(**kwargs)
+# RemoveDiagonalGatesBeforeMeasurePass excluded: removes all gates from purely-diagonal
+# circuits (QFT, AE, QPE) producing depth=0 outputs, invalidating benchmarks.
 
 @register_pass("Optimization")
 @register_pass("Bundle: Measurement & Terminal Cleanup")

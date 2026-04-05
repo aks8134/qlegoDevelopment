@@ -1,306 +1,127 @@
 routing_pass,circuit_type,num_qubits,topology,status,error,Gate Count,Circuit Depth,2Q Count,2Q Depth
-qlego-qiskit_PresetRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,17.0,7.0,5.0
+qlego-qiskit_PresetRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,15.0,7.0,7.0
 qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
-qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
-qlego-qiskit_LookaheadRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,18.0,7.0,7.0
-qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
-qlego-tket_TketDefaultRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,46.0,19.0,10.0,7.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,5,heavy_hex,success,,46.0,22.0,10.0,10.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,5,heavy_hex,success,,43.0,18.0,7.0,6.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,5,heavy_hex,success,,42.0,21.0,10.0,10.0
+qlego-tket_AASRoutePass,DJ Circuit,5,heavy_hex,success,,507.0,335.0,445.0,335.0
+qlego-tket_LexiRoutePass,DJ Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,5,heavy_hex,success,,39.0,18.0,7.0,7.0
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,5,heavy_hex,success,,39.0,14.0,7.0,7.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,48.0,27.0,26.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,42.0,27.0,26.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,42.0,24.0,24.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,47.0,27.0,27.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,43.0,24.0,24.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,10,heavy_hex,success,,109.0,52.0,39.0,30.0
+qlego-tket_AASRoutePass,DJ Circuit,10,heavy_hex,success,,183.0,82.0,35.0,33.0
+qlego-tket_LexiRoutePass,DJ Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,10,heavy_hex,success,,94.0,39.0,24.0,21.0
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,10,heavy_hex,success,,97.0,42.0,27.0,23.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,82.0,47.0,47.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,162.0,76.0,44.0,44.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,159.0,58.0,41.0,38.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,15,heavy_hex,success,,162.0,69.0,44.0,44.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,162.0,69.0,44.0,41.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,15,heavy_hex,success,,178.0,96.0,74.0,64.0
+qlego-tket_AASRoutePass,DJ Circuit,15,heavy_hex,success,,1806.0,1467.0,1600.0,1416.0
+qlego-tket_LexiRoutePass,DJ Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,15,heavy_hex,success,,151.0,77.0,47.0,46.0
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,15,heavy_hex,success,,148.0,69.0,44.0,43.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,97.0,67.0,63.0
+qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,218.0,89.0,61.0,59.0
+qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,233.0,96.0,76.0,62.0
+qlego-qiskit_LookaheadRoutingPass,DJ Circuit,20,heavy_hex,success,,230.0,100.0,73.0,66.0
+qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,236.0,99.0,79.0,59.0
+qlego-tket_TketDefaultRoutingPass,DJ Circuit,20,heavy_hex,success,,223.0,115.0,85.0,66.0
+qlego-tket_AASRoutePass,DJ Circuit,20,heavy_hex,success,,1570.0,1244.0,1306.0,1179.0
+qlego-tket_LexiRoutePass,DJ Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,DJ Circuit,20,heavy_hex,success,,205.0,103.0,67.0,65.0
+qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,20,heavy_hex,success,,211.0,101.0,73.0,67.0
+qlego-bqskit_PAMRoutingPass,DJ Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
 qlego-qiskit_PresetRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
-qlego-tket_TketDefaultRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Grover Circuit,5,heavy_hex,success,,831.0,664.0,405.0,366.0
-qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,810.0,630.0,384.0,349.0
-qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,825.0,669.0,399.0,375.0
-qlego-qiskit_LookaheadRoutingPass,Grover Circuit,5,heavy_hex,success,,819.0,674.0,393.0,370.0
-qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,816.0,634.0,390.0,357.0
-qlego-tket_TketDefaultRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
-qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,85.0,55.0,35.0,31.0
-qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,88.0,60.0,38.0,34.0
-qlego-qiskit_LookaheadRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
-qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
-qlego-tket_TketDefaultRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,245.0,54.0,54.0
-qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,243.0,57.0,57.0
-qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,243.0,57.0,55.0
-qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,246.0,57.0,57.0
-qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,240.0,54.0,54.0
-qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
-qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,59.0,32.0,32.0
-qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
-qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,94.0,62.0,35.0,32.0
-qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,94.0,63.0,35.0,33.0
-qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-qiskit_SabreSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-qiskit_BasicSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-qiskit_LookaheadRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-tket_TketDefaultRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
-qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
-qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,58.0,40.0,36.0
-qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
-qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,60.0,40.0,37.0
-qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,45.0,27.0,24.0
-qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,37.0,24.0,21.0
-qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,103.0,45.0,24.0,24.0
-qlego-qiskit_LookaheadRoutingPass,DJ Circuit,10,heavy_hex,success,,106.0,44.0,27.0,27.0
-qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,10,heavy_hex,success,,109.0,47.0,30.0,30.0
-qlego-tket_TketDefaultRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-tket_AASRoutePass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-tket_LexiRoutePass,GHZ Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
 qlego-qiskit_PresetRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
-qlego-tket_TketDefaultRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Grover Circuit,10,heavy_hex,success,,59265.0,45063.0,31602.0,25107.0
-qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,63930.0,48996.0,36267.0,29921.0
-qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,64134.0,49092.0,36471.0,29881.0
-qlego-qiskit_LookaheadRoutingPass,Grover Circuit,10,heavy_hex,success,,64182.0,48840.0,36519.0,29789.0
-qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,61911.0,46719.0,34248.0,27060.0
-qlego-tket_TketDefaultRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,QFT Circuit,10,heavy_hex,success,,379.0,197.0,204.0,124.0
-qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,379.0,173.0,204.0,112.0
-qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,373.0,186.0,198.0,117.0
-qlego-qiskit_LookaheadRoutingPass,QFT Circuit,10,heavy_hex,success,,382.0,202.0,207.0,126.0
-qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,391.0,160.0,216.0,102.0
-qlego-tket_TketDefaultRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8025.0,6803.0,1205.0,1124.0
-qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8016.0,6799.0,1196.0,1122.0
-qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8034.0,6799.0,1214.0,1127.0
-qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8031.0,6834.0,1211.0,1145.0
-qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8019.0,6804.0,1199.0,1126.0
-qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,387.0,214.0,200.0,141.0
-qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,393.0,179.0,206.0,113.0
-qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,399.0,194.0,212.0,128.0
-qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,402.0,200.0,215.0,127.0
-qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,390.0,171.0,203.0,107.0
-qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-qiskit_SabreSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-qiskit_BasicSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-qiskit_LookaheadRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-tket_TketDefaultRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,82.0,47.0,47.0
-qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,168.0,79.0,50.0,47.0
-qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,70.0,47.0,45.0
-qlego-qiskit_LookaheadRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,77.0,47.0,45.0
-qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,15,heavy_hex,success,,165.0,64.0,47.0,39.0
-qlego-tket_TketDefaultRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-tket_AASRoutePass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-tket_LexiRoutePass,GHZ Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
 qlego-qiskit_PresetRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
 qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
-qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
-qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
-qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
-qlego-tket_TketDefaultRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Grover Circuit,15,heavy_hex,success,,1185679.0,936532.0,642121.0,510936.0
-qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1220956.0,958571.0,677398.0,537892.0
-qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1187605.0,938276.0,644047.0,512171.0
-qlego-qiskit_LookaheadRoutingPass,Grover Circuit,15,heavy_hex,success,,1197583.0,946383.0,654025.0,521572.0
-qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1221925.0,961801.0,678367.0,539621.0
-qlego-tket_TketDefaultRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,QFT Circuit,15,heavy_hex,success,,894.0,369.0,519.0,254.0
-qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,933.0,343.0,558.0,239.0
-qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,912.0,363.0,537.0,248.0
-qlego-qiskit_LookaheadRoutingPass,QFT Circuit,15,heavy_hex,success,,927.0,406.0,552.0,284.0
-qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,891.0,327.0,516.0,219.0
-qlego-tket_TketDefaultRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246616.0,213315.0,33260.0,33004.0
-qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246622.0,213314.0,33266.0,33002.0
-qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246592.0,213294.0,33236.0,32986.0
-qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246625.0,213354.0,33269.0,33029.0
-qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246643.0,213320.0,33287.0,33009.0
-qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,939.0,423.0,525.0,289.0
-qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,897.0,408.0,483.0,256.0
-qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,921.0,433.0,507.0,289.0
-qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,948.0,430.0,534.0,289.0
-qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,894.0,400.0,480.0,262.0
-qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
-qlego-qiskit_SabreSwapRoutingPass,W State Circuit,15,heavy_hex,success,,286.0,148.0,46.0,34.0
-qlego-qiskit_BasicSwapRoutingPass,W State Circuit,15,heavy_hex,success,,277.0,139.0,37.0,22.0
-qlego-qiskit_LookaheadRoutingPass,W State Circuit,15,heavy_hex,success,,295.0,149.0,55.0,37.0
-qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
-qlego-tket_TketDefaultRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Half Adder Circuit,15,heavy_hex,success,,641.0,278.0,384.0,205.0
-qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,650.0,302.0,393.0,227.0
-qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,629.0,284.0,372.0,195.0
-qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,15,heavy_hex,success,,659.0,291.0,402.0,219.0
-qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,656.0,288.0,399.0,213.0
-qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,104.0,67.0,65.0
-qlego-qiskit_SabreSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,94.0,67.0,62.0
-qlego-qiskit_BasicSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,96.0,67.0,60.0
-qlego-qiskit_LookaheadRoutingPass,DJ Circuit,20,heavy_hex,success,,215.0,82.0,58.0,55.0
-qlego-qiskit_StochasticSwapRoutingPass,DJ Circuit,20,heavy_hex,success,,224.0,103.0,67.0,65.0
-qlego-tket_TketDefaultRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,50.0,36.0,32.0,32.0
+qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,15,heavy_hex,success,,44.0,30.0,26.0,26.0
+qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,15,heavy_hex,success,,44.0,30.0,26.0,26.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,15,heavy_hex,success,,59.0,32.0,56.0,29.0
+qlego-tket_AASRoutePass,GHZ Circuit,15,heavy_hex,success,,183.0,107.0,180.0,107.0
+qlego-tket_LexiRoutePass,GHZ Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,15,heavy_hex,success,,32.0,32.0,29.0,29.0
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,15,heavy_hex,success,,32.0,32.0,29.0,29.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
 qlego-qiskit_PresetRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
 qlego-qiskit_SabreSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
 qlego-qiskit_BasicSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
 qlego-qiskit_LookaheadRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
 qlego-qiskit_StochasticSwapRoutingPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
-qlego-tket_TketDefaultRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Grover Circuit,20,heavy_hex,success,,14497322.0,11825975.0,8110084.0,6514701.0
-qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,20,heavy_hex,success,,14501378.0,11829271.0,8114140.0,6519047.0
+qlego-tket_TketDefaultRoutingPass,GHZ Circuit,20,heavy_hex,success,,91.0,70.0,88.0,67.0
+qlego-tket_AASRoutePass,GHZ Circuit,20,heavy_hex,success,,392.0,299.0,389.0,299.0
+qlego-tket_LexiRoutePass,GHZ Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,GHZ Circuit,20,heavy_hex,success,,43.0,40.0,40.0,37.0
+qlego-bqskit_GeneralizedSabreRoutingPass,GHZ Circuit,20,heavy_hex,success,,43.0,40.0,40.0,37.0
+qlego-bqskit_PAMRoutingPass,GHZ Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,5,heavy_hex,success,,825.0,669.0,399.0,375.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,807.0,630.0,381.0,348.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,819.0,629.0,393.0,360.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,5,heavy_hex,success,,810.0,633.0,384.0,351.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,5,heavy_hex,success,,819.0,672.0,393.0,370.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,5,heavy_hex,success,,904.0,706.0,483.0,419.0
+qlego-tket_AASRoutePass,Grover Circuit,5,heavy_hex,success,,1033.0,787.0,463.0,425.0
+qlego-tket_LexiRoutePass,Grover Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,5,heavy_hex,success,,814.0,673.0,393.0,370.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,5,heavy_hex,success,,802.0,629.0,381.0,348.0
+qlego-bqskit_PAMRoutingPass,Grover Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,10,heavy_hex,success,,64515.0,47464.0,36852.0,28643.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,64860.0,48727.0,37197.0,29691.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,59862.0,46287.0,32199.0,26264.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,10,heavy_hex,success,,62454.0,46272.0,34791.0,26788.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,10,heavy_hex,success,,62502.0,46465.0,34839.0,26833.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,10,heavy_hex,success,,73403.0,56066.0,45750.0,37599.0
+qlego-tket_AASRoutePass,Grover Circuit,10,heavy_hex,success,,71750.0,52895.0,42312.0,32834.0
+qlego-tket_LexiRoutePass,Grover Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,10,heavy_hex,success,,59849.0,46312.0,32196.0,26267.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,10,heavy_hex,success,,59804.0,46353.0,32151.0,26226.0
+qlego-bqskit_PAMRoutingPass,Grover Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,15,heavy_hex,success,,1220359.0,956088.0,676801.0,534405.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1222498.0,962166.0,678940.0,537986.0
+qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1193497.0,943864.0,649939.0,518392.0
+qlego-qiskit_LookaheadRoutingPass,Grover Circuit,15,heavy_hex,success,,1219834.0,957893.0,676276.0,534608.0
+qlego-qiskit_StochasticSwapRoutingPass,Grover Circuit,15,heavy_hex,success,,1222051.0,960691.0,678493.0,539079.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,15,heavy_hex,success,,1322695.0,1036233.0,779152.0,616835.0
+qlego-tket_AASRoutePass,Grover Circuit,15,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_LexiRoutePass,Grover Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,15,heavy_hex,success,,1376905.0,1070690.0,833362.0,654663.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,15,heavy_hex,success,,1187461.0,932810.0,643918.0,507918.0
+qlego-bqskit_PAMRoutingPass,Grover Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Grover Circuit,20,heavy_hex,success,,14503892.0,11835779.0,8116654.0,6523422.0
+qlego-qiskit_SabreSwapRoutingPass,Grover Circuit,20,heavy_hex,success,,14496044.0,11826690.0,8108806.0,6515367.0
 qlego-qiskit_BasicSwapRoutingPass,Grover Circuit,20,heavy_hex,failed,"Worker subprocess failed with code -9
 STDERR: Starting pass Preset Init Pass
 Finished pass Preset Init Pass
@@ -322,58 +143,295 @@ Finished pass Preset Init Pass
 Starting pass Sabre Layout
 Finished pass Sabre Layout
 Starting pass Stochastic Swap Routing ",,,,
-qlego-tket_TketDefaultRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,QFT Circuit,20,heavy_hex,success,,1663.0,620.0,1013.0,439.0
-qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1657.0,590.0,1007.0,415.0
-qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1702.0,498.0,1052.0,364.0
-qlego-qiskit_LookaheadRoutingPass,QFT Circuit,20,heavy_hex,success,,1702.0,594.0,1052.0,409.0
-qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1678.0,627.0,1028.0,441.0
-qlego-tket_TketDefaultRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865956.0,6816283.0,1049573.0,1048978.0
-qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865998.0,6816337.0,1049615.0,1049016.0
-qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865959.0,6816298.0,1049576.0,1048992.0
-qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865929.0,6816197.0,1049546.0,1048906.0
-qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7866001.0,6816276.0,1049618.0,1048985.0
-qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1699.0,665.0,995.0,454.0
-qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1747.0,600.0,1043.0,436.0
-qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1738.0,651.0,1034.0,455.0
-qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1696.0,650.0,992.0,454.0
-qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1762.0,587.0,1058.0,402.0
-qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
-qlego-qiskit_PresetRoutingPass,W State Circuit,20,heavy_hex,success,,414.0,196.0,89.0,54.0
+qlego-tket_TketDefaultRoutingPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_AASRoutePass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_LexiRoutePass,Grover Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_PAMRoutingPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,5,heavy_hex,success,,85.0,55.0,35.0,31.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,85.0,55.0,35.0,31.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,88.0,52.0,38.0,29.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,5,heavy_hex,success,,88.0,60.0,38.0,34.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,5,heavy_hex,success,,209.0,146.0,44.0,39.0
+qlego-tket_AASRoutePass,QFT Circuit,5,heavy_hex,success,,61.0,45.0,24.0,21.0
+qlego-tket_LexiRoutePass,QFT Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,5,heavy_hex,success,,197.0,128.0,32.0,28.0
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,5,heavy_hex,success,,77.0,52.0,32.0,28.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,10,heavy_hex,success,,388.0,183.0,213.0,122.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,382.0,166.0,207.0,105.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,388.0,175.0,213.0,117.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,10,heavy_hex,success,,379.0,196.0,204.0,129.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,10,heavy_hex,success,,373.0,190.0,198.0,120.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,10,heavy_hex,success,,978.0,452.0,273.0,170.0
+qlego-tket_AASRoutePass,QFT Circuit,10,heavy_hex,success,,3516.0,2888.0,3397.0,2853.0
+qlego-tket_LexiRoutePass,QFT Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,10,heavy_hex,success,,903.0,429.0,198.0,120.0
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,10,heavy_hex,success,,351.0,174.0,186.0,106.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,15,heavy_hex,success,,906.0,344.0,531.0,244.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,915.0,373.0,540.0,262.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,906.0,359.0,531.0,256.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,15,heavy_hex,success,,933.0,390.0,558.0,271.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,15,heavy_hex,success,,891.0,342.0,516.0,226.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,15,heavy_hex,success,,2529.0,1094.0,909.0,473.0
+qlego-tket_AASRoutePass,QFT Circuit,15,heavy_hex,success,,1591.0,975.0,1346.0,903.0
+qlego-tket_LexiRoutePass,QFT Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,15,heavy_hex,success,,2163.0,866.0,543.0,273.0
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,15,heavy_hex,success,,882.0,314.0,522.0,213.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,QFT Circuit,20,heavy_hex,success,,1627.0,571.0,977.0,393.0
+qlego-qiskit_SabreSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1594.0,548.0,944.0,378.0
+qlego-qiskit_BasicSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1693.0,564.0,1043.0,390.0
+qlego-qiskit_LookaheadRoutingPass,QFT Circuit,20,heavy_hex,success,,1714.0,672.0,1064.0,481.0
+qlego-qiskit_StochasticSwapRoutingPass,QFT Circuit,20,heavy_hex,success,,1672.0,446.0,1022.0,309.0
+qlego-tket_TketDefaultRoutingPass,QFT Circuit,20,heavy_hex,success,,4589.0,1511.0,1679.0,609.0
+qlego-tket_AASRoutePass,QFT Circuit,20,heavy_hex,success,,208015.0,164096.0,207574.0,164008.0
+qlego-tket_LexiRoutePass,QFT Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,QFT Circuit,20,heavy_hex,success,,4082.0,1146.0,1172.0,386.0
+qlego-bqskit_GeneralizedSabreRoutingPass,QFT Circuit,20,heavy_hex,success,,1685.0,626.0,1055.0,442.0
+qlego-bqskit_PAMRoutingPass,QFT Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,243.0,57.0,57.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,240.0,54.0,54.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,304.0,236.0,57.0,55.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,240.0,54.0,54.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,240.0,54.0,54.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,557.0,351.0,63.0,59.0
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,5,heavy_hex,success,,2703.0,2011.0,2386.0,1850.0
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,5,heavy_hex,success,,548.0,360.0,54.0,54.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,success,,296.0,240.0,54.0,54.0
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8028.0,6812.0,1208.0,1136.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8031.0,6800.0,1211.0,1126.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8013.0,6815.0,1193.0,1136.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8019.0,6793.0,1199.0,1120.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8037.0,6812.0,1217.0,1136.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,14576.0,9023.0,1202.0,1129.0
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,10,heavy_hex,success,,15637.0,13431.0,6296.0,4269.0
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,10,heavy_hex,success,,14576.0,9045.0,1202.0,1134.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8015.0,6801.0,1205.0,1124.0
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246598.0,213333.0,33242.0,33017.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246610.0,213334.0,33254.0,33020.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246604.0,213330.0,33248.0,33016.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246634.0,213336.0,33278.0,33019.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246607.0,213303.0,33251.0,32995.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,444451.0,279440.0,33422.0,33133.0
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,15,heavy_hex,success,,444772.0,279533.0,33743.0,33239.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246598.0,213322.0,33257.0,33018.0
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865905.0,6816252.0,1049522.0,1048963.0
+qlego-qiskit_SabreSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865959.0,6816300.0,1049576.0,1048998.0
+qlego-qiskit_BasicSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865941.0,6816282.0,1049558.0,1048982.0
+qlego-qiskit_LookaheadRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7866010.0,6816297.0,1049627.0,1049001.0
+qlego-qiskit_StochasticSwapRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865992.0,6816247.0,1049609.0,1048966.0
+qlego-tket_TketDefaultRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_AASRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_LexiRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Amplitude Estimation Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_GeneralizedSabreRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_PAMRoutingPass,Amplitude Estimation Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,58.0,32.0,32.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,59.0,32.0,32.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,62.0,32.0,32.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,62.0,32.0,32.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,222.0,158.0,47.0,39.0
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,549.0,397.0,495.0,387.0
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,210.0,134.0,35.0,31.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,90.0,63.0,35.0,33.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,387.0,191.0,200.0,118.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,387.0,209.0,200.0,130.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,393.0,191.0,206.0,127.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,369.0,190.0,182.0,119.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,396.0,194.0,209.0,128.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,960.0,523.0,266.0,184.0
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,3275.0,2563.0,3137.0,2527.0
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,903.0,469.0,209.0,130.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,387.0,184.0,209.0,126.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,942.0,415.0,528.0,277.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,930.0,417.0,516.0,280.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,933.0,342.0,519.0,223.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,909.0,364.0,495.0,237.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,933.0,440.0,519.0,303.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,2215.0,992.0,555.0,318.0
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,7828.0,6279.0,7532.0,6211.0
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,2173.0,952.0,513.0,285.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,895.0,408.0,495.0,282.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1753.0,637.0,1049.0,447.0
+qlego-qiskit_SabreSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1762.0,596.0,1058.0,413.0
+qlego-qiskit_BasicSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1681.0,623.0,977.0,430.0
+qlego-qiskit_LookaheadRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1711.0,534.0,1007.0,354.0
+qlego-qiskit_StochasticSwapRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1786.0,645.0,1082.0,464.0
+qlego-tket_TketDefaultRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,4725.0,1956.0,1760.0,817.0
+qlego-tket_AASRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1874.0,831.0,1395.0,733.0
+qlego-tket_LexiRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,4125.0,1392.0,1160.0,469.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1707.0,653.0,1022.0,456.0
+qlego-bqskit_PAMRoutingPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
+qlego-tket_AASRoutePass,W State Circuit,5,heavy_hex,success,,10929.0,10313.0,10826.0,10283.0
+qlego-tket_LexiRoutePass,W State Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
+qlego-tket_AASRoutePass,W State Circuit,10,heavy_hex,success,,241.0,138.0,18.0,18.0
+qlego-tket_LexiRoutePass,W State Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
+qlego-qiskit_SabreSwapRoutingPass,W State Circuit,15,heavy_hex,success,,292.0,151.0,52.0,39.0
+qlego-qiskit_BasicSwapRoutingPass,W State Circuit,15,heavy_hex,success,,295.0,149.0,55.0,37.0
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,15,heavy_hex,success,,298.0,149.0,58.0,37.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,15,heavy_hex,success,,295.0,149.0,55.0,37.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,15,heavy_hex,success,,277.0,147.0,52.0,30.0
+qlego-tket_AASRoutePass,W State Circuit,15,heavy_hex,success,,1291.0,877.0,948.0,785.0
+qlego-tket_LexiRoutePass,W State Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,15,heavy_hex,success,,262.0,141.0,37.0,25.0
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,15,heavy_hex,success,,280.0,150.0,55.0,34.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,W State Circuit,20,heavy_hex,success,,414.0,208.0,89.0,59.0
 qlego-qiskit_SabreSwapRoutingPass,W State Circuit,20,heavy_hex,success,,414.0,196.0,89.0,54.0
 qlego-qiskit_BasicSwapRoutingPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
-qlego-qiskit_LookaheadRoutingPass,W State Circuit,20,heavy_hex,success,,375.0,190.0,50.0,34.0
-qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
-qlego-tket_TketDefaultRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_AASRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_LexiRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_BoxDecomposeRoutePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMRoutingPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-cirq_RouteCQCPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'cirq.routing',,,,
+qlego-qiskit_LookaheadRoutingPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
+qlego-qiskit_StochasticSwapRoutingPass,W State Circuit,20,heavy_hex,success,,423.0,196.0,98.0,54.0
+qlego-tket_TketDefaultRoutingPass,W State Circuit,20,heavy_hex,success,,412.0,217.0,107.0,66.0
+qlego-tket_AASRoutePass,W State Circuit,20,heavy_hex,success,,893.0,441.0,430.0,333.0
+qlego-tket_LexiRoutePass,W State Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,W State Circuit,20,heavy_hex,success,,370.0,198.0,65.0,48.0
+qlego-bqskit_GeneralizedSabreRoutingPass,W State Circuit,20,heavy_hex,success,,373.0,198.0,68.0,43.0
+qlego-bqskit_PAMRoutingPass,W State Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,58.0,40.0,36.0
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,5,heavy_hex,success,,78.0,58.0,40.0,36.0
+qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,5,heavy_hex,success,,82.0,71.0,49.0,47.0
+qlego-tket_AASRoutePass,Half Adder Circuit,5,heavy_hex,success,,1962.0,1743.0,1918.0,1721.0
+qlego-tket_LexiRoutePass,Half Adder Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,5,heavy_hex,success,,67.0,57.0,34.0,33.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,5,heavy_hex,success,,73.0,59.0,40.0,37.0
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Half Adder Circuit,15,heavy_hex,success,,656.0,302.0,399.0,216.0
+qlego-qiskit_SabreSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,659.0,309.0,402.0,234.0
+qlego-qiskit_BasicSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,623.0,277.0,366.0,192.0
+qlego-qiskit_LookaheadRoutingPass,Half Adder Circuit,15,heavy_hex,success,,650.0,344.0,393.0,256.0
+qlego-qiskit_StochasticSwapRoutingPass,Half Adder Circuit,15,heavy_hex,success,,647.0,294.0,390.0,223.0
+qlego-tket_TketDefaultRoutingPass,Half Adder Circuit,15,heavy_hex,success,,907.0,481.0,621.0,382.0
+qlego-tket_AASRoutePass,Half Adder Circuit,15,heavy_hex,success,,11324.0,9382.0,10898.0,9264.0
+qlego-tket_LexiRoutePass,Half Adder Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Half Adder Circuit,15,heavy_hex,success,,691.0,318.0,405.0,245.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Half Adder Circuit,15,heavy_hex,success,,655.0,333.0,369.0,222.0
+qlego-bqskit_PAMRoutingPass,Half Adder Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
+qlego-qiskit_SabreSwapRoutingPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
+qlego-qiskit_BasicSwapRoutingPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
+qlego-qiskit_LookaheadRoutingPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
+qlego-qiskit_StochasticSwapRoutingPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
+qlego-tket_TketDefaultRoutingPass,BV Circuit,5,heavy_hex,success,,27.0,15.0,2.0,2.0
+qlego-tket_AASRoutePass,BV Circuit,5,heavy_hex,success,,33.0,21.0,2.0,2.0
+qlego-tket_LexiRoutePass,BV Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,BV Circuit,5,heavy_hex,success,,27.0,15.0,2.0,2.0
+qlego-bqskit_GeneralizedSabreRoutingPass,BV Circuit,5,heavy_hex,success,,27.0,15.0,2.0,2.0
+qlego-bqskit_PAMRoutingPass,BV Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,BV Circuit,10,heavy_hex,success,,65.0,31.0,7.0,7.0
+qlego-qiskit_SabreSwapRoutingPass,BV Circuit,10,heavy_hex,success,,65.0,30.0,7.0,5.0
+qlego-qiskit_BasicSwapRoutingPass,BV Circuit,10,heavy_hex,success,,68.0,32.0,10.0,10.0
+qlego-qiskit_LookaheadRoutingPass,BV Circuit,10,heavy_hex,success,,65.0,33.0,7.0,7.0
+qlego-qiskit_StochasticSwapRoutingPass,BV Circuit,10,heavy_hex,success,,65.0,33.0,7.0,7.0
+qlego-tket_TketDefaultRoutingPass,BV Circuit,10,heavy_hex,success,,59.0,32.0,10.0,9.0
+qlego-tket_AASRoutePass,BV Circuit,10,heavy_hex,success,,475.0,410.0,420.0,388.0
+qlego-tket_LexiRoutePass,BV Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,BV Circuit,10,heavy_hex,success,,59.0,29.0,10.0,7.0
+qlego-bqskit_GeneralizedSabreRoutingPass,BV Circuit,10,heavy_hex,success,,56.0,32.0,7.0,7.0
+qlego-bqskit_PAMRoutingPass,BV Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,BV Circuit,15,heavy_hex,success,,115.0,59.0,16.0,16.0
+qlego-qiskit_SabreSwapRoutingPass,BV Circuit,15,heavy_hex,success,,121.0,61.0,22.0,21.0
+qlego-qiskit_BasicSwapRoutingPass,BV Circuit,15,heavy_hex,success,,118.0,59.0,19.0,19.0
+qlego-qiskit_LookaheadRoutingPass,BV Circuit,15,heavy_hex,success,,118.0,59.0,19.0,19.0
+qlego-qiskit_StochasticSwapRoutingPass,BV Circuit,15,heavy_hex,success,,121.0,61.0,22.0,21.0
+qlego-tket_TketDefaultRoutingPass,BV Circuit,15,heavy_hex,success,,119.0,56.0,34.0,24.0
+qlego-tket_AASRoutePass,BV Circuit,15,heavy_hex,success,,110.0,65.0,19.0,18.0
+qlego-tket_LexiRoutePass,BV Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,BV Circuit,15,heavy_hex,success,,101.0,56.0,16.0,15.0
+qlego-bqskit_GeneralizedSabreRoutingPass,BV Circuit,15,heavy_hex,success,,104.0,62.0,19.0,19.0
+qlego-bqskit_PAMRoutingPass,BV Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,BV Circuit,20,heavy_hex,success,,155.0,81.0,27.0,27.0
+qlego-qiskit_SabreSwapRoutingPass,BV Circuit,20,heavy_hex,success,,158.0,82.0,30.0,27.0
+qlego-qiskit_BasicSwapRoutingPass,BV Circuit,20,heavy_hex,success,,158.0,79.0,30.0,29.0
+qlego-qiskit_LookaheadRoutingPass,BV Circuit,20,heavy_hex,success,,158.0,72.0,30.0,23.0
+qlego-qiskit_StochasticSwapRoutingPass,BV Circuit,20,heavy_hex,success,,152.0,73.0,24.0,23.0
+qlego-tket_TketDefaultRoutingPass,BV Circuit,20,heavy_hex,success,,160.0,82.0,51.0,39.0
+qlego-tket_AASRoutePass,BV Circuit,20,heavy_hex,success,,139.0,83.0,24.0,24.0
+qlego-tket_LexiRoutePass,BV Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,BV Circuit,20,heavy_hex,success,,133.0,76.0,24.0,24.0
+qlego-bqskit_GeneralizedSabreRoutingPass,BV Circuit,20,heavy_hex,success,,136.0,79.0,27.0,27.0
+qlego-bqskit_PAMRoutingPass,BV Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Graph State Circuit,5,heavy_hex,success,,61.0,26.0,11.0,10.0
+qlego-qiskit_SabreSwapRoutingPass,Graph State Circuit,5,heavy_hex,success,,61.0,26.0,11.0,10.0
+qlego-qiskit_BasicSwapRoutingPass,Graph State Circuit,5,heavy_hex,success,,61.0,29.0,11.0,7.0
+qlego-qiskit_LookaheadRoutingPass,Graph State Circuit,5,heavy_hex,success,,61.0,26.0,11.0,10.0
+qlego-qiskit_StochasticSwapRoutingPass,Graph State Circuit,5,heavy_hex,success,,64.0,32.0,14.0,10.0
+qlego-tket_TketDefaultRoutingPass,Graph State Circuit,5,heavy_hex,success,,62.0,30.0,17.0,15.0
+qlego-tket_AASRoutePass,Graph State Circuit,5,heavy_hex,success,,2061.0,1800.0,2016.0,1786.0
+qlego-tket_LexiRoutePass,Graph State Circuit,5,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Graph State Circuit,5,heavy_hex,success,,59.0,31.0,14.0,10.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Graph State Circuit,5,heavy_hex,success,,56.0,25.0,11.0,10.0
+qlego-bqskit_PAMRoutingPass,Graph State Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Graph State Circuit,10,heavy_hex,success,,128.0,39.0,28.0,12.0
+qlego-qiskit_SabreSwapRoutingPass,Graph State Circuit,10,heavy_hex,success,,128.0,39.0,28.0,12.0
+qlego-qiskit_BasicSwapRoutingPass,Graph State Circuit,10,heavy_hex,success,,128.0,39.0,28.0,12.0
+qlego-qiskit_LookaheadRoutingPass,Graph State Circuit,10,heavy_hex,success,,128.0,39.0,28.0,12.0
+qlego-qiskit_StochasticSwapRoutingPass,Graph State Circuit,10,heavy_hex,success,,128.0,36.0,28.0,14.0
+qlego-tket_TketDefaultRoutingPass,Graph State Circuit,10,heavy_hex,success,,130.0,41.0,40.0,16.0
+qlego-tket_AASRoutePass,Graph State Circuit,10,heavy_hex,success,,351.0,182.0,261.0,164.0
+qlego-tket_LexiRoutePass,Graph State Circuit,10,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Graph State Circuit,10,heavy_hex,success,,118.0,38.0,28.0,12.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Graph State Circuit,10,heavy_hex,success,,115.0,35.0,25.0,14.0
+qlego-bqskit_PAMRoutingPass,Graph State Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Graph State Circuit,15,heavy_hex,success,,186.0,31.0,36.0,10.0
+qlego-qiskit_SabreSwapRoutingPass,Graph State Circuit,15,heavy_hex,success,,189.0,34.0,39.0,15.0
+qlego-qiskit_BasicSwapRoutingPass,Graph State Circuit,15,heavy_hex,success,,183.0,32.0,33.0,19.0
+qlego-qiskit_LookaheadRoutingPass,Graph State Circuit,15,heavy_hex,success,,186.0,30.0,36.0,12.0
+qlego-qiskit_StochasticSwapRoutingPass,Graph State Circuit,15,heavy_hex,success,,180.0,29.0,30.0,10.0
+qlego-tket_TketDefaultRoutingPass,Graph State Circuit,15,heavy_hex,success,,291.0,103.0,156.0,72.0
+qlego-tket_AASRoutePass,Graph State Circuit,15,heavy_hex,success,,972.0,686.0,837.0,663.0
+qlego-tket_LexiRoutePass,Graph State Circuit,15,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Graph State Circuit,15,heavy_hex,success,,171.0,30.0,36.0,15.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Graph State Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_PAMRoutingPass,Graph State Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-qiskit_PresetRoutingPass,Graph State Circuit,20,heavy_hex,success,,244.0,42.0,44.0,17.0
+qlego-qiskit_SabreSwapRoutingPass,Graph State Circuit,20,heavy_hex,success,,250.0,39.0,50.0,20.0
+qlego-qiskit_BasicSwapRoutingPass,Graph State Circuit,20,heavy_hex,success,,268.0,42.0,68.0,24.0
+qlego-qiskit_LookaheadRoutingPass,Graph State Circuit,20,heavy_hex,success,,262.0,43.0,62.0,20.0
+qlego-qiskit_StochasticSwapRoutingPass,Graph State Circuit,20,heavy_hex,success,,274.0,44.0,74.0,20.0
+qlego-tket_TketDefaultRoutingPass,Graph State Circuit,20,heavy_hex,success,,299.0,76.0,119.0,43.0
+qlego-tket_AASRoutePass,Graph State Circuit,20,heavy_hex,success,,456.0,251.0,276.0,236.0
+qlego-tket_LexiRoutePass,Graph State Circuit,20,heavy_hex,failed,ImportError: cannot import name 'LexiRouteRoutingPass' from 'pytket.passes' (/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/pytket/passes/__init__.py),,,,
+qlego-tket_BoxDecomposeRoutePass,Graph State Circuit,20,heavy_hex,success,,227.0,42.0,47.0,18.0
+qlego-bqskit_GeneralizedSabreRoutingPass,Graph State Circuit,20,heavy_hex,success,,227.0,45.0,47.0,21.0
+qlego-bqskit_PAMRoutingPass,Graph State Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,

@@ -18,6 +18,7 @@ from qiskit.qasm2 import loads, dumps, LEGACY_CUSTOM_INSTRUCTIONS
 from common import (
     ALL_CIRCUITS,
     RESULTS_DIR,
+    flush_results,
     initialize_circuit,
     evaluate,
     get_heavy_hex_backend,
@@ -132,6 +133,9 @@ def run(args):
                     })
 
                 pbar.update(1)
+
+        if not args.no_save:
+            flush_results(results, "exp0_correctness.csv", pbar)
 
     pbar.close()
     df = pd.DataFrame(results)

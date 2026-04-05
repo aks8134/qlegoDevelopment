@@ -31,6 +31,7 @@ from common import (
     ensure_registry,
     safe_run_pipeline,
     save_results,
+    flush_results,
     QPassContext,
     PresetInitPass,
     PresetLayoutPass,
@@ -47,6 +48,8 @@ def get_optimization_templates(sdk=None):
     opt_passes = PassRegistry.get_passes_by_category("Optimization")
     if sdk:
         opt_passes = {k: v for k, v in opt_passes.items() if sdk in k}
+    # Exclude Cirq passes — removed from all experiments per design decision
+    opt_passes = {k: v for k, v in opt_passes.items() if "cirq" not in k.lower()}
 
     templates = []
     for pass_key, pass_cls in opt_passes.items():
@@ -93,7 +96,7 @@ def run(args):
             if topo_name == "heavy_hex":
                 backend_json = heavy_hex_json
             else:
-                backend_json = get_all_to_all_backend(num_qubits)
+                backend_json = get_all_to_all_backend()
 
             for circuit_cls in ALL_CIRCUITS:
                 try:
@@ -122,6 +125,8 @@ def run(args):
                     pbar.update(1)
 
         pbar.close()
+        if not args.no_save:
+            flush_results(results, "exp5_topology.csv")
 
     df = pd.DataFrame(results)
 

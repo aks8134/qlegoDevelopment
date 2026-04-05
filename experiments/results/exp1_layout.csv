@@ -1,533 +1,519 @@
 layout_pass,circuit_type,num_qubits,topology,status,error,Gate Count,Circuit Depth,2Q Count,2Q Depth
 qlego-qiskit_TrivialLayoutPass,DJ Circuit,5,heavy_hex,success,,55.0,31.0,19.0,16.0
 qlego-qiskit_DenseLayoutPass,DJ Circuit,5,heavy_hex,success,,55.0,31.0,19.0,16.0
-qlego-qiskit_SabreLayoutPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,5,heavy_hex,success,,43.0,15.0,7.0,7.0
 qlego-qiskit_VF2LayoutPass,DJ Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,DJ Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,DJ Circuit,5,heavy_hex,success,,43.0,19.0,7.0,7.0
-qlego-tket_LinePlacementPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,DJ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,DJ Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,5,heavy_hex,success,,42.0,20.0,10.0,9.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,5,heavy_hex,success,,51.0,30.0,19.0,16.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,5,heavy_hex,success,,45.0,24.0,13.0,13.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,5,heavy_hex,success,,51.0,30.0,19.0,16.0
 qlego-qiskit_TrivialLayoutPass,DJ Circuit,10,heavy_hex,success,,151.0,80.0,72.0,49.0
 qlego-qiskit_DenseLayoutPass,DJ Circuit,10,heavy_hex,success,,142.0,73.0,63.0,47.0
-qlego-qiskit_SabreLayoutPass,DJ Circuit,10,heavy_hex,success,,106.0,47.0,27.0,26.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,10,heavy_hex,success,,106.0,44.0,27.0,26.0
 qlego-qiskit_VF2LayoutPass,DJ Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,DJ Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,DJ Circuit,10,heavy_hex,success,,103.0,39.0,24.0,24.0
-qlego-tket_LinePlacementPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,DJ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,DJ Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,10,heavy_hex,success,,121.0,54.0,51.0,33.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,10,heavy_hex,success,,142.0,79.0,72.0,49.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,10,heavy_hex,success,,127.0,65.0,57.0,41.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,10,heavy_hex,success,,142.0,79.0,72.0,49.0
 qlego-qiskit_TrivialLayoutPass,DJ Circuit,15,heavy_hex,success,,219.0,99.0,101.0,71.0
 qlego-qiskit_DenseLayoutPass,DJ Circuit,15,heavy_hex,success,,213.0,95.0,95.0,68.0
-qlego-qiskit_SabreLayoutPass,DJ Circuit,15,heavy_hex,success,,159.0,70.0,41.0,40.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,15,heavy_hex,success,,162.0,69.0,44.0,42.0
 qlego-qiskit_VF2LayoutPass,DJ Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,DJ Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,DJ Circuit,15,heavy_hex,success,,162.0,67.0,44.0,43.0
-qlego-tket_LinePlacementPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,DJ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,DJ Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,15,heavy_hex,success,,208.0,70.0,104.0,49.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,15,heavy_hex,success,,205.0,98.0,101.0,71.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,15,heavy_hex,success,,181.0,91.0,77.0,59.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,15,heavy_hex,success,,205.0,98.0,101.0,71.0
 qlego-qiskit_TrivialLayoutPass,DJ Circuit,20,heavy_hex,success,,308.0,131.0,151.0,89.0
 qlego-qiskit_DenseLayoutPass,DJ Circuit,20,heavy_hex,success,,332.0,122.0,175.0,86.0
-qlego-qiskit_SabreLayoutPass,DJ Circuit,20,heavy_hex,success,,224.0,106.0,67.0,65.0
+qlego-qiskit_SabreLayoutPass,DJ Circuit,20,heavy_hex,success,,218.0,99.0,61.0,60.0
 qlego-qiskit_VF2LayoutPass,DJ Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,DJ Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,DJ Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,DJ Circuit,20,heavy_hex,success,,221.0,90.0,64.0,62.0
-qlego-tket_LinePlacementPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,DJ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,DJ Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,DJ Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,DJ Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,DJ Circuit,20,heavy_hex,success,,265.0,102.0,127.0,72.0
+qlego-bqskit_TrivialPlacementPass,DJ Circuit,20,heavy_hex,success,,289.0,130.0,151.0,89.0
+qlego-bqskit_GreedyPlacementPass,DJ Circuit,20,heavy_hex,success,,295.0,119.0,157.0,79.0
+qlego-bqskit_PAMLayoutPass,DJ Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,DJ Circuit,20,heavy_hex,success,,289.0,130.0,151.0,89.0
 qlego-qiskit_TrivialLayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_DenseLayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_SabreLayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_VF2LayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
-qlego-qiskit_CSPLayoutPass,GHZ Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
 qlego-qiskit_PresetLayoutPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
-qlego-tket_LinePlacementPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,5,heavy_hex,success,,12.0,8.0,4.0,4.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,5,heavy_hex,success,,13.0,13.0,10.0,10.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,5,heavy_hex,success,,7.0,7.0,4.0,4.0
 qlego-qiskit_TrivialLayoutPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_DenseLayoutPass,GHZ Circuit,10,heavy_hex,success,,25.0,16.0,12.0,12.0
 qlego-qiskit_SabreLayoutPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_VF2LayoutPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
-qlego-qiskit_CSPLayoutPass,GHZ Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
 qlego-qiskit_PresetLayoutPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
-qlego-tket_LinePlacementPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,10,heavy_hex,success,,22.0,13.0,9.0,9.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,10,heavy_hex,success,,54.0,48.0,51.0,48.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,10,heavy_hex,success,,12.0,12.0,9.0,9.0
 qlego-qiskit_TrivialLayoutPass,GHZ Circuit,15,heavy_hex,success,,89.0,44.0,71.0,43.0
 qlego-qiskit_DenseLayoutPass,GHZ Circuit,15,heavy_hex,success,,92.0,54.0,74.0,50.0
-qlego-qiskit_SabreLayoutPass,GHZ Circuit,15,heavy_hex,success,,41.0,27.0,23.0,23.0
+qlego-qiskit_SabreLayoutPass,GHZ Circuit,15,heavy_hex,success,,47.0,33.0,29.0,29.0
 qlego-qiskit_VF2LayoutPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
-qlego-qiskit_CSPLayoutPass,GHZ Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
 qlego-qiskit_PresetLayoutPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
-qlego-tket_LinePlacementPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,15,heavy_hex,success,,32.0,18.0,14.0,14.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,15,heavy_hex,success,,59.0,50.0,56.0,47.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,15,heavy_hex,success,,74.0,43.0,71.0,43.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,15,heavy_hex,success,,68.0,62.0,65.0,59.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,15,heavy_hex,success,,74.0,43.0,71.0,43.0
 qlego-qiskit_TrivialLayoutPass,GHZ Circuit,20,heavy_hex,success,,99.0,47.0,76.0,43.0
 qlego-qiskit_DenseLayoutPass,GHZ Circuit,20,heavy_hex,success,,114.0,62.0,91.0,58.0
 qlego-qiskit_SabreLayoutPass,GHZ Circuit,20,heavy_hex,success,,63.0,41.0,40.0,37.0
 qlego-qiskit_VF2LayoutPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
-qlego-qiskit_CSPLayoutPass,GHZ Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
 qlego-qiskit_PresetLayoutPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
-qlego-tket_LinePlacementPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
+qlego-tket_GraphPlacementPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
+qlego-tket_NoiseAwarePlacementPass,GHZ Circuit,20,heavy_hex,success,,42.0,23.0,19.0,19.0
+qlego-bqskit_GeneralizedSabrePass,GHZ Circuit,20,heavy_hex,success,,88.0,76.0,85.0,73.0
+qlego-bqskit_TrivialPlacementPass,GHZ Circuit,20,heavy_hex,success,,79.0,46.0,76.0,43.0
+qlego-bqskit_GreedyPlacementPass,GHZ Circuit,20,heavy_hex,success,,94.0,62.0,91.0,59.0
+qlego-bqskit_PAMLayoutPass,GHZ Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,GHZ Circuit,20,heavy_hex,success,,79.0,46.0,76.0,43.0
 qlego-qiskit_TrivialLayoutPass,Grover Circuit,5,heavy_hex,success,,849.0,674.0,423.0,378.0
 qlego-qiskit_DenseLayoutPass,Grover Circuit,5,heavy_hex,success,,849.0,674.0,423.0,378.0
-qlego-qiskit_SabreLayoutPass,Grover Circuit,5,heavy_hex,success,,810.0,634.0,384.0,351.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,5,heavy_hex,success,,816.0,624.0,390.0,356.0
 qlego-qiskit_VF2LayoutPass,Grover Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Grover Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Grover Circuit,5,heavy_hex,success,,816.0,624.0,390.0,356.0
-qlego-tket_LinePlacementPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Grover Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Grover Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,5,heavy_hex,success,,832.0,662.0,411.0,366.0
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,5,heavy_hex,success,,844.0,673.0,423.0,378.0
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,5,heavy_hex,success,,835.0,668.0,414.0,372.0
+qlego-bqskit_PAMLayoutPass,Grover Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,5,heavy_hex,success,,844.0,673.0,423.0,378.0
 qlego-qiskit_TrivialLayoutPass,Grover Circuit,10,heavy_hex,success,,68013.0,48566.0,40350.0,29960.0
 qlego-qiskit_DenseLayoutPass,Grover Circuit,10,heavy_hex,success,,66477.0,49028.0,38814.0,29989.0
-qlego-qiskit_SabreLayoutPass,Grover Circuit,10,heavy_hex,success,,64521.0,47404.0,36858.0,28666.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,10,heavy_hex,success,,63990.0,49075.0,36327.0,29806.0
 qlego-qiskit_VF2LayoutPass,Grover Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Grover Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Grover Circuit,10,heavy_hex,success,,59586.0,46168.0,31923.0,26041.0
-qlego-tket_LinePlacementPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Grover Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Grover Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,10,heavy_hex,success,,68036.0,48604.0,40383.0,29974.0
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,10,heavy_hex,success,,68003.0,48565.0,40350.0,29960.0
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,10,heavy_hex,success,,65072.0,49726.0,37419.0,30390.0
+qlego-bqskit_PAMLayoutPass,Grover Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,10,heavy_hex,success,,68003.0,48565.0,40350.0,29960.0
 qlego-qiskit_TrivialLayoutPass,Grover Circuit,15,heavy_hex,success,,1217131.0,955333.0,673573.0,532067.0
 qlego-qiskit_DenseLayoutPass,Grover Circuit,15,heavy_hex,success,,1211482.0,950939.0,667924.0,525510.0
-qlego-qiskit_SabreLayoutPass,Grover Circuit,15,heavy_hex,success,,1220980.0,957360.0,677422.0,533407.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,15,heavy_hex,success,,1189777.0,941450.0,646219.0,515640.0
 qlego-qiskit_VF2LayoutPass,Grover Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Grover Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Grover Circuit,15,heavy_hex,success,,1184197.0,936728.0,640639.0,511246.0
-qlego-tket_LinePlacementPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Grover Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Grover Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,15,heavy_hex,success,,1222666.0,961103.0,679123.0,537649.0
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,15,heavy_hex,success,,1217116.0,955332.0,673573.0,532067.0
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,15,heavy_hex,success,,1221691.0,960742.0,678148.0,540150.0
+qlego-bqskit_PAMLayoutPass,Grover Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,15,heavy_hex,success,,1217116.0,955332.0,673573.0,532067.0
 qlego-qiskit_TrivialLayoutPass,Grover Circuit,20,heavy_hex,success,,14500286.0,11823660.0,8113048.0,6515947.0
 qlego-qiskit_DenseLayoutPass,Grover Circuit,20,heavy_hex,success,,14510846.0,11832153.0,8123608.0,6522720.0
-qlego-qiskit_SabreLayoutPass,Grover Circuit,20,heavy_hex,success,,14502647.0,11828432.0,8115409.0,6517569.0
+qlego-qiskit_SabreLayoutPass,Grover Circuit,20,heavy_hex,success,,14502467.0,11825888.0,8115229.0,6516787.0
 qlego-qiskit_VF2LayoutPass,Grover Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Grover Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Grover Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
-qlego-tket_LinePlacementPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Grover Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_GraphPlacementPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-tket_NoiseAwarePlacementPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_GeneralizedSabrePass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_TrivialPlacementPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_GreedyPlacementPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_PAMLayoutPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
+qlego-bqskit_SubtopologySelectionPass,Grover Circuit,20,heavy_hex,failed,Timeout: pipeline exceeded 300s,,,,
 qlego-qiskit_TrivialLayoutPass,QFT Circuit,5,heavy_hex,success,,100.0,72.0,50.0,40.0
 qlego-qiskit_DenseLayoutPass,QFT Circuit,5,heavy_hex,success,,100.0,72.0,50.0,40.0
-qlego-qiskit_SabreLayoutPass,QFT Circuit,5,heavy_hex,success,,82.0,58.0,32.0,27.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,5,heavy_hex,success,,85.0,55.0,35.0,31.0
 qlego-qiskit_VF2LayoutPass,QFT Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,QFT Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,QFT Circuit,5,heavy_hex,success,,82.0,53.0,32.0,28.0
-qlego-tket_LinePlacementPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,QFT Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,QFT Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,5,heavy_hex,success,,83.0,51.0,38.0,29.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,5,heavy_hex,success,,95.0,71.0,50.0,40.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,5,heavy_hex,success,,86.0,60.0,41.0,34.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,5,heavy_hex,success,,95.0,71.0,50.0,40.0
 qlego-qiskit_TrivialLayoutPass,QFT Circuit,10,heavy_hex,success,,409.0,201.0,234.0,127.0
 qlego-qiskit_DenseLayoutPass,QFT Circuit,10,heavy_hex,success,,391.0,185.0,216.0,115.0
-qlego-qiskit_SabreLayoutPass,QFT Circuit,10,heavy_hex,success,,388.0,176.0,213.0,115.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,10,heavy_hex,success,,370.0,188.0,195.0,117.0
 qlego-qiskit_VF2LayoutPass,QFT Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,QFT Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,QFT Circuit,10,heavy_hex,success,,364.0,184.0,189.0,114.0
-qlego-tket_LinePlacementPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,QFT Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,QFT Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,10,heavy_hex,success,,465.0,213.0,300.0,145.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,10,heavy_hex,success,,399.0,200.0,234.0,127.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,10,heavy_hex,success,,429.0,210.0,264.0,150.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,10,heavy_hex,success,,399.0,200.0,234.0,127.0
 qlego-qiskit_TrivialLayoutPass,QFT Circuit,15,heavy_hex,success,,1035.0,386.0,660.0,289.0
 qlego-qiskit_DenseLayoutPass,QFT Circuit,15,heavy_hex,success,,1017.0,399.0,642.0,284.0
-qlego-qiskit_SabreLayoutPass,QFT Circuit,15,heavy_hex,success,,906.0,373.0,531.0,262.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,15,heavy_hex,success,,903.0,347.0,528.0,234.0
 qlego-qiskit_VF2LayoutPass,QFT Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,QFT Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,QFT Circuit,15,heavy_hex,success,,897.0,378.0,522.0,252.0
-qlego-tket_LinePlacementPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,QFT Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,QFT Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,15,heavy_hex,success,,930.0,404.0,570.0,275.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,15,heavy_hex,success,,1020.0,385.0,660.0,289.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,15,heavy_hex,success,,954.0,365.0,594.0,262.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,15,heavy_hex,success,,1020.0,385.0,660.0,289.0
 qlego-qiskit_TrivialLayoutPass,QFT Circuit,20,heavy_hex,success,,1891.0,607.0,1241.0,431.0
 qlego-qiskit_DenseLayoutPass,QFT Circuit,20,heavy_hex,success,,1762.0,597.0,1112.0,430.0
-qlego-qiskit_SabreLayoutPass,QFT Circuit,20,heavy_hex,success,,1708.0,551.0,1058.0,393.0
+qlego-qiskit_SabreLayoutPass,QFT Circuit,20,heavy_hex,success,,1672.0,585.0,1022.0,412.0
 qlego-qiskit_VF2LayoutPass,QFT Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,QFT Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,QFT Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,QFT Circuit,20,heavy_hex,success,,1609.0,562.0,959.0,392.0
-qlego-tket_LinePlacementPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,QFT Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,QFT Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,QFT Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,QFT Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,QFT Circuit,20,heavy_hex,success,,1748.0,523.0,1118.0,360.0
+qlego-bqskit_TrivialPlacementPass,QFT Circuit,20,heavy_hex,success,,1871.0,606.0,1241.0,431.0
+qlego-bqskit_GreedyPlacementPass,QFT Circuit,20,heavy_hex,success,,1754.0,540.0,1124.0,382.0
+qlego-bqskit_PAMLayoutPass,QFT Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,QFT Circuit,20,heavy_hex,success,,1871.0,606.0,1241.0,431.0
 qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,success,,319.0,255.0,72.0,69.0
 qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,success,,319.0,255.0,72.0,69.0
 qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,245.0,54.0,54.0
 qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,success,,301.0,245.0,54.0,54.0
-qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,5,heavy_hex,success,,305.0,233.0,63.0,53.0
+qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,success,,314.0,254.0,72.0,69.0
+qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,5,heavy_hex,success,,305.0,245.0,63.0,61.0
+qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,5,heavy_hex,success,,314.0,254.0,72.0,69.0
 qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8112.0,6834.0,1292.0,1170.0
 qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8115.0,6858.0,1295.0,1186.0
-qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8016.0,6825.0,1196.0,1143.0
+qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8025.0,6808.0,1205.0,1133.0
 qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8013.0,6818.0,1193.0,1136.0
-qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,10,heavy_hex,success,,8120.0,6837.0,1310.0,1163.0
+qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8102.0,6833.0,1292.0,1170.0
+qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8078.0,6856.0,1268.0,1182.0
+qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,10,heavy_hex,success,,8102.0,6833.0,1292.0,1170.0
 qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246769.0,213358.0,33413.0,33056.0
 qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246781.0,213392.0,33425.0,33076.0
-qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246625.0,213334.0,33269.0,33028.0
+qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246598.0,213320.0,33242.0,33004.0
 qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246586.0,213302.0,33230.0,32993.0
-qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-qiskit_TrivialLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7866115.0,6816282.0,1049732.0,1049003.0
-qlego-qiskit_DenseLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7866133.0,6816338.0,1049750.0,1049036.0
-qlego-qiskit_SabreLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865980.0,6816290.0,1049597.0,1048976.0
-qlego-qiskit_VF2LayoutPass,Amplitude Estimation Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
-qlego-qiskit_PresetLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,success,,7865890.0,6816269.0,1049507.0,1048971.0
-qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Amplitude Estimation Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Amplitude Estimation Circuit,15,heavy_hex,success,,246736.0,213382.0,33395.0,33063.0
+qlego-bqskit_TrivialPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246754.0,213357.0,33413.0,33056.0
+qlego-bqskit_GreedyPlacementPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246715.0,213347.0,33374.0,33060.0
+qlego-bqskit_PAMLayoutPass,Amplitude Estimation Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Amplitude Estimation Circuit,15,heavy_hex,success,,246754.0,213357.0,33413.0,33056.0
 qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,109.0,82.0,50.0,47.0
 qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,109.0,82.0,50.0,47.0
-qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,62.0,32.0,32.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,59.0,32.0,32.0
 qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,91.0,68.0,32.0,32.0
-qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,96.0,57.0,41.0,33.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,105.0,81.0,50.0,47.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,96.0,63.0,41.0,39.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,5,heavy_hex,success,,105.0,81.0,50.0,47.0
 qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,492.0,261.0,305.0,188.0
 qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,459.0,250.0,272.0,173.0
-qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,372.0,188.0,185.0,117.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,399.0,190.0,212.0,127.0
 qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,369.0,187.0,182.0,117.0
-qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,471.0,236.0,293.0,172.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,483.0,260.0,305.0,188.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,435.0,238.0,257.0,165.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,10,heavy_hex,success,,483.0,260.0,305.0,188.0
 qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1095.0,474.0,681.0,322.0
 qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1101.0,489.0,687.0,341.0
-qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,933.0,406.0,519.0,273.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,945.0,390.0,531.0,254.0
 qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,906.0,374.0,492.0,252.0
-qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1057.0,469.0,657.0,331.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1081.0,473.0,681.0,322.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1036.0,441.0,636.0,322.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,15,heavy_hex,success,,1081.0,473.0,681.0,322.0
 qlego-qiskit_TrivialLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1921.0,675.0,1217.0,479.0
 qlego-qiskit_DenseLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1918.0,712.0,1214.0,510.0
-qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1774.0,634.0,1070.0,447.0
+qlego-qiskit_SabreLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1660.0,635.0,956.0,438.0
 qlego-qiskit_VF2LayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1663.0,627.0,959.0,418.0
-qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1887.0,614.0,1202.0,445.0
+qlego-bqskit_TrivialPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1902.0,674.0,1217.0,479.0
+qlego-bqskit_GreedyPlacementPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1929.0,753.0,1244.0,528.0
+qlego-bqskit_PAMLayoutPass,Quantum Phase Estimation Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Quantum Phase Estimation Circuit,20,heavy_hex,success,,1902.0,674.0,1217.0,479.0
 qlego-qiskit_TrivialLayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
 qlego-qiskit_DenseLayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
 qlego-qiskit_SabreLayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
 qlego-qiskit_VF2LayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-qiskit_CSPLayoutPass,W State Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
 qlego-qiskit_PresetLayoutPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
-qlego-tket_LinePlacementPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,W State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-tket_GraphPlacementPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,5,heavy_hex,success,,78.0,46.0,8.0,6.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,5,heavy_hex,success,,82.0,51.0,17.0,15.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,5,heavy_hex,success,,73.0,45.0,8.0,6.0
 qlego-qiskit_TrivialLayoutPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
 qlego-qiskit_DenseLayoutPass,W State Circuit,10,heavy_hex,success,,176.0,94.0,21.0,15.0
 qlego-qiskit_SabreLayoutPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
 qlego-qiskit_VF2LayoutPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-qiskit_CSPLayoutPass,W State Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
 qlego-qiskit_PresetLayoutPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
-qlego-tket_LinePlacementPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,W State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-tket_GraphPlacementPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,10,heavy_hex,success,,173.0,91.0,18.0,11.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,10,heavy_hex,success,,217.0,111.0,72.0,38.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,10,heavy_hex,success,,163.0,90.0,18.0,11.0
 qlego-qiskit_TrivialLayoutPass,W State Circuit,15,heavy_hex,success,,355.0,160.0,115.0,63.0
 qlego-qiskit_DenseLayoutPass,W State Circuit,15,heavy_hex,success,,340.0,166.0,100.0,63.0
-qlego-qiskit_SabreLayoutPass,W State Circuit,15,heavy_hex,success,,292.0,148.0,52.0,34.0
+qlego-qiskit_SabreLayoutPass,W State Circuit,15,heavy_hex,success,,298.0,148.0,58.0,39.0
 qlego-qiskit_VF2LayoutPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
-qlego-qiskit_CSPLayoutPass,W State Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
 qlego-qiskit_PresetLayoutPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
-qlego-tket_LinePlacementPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,W State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
+qlego-tket_GraphPlacementPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,15,heavy_hex,success,,268.0,136.0,28.0,16.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,15,heavy_hex,success,,322.0,156.0,97.0,58.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,15,heavy_hex,success,,340.0,159.0,115.0,63.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,15,heavy_hex,success,,349.0,152.0,124.0,57.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,15,heavy_hex,success,,340.0,159.0,115.0,63.0
 qlego-qiskit_TrivialLayoutPass,W State Circuit,20,heavy_hex,success,,450.0,205.0,125.0,64.0
 qlego-qiskit_DenseLayoutPass,W State Circuit,20,heavy_hex,success,,474.0,233.0,149.0,93.0
 qlego-qiskit_SabreLayoutPass,W State Circuit,20,heavy_hex,success,,390.0,199.0,65.0,48.0
 qlego-qiskit_VF2LayoutPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
-qlego-qiskit_CSPLayoutPass,W State Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
 qlego-qiskit_PresetLayoutPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
-qlego-tket_LinePlacementPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,W State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
+qlego-tket_GraphPlacementPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
+qlego-tket_NoiseAwarePlacementPass,W State Circuit,20,heavy_hex,success,,363.0,181.0,38.0,21.0
+qlego-bqskit_GeneralizedSabrePass,W State Circuit,20,heavy_hex,success,,418.0,216.0,113.0,69.0
+qlego-bqskit_TrivialPlacementPass,W State Circuit,20,heavy_hex,success,,430.0,204.0,125.0,64.0
+qlego-bqskit_GreedyPlacementPass,W State Circuit,20,heavy_hex,success,,445.0,185.0,140.0,41.0
+qlego-bqskit_PAMLayoutPass,W State Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,W State Circuit,20,heavy_hex,success,,430.0,204.0,125.0,64.0
 qlego-qiskit_TrivialLayoutPass,Half Adder Circuit,5,heavy_hex,success,,81.0,61.0,43.0,39.0
 qlego-qiskit_DenseLayoutPass,Half Adder Circuit,5,heavy_hex,success,,81.0,61.0,43.0,39.0
-qlego-qiskit_SabreLayoutPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
+qlego-qiskit_SabreLayoutPass,Half Adder Circuit,5,heavy_hex,success,,78.0,58.0,40.0,36.0
 qlego-qiskit_VF2LayoutPass,Half Adder Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Half Adder Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Half Adder Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Half Adder Circuit,5,heavy_hex,success,,72.0,58.0,34.0,33.0
-qlego-tket_LinePlacementPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Half Adder Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,Half Adder Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,5,heavy_hex,success,,76.0,57.0,43.0,36.0
+qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,5,heavy_hex,success,,76.0,60.0,43.0,39.0
+qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,5,heavy_hex,success,,79.0,62.0,46.0,39.0
+qlego-bqskit_PAMLayoutPass,Half Adder Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,5,heavy_hex,success,,76.0,60.0,43.0,39.0
 qlego-qiskit_TrivialLayoutPass,Half Adder Circuit,15,heavy_hex,success,,806.0,383.0,549.0,282.0
 qlego-qiskit_DenseLayoutPass,Half Adder Circuit,15,heavy_hex,success,,740.0,380.0,483.0,292.0
-qlego-qiskit_SabreLayoutPass,Half Adder Circuit,15,heavy_hex,success,,614.0,304.0,357.0,214.0
+qlego-qiskit_SabreLayoutPass,Half Adder Circuit,15,heavy_hex,success,,671.0,346.0,414.0,253.0
 qlego-qiskit_VF2LayoutPass,Half Adder Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Half Adder Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Half Adder Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Half Adder Circuit,15,heavy_hex,success,,641.0,309.0,384.0,224.0
-qlego-tket_LinePlacementPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,Half Adder Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,Half Adder Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Half Adder Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Half Adder Circuit,15,heavy_hex,success,,811.0,421.0,525.0,305.0
+qlego-bqskit_TrivialPlacementPass,Half Adder Circuit,15,heavy_hex,success,,835.0,382.0,549.0,282.0
+qlego-bqskit_GreedyPlacementPass,Half Adder Circuit,15,heavy_hex,success,,784.0,379.0,498.0,286.0
+qlego-bqskit_PAMLayoutPass,Half Adder Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Half Adder Circuit,15,heavy_hex,success,,835.0,382.0,549.0,282.0
 qlego-qiskit_TrivialLayoutPass,BV Circuit,5,heavy_hex,success,,40.0,22.0,11.0,8.0
 qlego-qiskit_DenseLayoutPass,BV Circuit,5,heavy_hex,success,,40.0,22.0,11.0,8.0
 qlego-qiskit_SabreLayoutPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
 qlego-qiskit_VF2LayoutPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
-qlego-qiskit_CSPLayoutPass,BV Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
 qlego-qiskit_PresetLayoutPass,BV Circuit,5,heavy_hex,success,,31.0,16.0,2.0,2.0
-qlego-tket_LinePlacementPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,BV Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,BV Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,BV Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,BV Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,BV Circuit,5,heavy_hex,success,,27.0,15.0,2.0,2.0
+qlego-bqskit_TrivialPlacementPass,BV Circuit,5,heavy_hex,success,,36.0,21.0,11.0,8.0
+qlego-bqskit_GreedyPlacementPass,BV Circuit,5,heavy_hex,success,,36.0,21.0,11.0,8.0
+qlego-bqskit_PAMLayoutPass,BV Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,BV Circuit,5,heavy_hex,success,,36.0,21.0,11.0,8.0
 qlego-qiskit_TrivialLayoutPass,BV Circuit,10,heavy_hex,success,,83.0,48.0,25.0,22.0
 qlego-qiskit_DenseLayoutPass,BV Circuit,10,heavy_hex,success,,80.0,48.0,22.0,22.0
-qlego-qiskit_SabreLayoutPass,BV Circuit,10,heavy_hex,success,,65.0,31.0,7.0,7.0
+qlego-qiskit_SabreLayoutPass,BV Circuit,10,heavy_hex,success,,65.0,34.0,7.0,7.0
 qlego-qiskit_VF2LayoutPass,BV Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,BV Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,BV Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,BV Circuit,10,heavy_hex,success,,65.0,33.0,7.0,7.0
-qlego-tket_LinePlacementPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,BV Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,BV Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,BV Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,BV Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,BV Circuit,10,heavy_hex,success,,59.0,32.0,10.0,10.0
+qlego-bqskit_TrivialPlacementPass,BV Circuit,10,heavy_hex,success,,74.0,47.0,25.0,22.0
+qlego-bqskit_GreedyPlacementPass,BV Circuit,10,heavy_hex,success,,68.0,38.0,19.0,16.0
+qlego-bqskit_PAMLayoutPass,BV Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,BV Circuit,10,heavy_hex,success,,74.0,47.0,25.0,22.0
 qlego-qiskit_TrivialLayoutPass,BV Circuit,15,heavy_hex,success,,166.0,69.0,67.0,32.0
 qlego-qiskit_DenseLayoutPass,BV Circuit,15,heavy_hex,success,,127.0,69.0,28.0,25.0
-qlego-qiskit_SabreLayoutPass,BV Circuit,15,heavy_hex,success,,121.0,66.0,22.0,22.0
+qlego-qiskit_SabreLayoutPass,BV Circuit,15,heavy_hex,success,,115.0,58.0,16.0,16.0
 qlego-qiskit_VF2LayoutPass,BV Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,BV Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,BV Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,BV Circuit,15,heavy_hex,success,,118.0,54.0,19.0,15.0
-qlego-tket_LinePlacementPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,BV Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,BV Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,BV Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,BV Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,BV Circuit,15,heavy_hex,success,,113.0,59.0,28.0,22.0
+qlego-bqskit_TrivialPlacementPass,BV Circuit,15,heavy_hex,success,,152.0,68.0,67.0,32.0
+qlego-bqskit_GreedyPlacementPass,BV Circuit,15,heavy_hex,success,,122.0,68.0,37.0,25.0
+qlego-bqskit_PAMLayoutPass,BV Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,BV Circuit,15,heavy_hex,success,,152.0,68.0,67.0,32.0
 qlego-qiskit_TrivialLayoutPass,BV Circuit,20,heavy_hex,success,,200.0,86.0,72.0,40.0
 qlego-qiskit_DenseLayoutPass,BV Circuit,20,heavy_hex,success,,170.0,92.0,42.0,38.0
-qlego-qiskit_SabreLayoutPass,BV Circuit,20,heavy_hex,success,,155.0,77.0,27.0,24.0
+qlego-qiskit_SabreLayoutPass,BV Circuit,20,heavy_hex,success,,152.0,73.0,24.0,20.0
 qlego-qiskit_VF2LayoutPass,BV Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,BV Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,BV Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,BV Circuit,20,heavy_hex,success,,152.0,80.0,24.0,24.0
-qlego-tket_LinePlacementPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,BV Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-tket_LinePlacementPass,BV Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,BV Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,BV Circuit,20,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,BV Circuit,20,heavy_hex,success,,139.0,70.0,30.0,27.0
+qlego-bqskit_TrivialPlacementPass,BV Circuit,20,heavy_hex,success,,181.0,85.0,72.0,40.0
+qlego-bqskit_GreedyPlacementPass,BV Circuit,20,heavy_hex,success,,151.0,88.0,42.0,33.0
+qlego-bqskit_PAMLayoutPass,BV Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,BV Circuit,20,heavy_hex,success,,181.0,85.0,72.0,40.0
 qlego-qiskit_TrivialLayoutPass,Graph State Circuit,5,heavy_hex,success,,70.0,45.0,20.0,17.0
 qlego-qiskit_DenseLayoutPass,Graph State Circuit,5,heavy_hex,success,,70.0,45.0,20.0,17.0
 qlego-qiskit_SabreLayoutPass,Graph State Circuit,5,heavy_hex,success,,61.0,28.0,11.0,8.0
 qlego-qiskit_VF2LayoutPass,Graph State Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Graph State Circuit,5,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
+qlego-qiskit_CSPLayoutPass,Graph State Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
 qlego-qiskit_PresetLayoutPass,Graph State Circuit,5,heavy_hex,success,,61.0,23.0,11.0,7.0
-qlego-tket_LinePlacementPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,5,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-qiskit_TrivialLayoutPass,Graph State Circuit,10,heavy_hex,success,,164.0,50.0,64.0,30.0
-qlego-qiskit_DenseLayoutPass,Graph State Circuit,10,heavy_hex,success,,158.0,50.0,58.0,25.0
-qlego-qiskit_SabreLayoutPass,Graph State Circuit,10,heavy_hex,success,,125.0,31.0,25.0,12.0
+qlego-tket_LinePlacementPass,Graph State Circuit,5,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Graph State Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,5,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,5,heavy_hex,success,,56.0,21.0,11.0,6.0
+qlego-bqskit_TrivialPlacementPass,Graph State Circuit,5,heavy_hex,success,,65.0,44.0,20.0,17.0
+qlego-bqskit_GreedyPlacementPass,Graph State Circuit,5,heavy_hex,success,,65.0,26.0,20.0,14.0
+qlego-bqskit_PAMLayoutPass,Graph State Circuit,5,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,5,heavy_hex,success,,65.0,44.0,20.0,17.0
+qlego-qiskit_TrivialLayoutPass,Graph State Circuit,10,heavy_hex,success,,170.0,77.0,70.0,42.0
+qlego-qiskit_DenseLayoutPass,Graph State Circuit,10,heavy_hex,success,,161.0,79.0,61.0,48.0
+qlego-qiskit_SabreLayoutPass,Graph State Circuit,10,heavy_hex,success,,125.0,32.0,25.0,9.0
 qlego-qiskit_VF2LayoutPass,Graph State Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Graph State Circuit,10,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
-qlego-qiskit_PresetLayoutPass,Graph State Circuit,10,heavy_hex,success,,125.0,29.0,25.0,10.0
-qlego-tket_LinePlacementPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,10,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-qiskit_TrivialLayoutPass,Graph State Circuit,15,heavy_hex,success,,270.0,73.0,120.0,48.0
-qlego-qiskit_DenseLayoutPass,Graph State Circuit,15,heavy_hex,success,,243.0,62.0,93.0,33.0
-qlego-qiskit_SabreLayoutPass,Graph State Circuit,15,heavy_hex,success,,189.0,49.0,39.0,21.0
+qlego-qiskit_CSPLayoutPass,Graph State Circuit,10,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
+qlego-qiskit_PresetLayoutPass,Graph State Circuit,10,heavy_hex,success,,122.0,29.0,22.0,9.0
+qlego-tket_LinePlacementPass,Graph State Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_GraphPlacementPass,Graph State Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,10,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,10,heavy_hex,success,,115.0,27.0,25.0,9.0
+qlego-bqskit_TrivialPlacementPass,Graph State Circuit,10,heavy_hex,success,,160.0,76.0,70.0,42.0
+qlego-bqskit_GreedyPlacementPass,Graph State Circuit,10,heavy_hex,success,,142.0,66.0,52.0,33.0
+qlego-bqskit_PAMLayoutPass,Graph State Circuit,10,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,10,heavy_hex,success,,160.0,76.0,70.0,42.0
+qlego-qiskit_TrivialLayoutPass,Graph State Circuit,15,heavy_hex,success,,252.0,66.0,102.0,36.0
+qlego-qiskit_DenseLayoutPass,Graph State Circuit,15,heavy_hex,success,,234.0,68.0,84.0,33.0
+qlego-qiskit_SabreLayoutPass,Graph State Circuit,15,heavy_hex,success,,189.0,39.0,39.0,15.0
 qlego-qiskit_VF2LayoutPass,Graph State Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Graph State Circuit,15,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
-qlego-qiskit_PresetLayoutPass,Graph State Circuit,15,heavy_hex,success,,180.0,29.0,30.0,10.0
-qlego-tket_LinePlacementPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,15,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-qiskit_TrivialLayoutPass,Graph State Circuit,20,heavy_hex,success,,352.0,105.0,152.0,67.0
-qlego-qiskit_DenseLayoutPass,Graph State Circuit,20,heavy_hex,success,,328.0,49.0,128.0,31.0
-qlego-qiskit_SabreLayoutPass,Graph State Circuit,20,heavy_hex,success,,259.0,35.0,59.0,19.0
-qlego-qiskit_VF2LayoutPass,Graph State Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
-qlego-qiskit_CSPLayoutPass,Graph State Circuit,20,heavy_hex,failed,"qiskit.exceptions.MissingOptionalLibraryError: ""The 'python-constraint' library is required to use 'CSPLayout'. You can install it with 'pip install python-constraint'.""",,,,
-qlego-qiskit_PresetLayoutPass,Graph State Circuit,20,heavy_hex,success,,247.0,35.0,47.0,15.0
-qlego-tket_LinePlacementPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_GraphPlacementPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'pytket',,,,
-qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_TrivialPlacementPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_GreedyPlacementPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_PAMLayoutPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
-qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,20,heavy_hex,failed,ModuleNotFoundError: No module named 'bqskit',,,,
+qlego-qiskit_CSPLayoutPass,Graph State Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Layout algorithm failed to find a valid mapping.',,,,
+qlego-qiskit_PresetLayoutPass,Graph State Circuit,15,heavy_hex,success,,195.0,39.0,45.0,17.0
+qlego-tket_LinePlacementPass,Graph State Circuit,15,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Graph State Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,15,heavy_hex,failed,RuntimeError: Layout algorithm failed to find a valid mapping.,,,,
+qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,15,heavy_hex,success,,198.0,47.0,63.0,20.0
+qlego-bqskit_TrivialPlacementPass,Graph State Circuit,15,heavy_hex,success,,237.0,65.0,102.0,36.0
+qlego-bqskit_GreedyPlacementPass,Graph State Circuit,15,heavy_hex,success,,237.0,90.0,102.0,49.0
+qlego-bqskit_PAMLayoutPass,Graph State Circuit,15,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,15,heavy_hex,success,,237.0,65.0,102.0,36.0
+qlego-qiskit_TrivialLayoutPass,Graph State Circuit,20,heavy_hex,success,,340.0,72.0,140.0,47.0
+qlego-qiskit_DenseLayoutPass,Graph State Circuit,20,heavy_hex,success,,352.0,70.0,152.0,50.0
+qlego-qiskit_SabreLayoutPass,Graph State Circuit,20,heavy_hex,success,,244.0,29.0,44.0,10.0
+qlego-qiskit_VF2LayoutPass,Graph State Circuit,20,heavy_hex,success,,220.0,26.0,20.0,4.0
+qlego-qiskit_CSPLayoutPass,Graph State Circuit,20,heavy_hex,success,,220.0,26.0,20.0,4.0
+qlego-qiskit_PresetLayoutPass,Graph State Circuit,20,heavy_hex,success,,220.0,26.0,20.0,4.0
+qlego-tket_LinePlacementPass,Graph State Circuit,20,heavy_hex,failed,qiskit.transpiler.exceptions.TranspilerError: 'Sabre swap runs on physical circuits only.',,,,
+qlego-tket_GraphPlacementPass,Graph State Circuit,20,heavy_hex,success,,220.0,26.0,20.0,4.0
+qlego-tket_NoiseAwarePlacementPass,Graph State Circuit,20,heavy_hex,success,,220.0,26.0,20.0,4.0
+qlego-bqskit_GeneralizedSabrePass,Graph State Circuit,20,heavy_hex,success,,254.0,41.0,74.0,18.0
+qlego-bqskit_TrivialPlacementPass,Graph State Circuit,20,heavy_hex,success,,320.0,71.0,140.0,47.0
+qlego-bqskit_GreedyPlacementPass,Graph State Circuit,20,heavy_hex,success,,326.0,80.0,146.0,56.0
+qlego-bqskit_PAMLayoutPass,Graph State Circuit,20,heavy_hex,failed,RuntimeError: Server connection unexpectedly closed.,,,,
+qlego-bqskit_SubtopologySelectionPass,Graph State Circuit,20,heavy_hex,success,,320.0,71.0,140.0,47.0

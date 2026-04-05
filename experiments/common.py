@@ -126,19 +126,49 @@ def get_heavy_hex_backend():
     return backend, backend_json
 
 
-def get_all_to_all_backend(n_qubits: int):
-    """Return a fully-connected all-to-all backend JSON for n qubits."""
-    edges = []
-    for i in range(n_qubits):
-        for j in range(i + 1, n_qubits):
-            edges.append([i, j])
-    backend_json = {
-        "n_qubits": n_qubits,
-        "edges": edges,
-        "basis_gates": ["cx", "id", "rz", "sx", "x"],
-    }
-    import json
-    return json.dumps(backend_json)
+def get_all_to_all_backend():
+    """Return a 65-qubit fully-connected all-to-all backend JSON.
+
+    Fixed at 65 qubits to match FakeBrooklynV2 so circuits compiled on heavy-hex
+    can be transferred directly to this topology without requantization.
+    Gate errors are set to the FakeBrooklyn mean values so the two topologies
+    are compared on equal noise footing — the only controlled variable is connectivity.
+    """
+    import numpy as np
+    from qlego.qbackend import QBackend
+    from qlego_qiskit.adapter.backend import QiskitBackend
+    from qiskit_ibm_runtime.fake_provider import FakeBrooklynV2
+
+    N = 65  # fixed, matches FakeBrooklynV2
+
+    # Derive mean error rates from FakeBrooklyn calibration data
+    hh_backend = QiskitBackend.from_qiskit(FakeBrooklynV2())
+    hh_errors = hh_backend.errors
+    vals_1q = [v for (_, q), v in hh_errors.items() if len(q) == 1 and v > 0]
+    vals_2q = [v for (_, q), v in hh_errors.items() if len(q) == 2 and v > 0]
+    mean_1q = float(np.mean(vals_1q)) if vals_1q else 0.007
+    mean_2q = float(np.mean(vals_2q)) if vals_2q else 0.013
+
+    edges = [(i, j) for i in range(N) for j in range(i + 1, N)]
+    gate_set = ["cx", "id", "rz", "sx", "x", "measure"]
+
+    # Assign mean error to every (gate, qubit_tuple) combination
+    errors = {}
+    for g in ["rz", "sx", "x", "id"]:
+        for q in range(N):
+            errors[(g, (q,))] = mean_1q
+    for i, j in edges:
+        errors[("cx", (i, j))] = mean_2q
+        errors[("cx", (j, i))] = mean_2q
+
+    backend = QBackend(
+        n_qubits=N,
+        edges=edges,
+        durations={},
+        gate_set=gate_set,
+        errors=errors,
+    )
+    return backend.to_json()
 
 
 def ensure_registry():
@@ -169,6 +199,7 @@ def safe_run_pipeline(template, initial_qasm, backend_json, extra_result=None):
             error_msg = full_error[:200]
         result["status"] = "failed"
         result["error"] = error_msg
+        print(f"  [FAILED] {result} | error: {error_msg}")
     return result
 
 
@@ -177,3 +208,16 @@ def save_results(df: pd.DataFrame, filename: str):
     path = os.path.join(RESULTS_DIR, filename)
     df.to_csv(path, index=False)
     print(f"Saved {path} ({len(df)} rows)")
+
+
+def flush_results(results: list, filename: str, pbar=None):
+    """Write accumulated results list to CSV mid-run (overwrites with full data so far)."""
+    if not results:
+        return
+    path = os.path.join(RESULTS_DIR, filename)
+    pd.DataFrame(results).to_csv(path, index=False)
+    msg = f"  Flushed {len(results)} rows → {filename}"
+    if pbar is not None:
+        pbar.write(msg)
+    else:
+        print(msg)

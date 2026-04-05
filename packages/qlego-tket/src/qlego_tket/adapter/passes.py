@@ -315,8 +315,9 @@ class BaseTketOptimizationPass(TKetPass):
         pass
 
     def run(self, ctx: QPassContext) -> QPassContext:
+        from pytket.passes import DecomposeBoxes
         opt_algo = self.get_optimization_algo(**self.pass_cfg)
-        super().__init__([opt_algo])
+        super().__init__([DecomposeBoxes(), opt_algo])
         ctx = super().run(ctx)
         return ctx
 

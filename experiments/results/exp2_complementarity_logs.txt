@@ -1,0 +1,79 @@
+  Flushed 60 rows → exp2_complementarity.csv
+Baseline failed for Half Adder Circuit 10q: Worker subprocess failed with code 1
+STDERR: Starting pass Half Adder Circuit
+num_qubits must be an odd integer ≥ 3.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-core/src/qlego/worker.py", line 106, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-core/src/qlego/worker.py", line 61, in main
+    ctx = p.run(ctx)
+          ^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-mqt-workload/src/qlego_mqt_workload/adapter/passes.py", line 33, in run
+    qc = get_benchmark(benchmark=self.benchmark, level=BenchmarkLevel.ALG, circuit_size=self.num_qubits)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 453, in get_benchmark
+    return get_benchmark_alg(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 195, in get_benchmark_alg
+    qc = _get_circuit(benchmark, circuit_size, random_parameters)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 68, in _get_circuit
+    qc = create_circuit(benchmark, circuit_size)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmarks/__init__.py", line 130, in create_circuit
+    return factory(circuit_size, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmarks/half_adder.py", line 36, in create_circuit
+    raise ValueError(msg)
+ValueError: num_qubits must be an odd integer ≥ 3.
+
+STDOUT: 
+  Flushed 114 rows → exp2_complementarity.csv
+  Flushed 174 rows → exp2_complementarity.csv
+Baseline failed for Grover Circuit 20q: Timeout: pipeline exceeded 300s
+Baseline failed for Half Adder Circuit 20q: Worker subprocess failed with code 1
+STDERR: Starting pass Half Adder Circuit
+num_qubits must be an odd integer ≥ 3.
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-core/src/qlego/worker.py", line 106, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-core/src/qlego/worker.py", line 61, in main
+    ctx = p.run(ctx)
+          ^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/packages/qlego-mqt-workload/src/qlego_mqt_workload/adapter/passes.py", line 33, in run
+    qc = get_benchmark(benchmark=self.benchmark, level=BenchmarkLevel.ALG, circuit_size=self.num_qubits)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 453, in get_benchmark
+    return get_benchmark_alg(
+           ^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 195, in get_benchmark_alg
+    qc = _get_circuit(benchmark, circuit_size, random_parameters)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmark_generation.py", line 68, in _get_circuit
+    qc = create_circuit(benchmark, circuit_size)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmarks/__init__.py", line 130, in create_circuit
+    return factory(circuit_size, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/abhishekshringi/Documents/Quantum Research/qlego/tests/envs/env_1/lib/python3.12/site-packages/mqt/bench/benchmarks/half_adder.py", line 36, in create_circuit
+    raise ValueError(msg)
+ValueError: num_qubits must be an odd integer ≥ 3.
+
+STDOUT: 
+  Flushed 222 rows → exp2_complementarity.csv
+
+--- Residual improvement after convergence (step1) ---
+ordering
+BQSKit -> Qiskit -> TKet    18.084000
+BQSKit -> TKet -> Qiskit    64.951538
+Qiskit -> BQSKit -> TKet    68.270000
+Qiskit -> TKet -> BQSKit    53.738857
+TKet -> BQSKit -> Qiskit    62.772500
+TKet -> Qiskit -> BQSKit   -48.901667
+Saved /Users/abhishekshringi/Documents/Quantum Research/qlego/experiments/results/exp2_complementarity.csv (222 rows)

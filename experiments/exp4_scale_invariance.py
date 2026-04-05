@@ -38,6 +38,7 @@ from common import (
     ensure_registry,
     safe_run_pipeline,
     save_results,
+    flush_results,
     QPassContext,
     PresetInitPass,
     PresetLayoutPass,
@@ -218,6 +219,9 @@ def run(args):
         if circuit_results:
             print(f"  {circuit_cls.name}: top-{TOP_K} = {circuit_results[:TOP_K]}")
 
+    if not args.no_save:
+        flush_results(results, "exp4_scale_invariance.csv")
+
     # ---------------------------------------------------------------
     # Phase 2: Run top-K at all larger scales
     # ---------------------------------------------------------------
@@ -259,6 +263,9 @@ def run(args):
                 )
                 results.append(result)
 
+    if not args.no_save:
+        flush_results(results, "exp4_scale_invariance.csv")
+
     # ---------------------------------------------------------------
     # Phase 3: Full sweep at verify_scale for ground truth
     # ---------------------------------------------------------------
@@ -284,6 +291,9 @@ def run(args):
                 },
             )
             results.append(result)
+
+    if not args.no_save:
+        flush_results(results, "exp4_scale_invariance.csv")
 
     # ---------------------------------------------------------------
     # Phase 4 (H4b): Optimization scale invariance
@@ -335,6 +345,9 @@ def run(args):
                         },
                     )
                     results.append(result)
+
+    if not args.no_save:
+        flush_results(results, "exp4_scale_invariance.csv")
 
     # ---------------------------------------------------------------
     # Analysis: Spearman correlation and optimality gap

@@ -27,26 +27,26 @@ def _bqskit_circuit_from_qasm_str(qasm: str):
 # In _bqskit_circuit_to_qasm_str
 def _bqskit_circuit_to_qasm_str(circ):
     import tempfile, os
-    import re
-    
+
+    # Unfold any circuitgate_XXXX composite gates back to primitives before
+    # serializing. Without this, BQSKit writes custom gate definitions into the
+    # QASM header; if that QASM is later read by Qiskit or BQSKit again, the
+    # hash-based gate name is already registered in the global gate registry and
+    # raises "circuitgate_XXXX is already defined".
+    try:
+        from bqskit.passes import UnfoldPass
+        from bqskit.compiler import Compiler, Workflow
+        with Compiler(num_workers=1) as compiler:
+            circ = compiler.compile(circ, Workflow([UnfoldPass()]))
+    except Exception:
+        pass  # if unfold fails for any reason, fall through and save as-is
+
     f = tempfile.NamedTemporaryFile("w+", suffix=".qasm", delete=False)
     try:
         f.close()
         circ.save(f.name)
         with open(f.name, "r") as g:
-            qasm = g.read()
-            # Remove duplicate creg declarations
-            lines = qasm.split('\n')
-            seen_cregs = set()
-            cleaned_lines = []
-            for line in lines:
-                if line.strip().startswith('creg'):
-                    if line.strip() not in seen_cregs:
-                        seen_cregs.add(line.strip())
-                        cleaned_lines.append(line)
-                else:
-                    cleaned_lines.append(line)
-            return '\n'.join(cleaned_lines)
+            return g.read()
     finally:
         try:
             os.remove(f.name)

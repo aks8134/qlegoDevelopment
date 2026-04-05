@@ -23,10 +23,12 @@ from tqdm import tqdm
 
 from common import (
     ALL_CIRCUITS,
+    ENV_CONFIG_PATH,
     initialize_circuit,
     evaluate,
     get_heavy_hex_backend,
     save_results,
+    flush_results,
     QPassContext,
     PresetInitPass,
     PresetLayoutPass,
@@ -110,7 +112,7 @@ def run(args):
                     translation=PresetTranslationPass(),
                 )
                 ctx = QPassContext(qasm=initial_qasm, hardware=backend_json)
-                compiled_ctx = baseline_template.compile(ctx=ctx)
+                compiled_ctx = baseline_template.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
                 baseline_qasm = compiled_ctx.qasm
                 baseline_metrics = evaluate(baseline_qasm)
             except Exception as e:
@@ -151,7 +153,7 @@ def run(args):
                             translation=[],
                         )
                         ctx = QPassContext(qasm=current_qasm, hardware=backend_json)
-                        compiled_ctx = opt_template.compile(ctx=ctx)
+                        compiled_ctx = opt_template.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
                         current_qasm = compiled_ctx.qasm
                         metrics = evaluate(current_qasm)
 
@@ -181,6 +183,9 @@ def run(args):
                         # Don't break — continue with same qasm for next pass
 
                 pbar.update(1)
+
+        if not args.no_save:
+            flush_results(results, "exp3_destructive.csv", pbar)
 
     pbar.close()
     df = pd.DataFrame(results)

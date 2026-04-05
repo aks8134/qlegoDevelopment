@@ -21,16 +21,20 @@ can still extract additional reductions.
 
 import argparse
 import itertools
+import os
 import pandas as pd
 from tqdm import tqdm
 
+import common
 from common import (
     ALL_CIRCUITS,
     STANDARD_QUBITS,
+    ENV_CONFIG_PATH,
     initialize_circuit,
     evaluate,
     get_heavy_hex_backend,
     save_results,
+    flush_results,
     QPassContext,
     QPipeline,
     PresetInitPass,
@@ -107,7 +111,7 @@ def apply_chain_to_convergence(qasm, backend_json, chain_classes):
         )
         try:
             ctx = QPassContext(qasm=current_qasm, hardware=backend_json)
-            compiled_ctx = t.compile(ctx=ctx)
+            compiled_ctx = t.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
             current_qasm = compiled_ctx.qasm
         except Exception:
             break
@@ -140,7 +144,7 @@ def apply_chain_once(qasm, backend_json, chain_classes):
     )
     try:
         ctx = QPassContext(qasm=qasm, hardware=backend_json)
-        compiled_ctx = t.compile(ctx=ctx)
+        compiled_ctx = t.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
         metrics = evaluate(compiled_ctx.qasm)
         return compiled_ctx.qasm, metrics
     except Exception as e:
@@ -153,6 +157,16 @@ def run(args):
     qubit_scales = args.qubits or STANDARD_QUBITS
     sdk_names = list(SDK_CHAINS.keys())
     orderings = list(itertools.permutations(sdk_names))
+
+    # Resume: load already-completed (circuit_type, num_qubits, ordering) triples
+    completed_keys = set()
+    out_file = "exp2_complementarity.csv"
+    resume_path = os.path.join(common.RESULTS_DIR, out_file)
+    if args.resume and os.path.exists(resume_path):
+        df_prev = pd.read_csv(resume_path)
+        for _, row in df_prev.iterrows():
+            completed_keys.add((row["circuit_type"], int(row["num_qubits"]), row["ordering"]))
+        print(f"Resuming: {len(completed_keys)} completed (circuit, qubits, ordering) triples found.")
 
     results = []
 
@@ -173,7 +187,7 @@ def run(args):
                     translation=PresetTranslationPass(),
                 )
                 ctx = QPassContext(qasm=initial_qasm, hardware=backend_json)
-                compiled_ctx = baseline_template.compile(ctx=ctx)
+                compiled_ctx = baseline_template.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
                 baseline_qasm = compiled_ctx.qasm
                 baseline_metrics = evaluate(baseline_qasm)
             except Exception as e:
@@ -186,6 +200,9 @@ def run(args):
                 pbar.set_postfix_str(
                     f"{circuit_cls.name} {num_qubits}q {'->'.join(ordering)}"
                 )
+                if (circuit_cls.name, int(num_qubits), " -> ".join(ordering)) in completed_keys:
+                    pbar.update(1)
+                    continue
 
                 row = {
                     "circuit_type": circuit_cls.name,
@@ -239,8 +256,19 @@ def run(args):
                 results.append(row)
                 pbar.update(1)
 
+        if not args.no_save and results:
+            df_new = pd.DataFrame(results)
+            if args.resume and os.path.exists(resume_path):
+                df_new = pd.concat([pd.read_csv(resume_path), df_new], ignore_index=True)
+            save_results(df_new, out_file)
+            pbar.write(f"  Flushed {len(df_new)} rows → {out_file}")
+
     pbar.close()
-    df = pd.DataFrame(results)
+    df_new = pd.DataFrame(results)
+    if args.resume and os.path.exists(resume_path) and not df_new.empty:
+        df = pd.concat([pd.read_csv(resume_path), df_new], ignore_index=True)
+    else:
+        df = df_new
 
     # Summary: average residual improvement per SDK pair
     success = df[df["status"] == "success"]
@@ -248,13 +276,15 @@ def run(args):
         print("\n--- Residual improvement after convergence (step1) ---")
         print(success.groupby("ordering")["step1_residual_pct"].mean().to_string())
 
-    if not args.no_save:
-        save_results(df, "exp2_complementarity.csv")
+    if not args.no_save and not df.empty:
+        save_results(df, out_file)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Experiment 2: Cross-SDK Complementarity")
     parser.add_argument("--qubits", type=int, nargs="+", default=None)
+    parser.add_argument("--resume", action="store_true",
+                        help="Skip already-completed runs found in the existing CSV")
     parser.add_argument("--no_save", action="store_true")
     args = parser.parse_args()
     run(args)

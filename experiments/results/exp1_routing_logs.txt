@@ -1,1 +1,43 @@
 Routing passes: 11 — ['qlego-qiskit_PresetRoutingPass', 'qlego-qiskit_SabreSwapRoutingPass', 'qlego-qiskit_BasicSwapRoutingPass', 'qlego-qiskit_LookaheadRoutingPass', 'qlego-qiskit_StochasticSwapRoutingPass', 'qlego-tket_TketDefaultRoutingPass', 'qlego-tket_AASRoutePass', 'qlego-tket_LexiRoutePass', 'qlego-tket_BoxDecomposeRoutePass', 'qlego-bqskit_GeneralizedSabreRoutingPass', 'qlego-bqskit_PAMRoutingPass']
+
+Best routing pass per circuit:
+circuit_type                      num_qubits
+Amplitude Estimation Circuit      5                    qlego-qiskit_BasicSwapRoutingPass
+                                  10                   qlego-qiskit_LookaheadRoutingPass
+                                  15              qlego-qiskit_StochasticSwapRoutingPass
+                                  20              qlego-qiskit_StochasticSwapRoutingPass
+BV Circuit                        5                    qlego-tket_TketDefaultRoutingPass
+                                  10                    qlego-tket_BoxDecomposeRoutePass
+                                  15                   qlego-tket_TketDefaultRoutingPass
+                                  20                   qlego-qiskit_LookaheadRoutingPass
+DJ Circuit                        5             qlego-bqskit_GeneralizedSabreRoutingPass
+                                  10                    qlego-tket_BoxDecomposeRoutePass
+                                  15                   qlego-qiskit_BasicSwapRoutingPass
+                                  20                   qlego-qiskit_SabreSwapRoutingPass
+GHZ Circuit                       5                    qlego-tket_TketDefaultRoutingPass
+                                  10                   qlego-tket_TketDefaultRoutingPass
+                                  15                   qlego-qiskit_LookaheadRoutingPass
+                                  20                    qlego-tket_BoxDecomposeRoutePass
+Graph State Circuit               5             qlego-bqskit_GeneralizedSabreRoutingPass
+                                  10            qlego-bqskit_GeneralizedSabreRoutingPass
+                                  15              qlego-qiskit_StochasticSwapRoutingPass
+                                  20                   qlego-qiskit_SabreSwapRoutingPass
+Grover Circuit                    5                    qlego-qiskit_BasicSwapRoutingPass
+                                  10                   qlego-qiskit_LookaheadRoutingPass
+                                  15            qlego-bqskit_GeneralizedSabreRoutingPass
+                                  20                   qlego-qiskit_SabreSwapRoutingPass
+Half Adder Circuit                5                     qlego-tket_BoxDecomposeRoutePass
+                                  15                   qlego-qiskit_BasicSwapRoutingPass
+QFT Circuit                       5                              qlego-tket_AASRoutePass
+                                  10                   qlego-qiskit_SabreSwapRoutingPass
+                                  15            qlego-bqskit_GeneralizedSabreRoutingPass
+                                  20              qlego-qiskit_StochasticSwapRoutingPass
+Quantum Phase Estimation Circuit  5                       qlego-qiskit_PresetRoutingPass
+                                  10            qlego-bqskit_GeneralizedSabreRoutingPass
+                                  15                   qlego-qiskit_BasicSwapRoutingPass
+                                  20                   qlego-qiskit_LookaheadRoutingPass
+W State Circuit                   5                    qlego-tket_TketDefaultRoutingPass
+                                  10                   qlego-tket_TketDefaultRoutingPass
+                                  15                    qlego-tket_BoxDecomposeRoutePass
+                                  20                   qlego-qiskit_SabreSwapRoutingPass
+Saved /Users/abhishekshringi/Documents/Quantum Research/qlego/experiments/results/exp1_routing.csv (418 rows)

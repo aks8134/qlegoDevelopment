@@ -2,18 +2,18 @@ circuit_type,num_qubits,ordering,step,pass_name,Circuit Depth,Gate Count,2Q Coun
 DJ Circuit,5,ALL,0,Baseline (no optimization),19.0,43.0,7.0,7.0,success,
 DJ Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,17.0,38.0,7.0,7.0,success,
 DJ Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,7.0,17.0,4.0,4.0,success,
-DJ Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,6.0,7.0,4.0,4.0,success,
-DJ Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,6.0,7.0,4.0,4.0,success,
+DJ Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,4.0,7.0,4.0,4.0,success,
+DJ Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,4.0,7.0,4.0,4.0,success,
 DJ Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
 DJ Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,4.0,4.0,4.0,4.0,success,
 DJ Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,7.0,17.0,4.0,4.0,success,
-DJ Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,5.0,7.0,4.0,4.0,success,
+DJ Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,5.0,6.0,4.0,4.0,success,
 DJ Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,4.0,4.0,4.0,4.0,success,
 DJ Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
 DJ Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,4.0,4.0,4.0,4.0,success,
 DJ Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,4.0,4.0,4.0,4.0,success,
-DJ Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,13.0,23.0,7.0,7.0,success,
-DJ Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,14.0,24.0,7.0,7.0,success,
+DJ Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,15.0,24.0,7.0,7.0,success,
+DJ Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,14.0,20.0,7.0,7.0,success,
 DJ Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,6.0,13.0,4.0,4.0,success,
 DJ Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,6.0,13.0,4.0,4.0,success,
 DJ Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,6.0,13.0,4.0,4.0,success,
@@ -56,8 +56,8 @@ Traceback (most recent call last):
   File ""/Users/abhishekshringi/Documents"
 Grover Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,379.0,535.0,164.0,143.0,success,
 Grover Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,379.0,535.0,164.0,143.0,success,
-Grover Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,265.0,354.0,164.0,143.0,success,
-Grover Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,265.0,354.0,164.0,143.0,success,
+Grover Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,378.0,530.0,164.0,143.0,success,
+Grover Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,378.0,530.0,164.0,143.0,success,
 Grover Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
 STDERR: Starting pass Scanning Gate Removal Pass
 Server connection unexpectedly closed.
@@ -67,20 +67,16 @@ Grover Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,551.0,720.0
 Grover Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,266.0,359.0,164.0,143.0,success,
 Grover Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,265.0,354.0,164.0,143.0,success,
 Grover Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,265.0,354.0,164.0,143.0,success,
-Grover Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,,,,,failed,"Worker subprocess failed with code 1
-STDERR: Starting pass KAK Decomposition
-Cannot obtain matrix from op: CustomGate
-Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_modu"
+Grover Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,265.0,354.0,164.0,143.0,success,
 QFT Circuit,5,ALL,0,Baseline (no optimization),53.0,82.0,32.0,28.0,success,
 QFT Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,51.0,76.0,32.0,28.0,success,
 QFT Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,35.0,53.0,20.0,18.0,success,
-QFT Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,22.0,29.0,20.0,18.0,success,
-QFT Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,11.0,17.0,8.0,6.0,success,
+QFT Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,21.0,24.0,20.0,18.0,success,
+QFT Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,7.0,8.0,4.0,4.0,success,
 QFT Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,2.0,2.0,2.0,2.0,success,
 QFT Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,2.0,2.0,2.0,2.0,success,
 QFT Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,35.0,53.0,20.0,18.0,success,
-QFT Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,20.0,24.0,20.0,18.0,success,
+QFT Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,21.0,25.0,20.0,18.0,success,
 QFT Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,18.0,20.0,20.0,18.0,success,
 QFT Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
 QFT Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,4.0,4.0,4.0,4.0,success,
@@ -94,31 +90,35 @@ QFT Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,0.0,0.0,0.0,0.0,succ
 Amplitude Estimation Circuit,5,ALL,0,Baseline (no optimization),245.0,301.0,54.0,54.0,success,
 Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,199.0,225.0,54.0,54.0,success,
 Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,82.0,104.0,42.0,40.0,success,
-Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,48.0,58.0,30.0,28.0,success,
-Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,34.0,42.0,14.0,14.0,success,
-Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,4.0,8.0,2.0,2.0,success,
-Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,4.0,8.0,2.0,2.0,success,
+Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,38.0,43.0,27.0,25.0,success,
+Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,23.0,25.0,9.0,9.0,success,
+Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,3.0,5.0,1.0,1.0,success,
+Amplitude Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,3.0,5.0,1.0,1.0,success,
 Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,82.0,104.0,42.0,40.0,success,
-Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,37.0,47.0,26.0,24.0,success,
-Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,24.0,26.0,26.0,24.0,success,
-Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,4.0,8.0,2.0,2.0,success,
-Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,4.0,8.0,2.0,2.0,success,
-Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,4.0,8.0,2.0,2.0,success,
-Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,119.0,124.0,54.0,54.0,success,
-Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,88.0,93.0,54.0,54.0,success,
-Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,1.0,5.0,0.0,0.0,success,
-Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,1.0,5.0,0.0,0.0,success,
-Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,1.0,5.0,0.0,0.0,success,
+Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,46.0,56.0,29.0,27.0,success,
+Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,27.0,29.0,29.0,27.0,success,
+Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,3.0,5.0,1.0,1.0,success,
+Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,3.0,5.0,1.0,1.0,success,
+Amplitude Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,3.0,5.0,1.0,1.0,success,
+Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
+STDERR: Starting pass Scanning Gate Removal Pass
+Server connection unexpectedly closed.
+Traceback (most recent call last):
+  File ""/Users/abhishekshringi/Documents"
+Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,199.0,225.0,54.0,54.0,success,
+Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,82.0,104.0,42.0,40.0,success,
+Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,81.0,99.0,42.0,40.0,success,
+Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,81.0,99.0,42.0,40.0,success,
 Amplitude Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,0.0,0.0,0.0,0.0,success,
 Quantum Phase Estimation Circuit,5,ALL,0,Baseline (no optimization),68.0,91.0,32.0,32.0,success,
 Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,67.0,90.0,32.0,32.0,success,
 Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,34.0,53.0,19.0,17.0,success,
-Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,26.0,30.0,19.0,17.0,success,
-Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,16.0,18.0,7.0,7.0,success,
+Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,19.0,23.0,19.0,17.0,success,
+Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,5.0,7.0,3.0,3.0,success,
 Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,1.0,1.0,1.0,1.0,success,
 Quantum Phase Estimation Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,1.0,1.0,1.0,1.0,success,
 Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,34.0,53.0,19.0,17.0,success,
-Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,20.0,24.0,19.0,17.0,success,
+Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,24.0,28.0,19.0,17.0,success,
 Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,17.0,19.0,19.0,17.0,success,
 Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,1.0,1.0,1.0,1.0,success,
 Quantum Phase Estimation Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,1.0,1.0,1.0,1.0,success,
@@ -132,17 +132,17 @@ Quantum Phase Estimation Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition
 W State Circuit,5,ALL,0,Baseline (no optimization),46.0,78.0,8.0,6.0,success,
 W State Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,21.0,38.0,8.0,6.0,success,
 W State Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,11.0,22.0,8.0,6.0,success,
-W State Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,7.0,9.0,8.0,6.0,success,
-W State Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,7.0,9.0,8.0,6.0,success,
+W State Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,7.0,10.0,8.0,6.0,success,
+W State Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,7.0,10.0,8.0,6.0,success,
 W State Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,6.0,8.0,8.0,6.0,success,
 W State Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,6.0,8.0,8.0,6.0,success,
 W State Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,11.0,22.0,8.0,6.0,success,
-W State Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,7.0,10.0,8.0,6.0,success,
+W State Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,9.0,12.0,8.0,6.0,success,
 W State Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,6.0,8.0,8.0,6.0,success,
 W State Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,6.0,8.0,8.0,6.0,success,
 W State Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,6.0,8.0,8.0,6.0,success,
 W State Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,6.0,8.0,8.0,6.0,success,
-W State Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,20.0,33.0,8.0,6.0,success,
+W State Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,20.0,34.0,8.0,6.0,success,
 W State Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,20.0,33.0,8.0,6.0,success,
 W State Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,5.0,9.0,4.0,4.0,success,
 W State Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,5.0,9.0,4.0,4.0,success,
@@ -167,8 +167,8 @@ Traceback (most recent call last):
   File ""/Users/abhishekshringi/Documents"
 Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,35.0,57.0,19.0,15.0,success,
 Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,35.0,57.0,19.0,15.0,success,
-Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,28.0,42.0,19.0,15.0,success,
-Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,28.0,42.0,19.0,15.0,success,
+Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,34.0,52.0,19.0,15.0,success,
+Half Adder Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,34.0,52.0,19.0,15.0,success,
 Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
 STDERR: Starting pass Scanning Gate Removal Pass
 Server connection unexpectedly closed.
@@ -178,11 +178,57 @@ Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,58.0,72
 Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,29.0,47.0,19.0,15.0,success,
 Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,28.0,42.0,19.0,15.0,success,
 Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,28.0,42.0,19.0,15.0,success,
-Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,,,,,failed,"Worker subprocess failed with code 1
-STDERR: Starting pass KAK Decomposition
-Cannot obtain matrix from op: CustomGate
+Half Adder Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,28.0,42.0,19.0,15.0,success,
+BV Circuit,5,ALL,0,Baseline (no optimization),16.0,31.0,2.0,2.0,success,
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,9.0,24.0,2.0,2.0,success,
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,5.0,12.0,2.0,2.0,success,
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
+STDERR: Starting pass Scanning Gate Removal Pass
+Server connection unexpectedly closed.
 Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_modu"
+  File ""/Users/abhishekshringi/Documents"
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,5.0,12.0,2.0,2.0,success,
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,5.0,12.0,2.0,2.0,success,
+BV Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,4.0,8.0,2.0,2.0,success,
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,5.0,12.0,2.0,2.0,success,
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
+STDERR: Starting pass Scanning Gate Removal Pass
+Server connection unexpectedly closed.
+Traceback (most recent call last):
+  File ""/Users/abhishekshringi/Documents"
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,8.0,22.0,2.0,2.0,success,
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,8.0,22.0,2.0,2.0,success,
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,8.0,18.0,2.0,2.0,success,
+BV Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,8.0,18.0,2.0,2.0,success,
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,"Worker subprocess failed with code 1
+STDERR: Starting pass Scanning Gate Removal Pass
+Server connection unexpectedly closed.
+Traceback (most recent call last):
+  File ""/Users/abhishekshringi/Documents"
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,9.0,24.0,2.0,2.0,success,
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,5.0,12.0,2.0,2.0,success,
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,4.0,8.0,2.0,2.0,success,
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,4.0,8.0,2.0,2.0,success,
+BV Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,4.0,8.0,2.0,2.0,success,
+Graph State Circuit,5,ALL,0,Baseline (no optimization),29.0,61.0,11.0,7.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,23.0,37.0,11.0,7.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,8.0,15.0,5.0,4.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,6.0,8.0,5.0,4.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,6.0,8.0,5.0,4.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,8.0,15.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,4.0,7.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,4.0,5.0,5.0,4.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,14.0,26.0,11.0,7.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,12.0,22.0,11.0,7.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,5.0,10.0,5.0,4.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,5.0,10.0,5.0,4.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,5.0,10.0,5.0,4.0,success,
+Graph State Circuit,5,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,4.0,5.0,5.0,4.0,success,
 DJ Circuit,10,ALL,0,Baseline (no optimization),39.0,103.0,24.0,24.0,success,
 DJ Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,36.0,90.0,24.0,24.0,success,
 DJ Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,16.0,37.0,9.0,9.0,success,
@@ -194,8 +240,8 @@ DJ Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,16.0,37.0,9.0,9.0,succes
 DJ Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 DJ Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,24.0,65.0,9.0,9.0,success,
 DJ Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,24.0,65.0,9.0,9.0,success,
-DJ Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,15.0,28.0,9.0,9.0,success,
-DJ Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,15.0,28.0,9.0,9.0,success,
+DJ Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,23.0,56.0,9.0,9.0,success,
+DJ Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,23.0,56.0,9.0,9.0,success,
 DJ Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 DJ Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,36.0,90.0,24.0,24.0,success,
 DJ Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,16.0,37.0,9.0,9.0,success,
@@ -240,10 +286,10 @@ Grover Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,,,,,failed
 Grover Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,20278.0,29472.0,13056.0,10414.0,success,
 Grover Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 Grover Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,41716.0,54299.0,31923.0,26041.0,success,
-Grover Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,19918.0,26760.0,13022.0,10502.0,success,
+Grover Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,,,,,failed,Timeout: pipeline exceeded 300s
 Grover Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,,,,,failed,Timeout: pipeline exceeded 300s
-Grover Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,19918.0,26760.0,13022.0,10502.0,success,
-Grover Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,19918.0,26760.0,13022.0,10502.0,success,
+Grover Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,39480.0,51264.0,29239.0,24134.0,success,
+Grover Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,22775.0,34822.0,14715.0,11846.0,success,
 QFT Circuit,10,ALL,0,Baseline (no optimization),184.0,364.0,189.0,114.0,success,
 QFT Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,179.0,353.0,189.0,114.0,success,
 QFT Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,86.0,227.0,90.0,45.0,success,
@@ -255,18 +301,14 @@ QFT Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,86.0,227.0,90.0,45.0,su
 QFT Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 QFT Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,104.0,279.0,90.0,45.0,success,
 QFT Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,104.0,279.0,90.0,45.0,success,
-QFT Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,85.0,217.0,90.0,45.0,success,
-QFT Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,85.0,217.0,90.0,45.0,success,
+QFT Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,103.0,269.0,90.0,45.0,success,
+QFT Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,103.0,269.0,90.0,45.0,success,
 QFT Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 QFT Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,179.0,353.0,189.0,114.0,success,
 QFT Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,86.0,227.0,90.0,45.0,success,
 QFT Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,85.0,217.0,90.0,45.0,success,
 QFT Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,85.0,217.0,90.0,45.0,success,
-QFT Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,,,,,failed,"Worker subprocess failed with code 1
-STDERR: Starting pass KAK Decomposition
-Cannot obtain matrix from op: CustomGate
-Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_modu"
+QFT Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,2.0,4.0,4.0,2.0,success,
 Amplitude Estimation Circuit,10,ALL,0,Baseline (no optimization),6818.0,8013.0,1193.0,1136.0,success,
 Amplitude Estimation Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,5284.0,5457.0,1193.0,1136.0,success,
 Amplitude Estimation Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,2106.0,2253.0,1094.0,1052.0,success,
@@ -297,11 +339,7 @@ Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDec
 Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,2106.0,2253.0,1094.0,1052.0,success,
 Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,2105.0,2243.0,1094.0,1052.0,success,
 Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,2105.0,2243.0,1094.0,1052.0,success,
-Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,,,,,failed,"Worker subprocess failed with code 1
-STDERR: Starting pass KAK Decomposition
-Cannot obtain matrix from op: CustomGate
-Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_modu"
+Amplitude Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,3.0,5.0,1.0,1.0,success,
 Quantum Phase Estimation Circuit,10,ALL,0,Baseline (no optimization),187.0,369.0,182.0,117.0,success,
 Quantum Phase Estimation Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,187.0,364.0,182.0,117.0,success,
 Quantum Phase Estimation Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,80.0,231.0,85.0,39.0,success,
@@ -313,18 +351,14 @@ Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,80
 Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,92.0,268.0,85.0,39.0,success,
 Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,92.0,268.0,85.0,39.0,success,
-Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,79.0,222.0,85.0,39.0,success,
-Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,79.0,222.0,85.0,39.0,success,
+Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,91.0,259.0,85.0,39.0,success,
+Quantum Phase Estimation Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,91.0,259.0,85.0,39.0,success,
 Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,187.0,364.0,182.0,117.0,success,
 Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,80.0,231.0,85.0,39.0,success,
 Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,79.0,222.0,85.0,39.0,success,
 Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,79.0,222.0,85.0,39.0,success,
-Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,,,,,failed,"Worker subprocess failed with code 1
-STDERR: Starting pass KAK Decomposition
-Cannot obtain matrix from op: CustomGate
-Traceback (most recent call last):
-  File ""<frozen runpy>"", line 198, in _run_modu"
+Quantum Phase Estimation Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,1.0,1.0,1.0,1.0,success,
 W State Circuit,10,ALL,0,Baseline (no optimization),91.0,173.0,18.0,11.0,success,
 W State Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,41.0,83.0,18.0,11.0,success,
 W State Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,21.0,47.0,18.0,11.0,success,
@@ -336,11 +370,49 @@ W State Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,21.0,47.0,18.0,11.0
 W State Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 W State Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,41.0,83.0,18.0,11.0,success,
 W State Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,41.0,83.0,18.0,11.0,success,
-W State Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,20.0,37.0,18.0,11.0,success,
-W State Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,20.0,37.0,18.0,11.0,success,
+W State Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,40.0,73.0,18.0,11.0,success,
+W State Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,40.0,73.0,18.0,11.0,success,
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,41.0,83.0,18.0,11.0,success,
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,21.0,47.0,18.0,11.0,success,
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,20.0,37.0,18.0,11.0,success,
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,20.0,37.0,18.0,11.0,success,
 W State Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,11.0,18.0,18.0,11.0,success,
+BV Circuit,10,ALL,0,Baseline (no optimization),33.0,65.0,7.0,7.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,20.0,52.0,7.0,7.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,7.0,23.0,4.0,4.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,4.0,5.0,4.0,4.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,4.0,5.0,4.0,4.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,7.0,23.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,5.0,9.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,4.0,4.0,4.0,4.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,16.0,25.0,7.0,7.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,13.0,21.0,7.0,7.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,6.0,12.0,4.0,4.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,6.0,12.0,4.0,4.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,6.0,12.0,4.0,4.0,success,
+BV Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,4.0,4.0,4.0,4.0,success,
+Graph State Circuit,10,ALL,0,Baseline (no optimization),37.0,116.0,16.0,9.0,success,
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),1,Qiskit:Optimize1qGateDecomp,22.0,62.0,16.0,9.0,success,
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),2,TKet:CliffordSimp,11.0,30.0,10.0,6.0,success,
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),3,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),4,Qiskit:CommutativeCancel,11.0,30.0,10.0,6.0,success,
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),5,TKet:KAKDecomposition,11.0,30.0,10.0,6.0,success,
+Graph State Circuit,10,Order_A (Q-T-B-Q-T-B),6,BQSKit:GroupSingleQuditGate,10.0,20.0,10.0,6.0,success,
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),1,TKet:CliffordSimp,11.0,30.0,10.0,6.0,success,
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),2,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),3,Qiskit:Optimize1qGateDecomp,19.0,50.0,10.0,6.0,success,
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),4,TKet:KAKDecomposition,19.0,50.0,10.0,6.0,success,
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),5,BQSKit:GroupSingleQuditGate,18.0,40.0,10.0,6.0,success,
+Graph State Circuit,10,Order_B (T-B-Q-T-B-Q),6,Qiskit:CommutativeCancel,18.0,40.0,10.0,6.0,success,
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),1,BQSKit:ScanningGateRemoval,,,,,failed,Timeout: pipeline exceeded 300s
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),2,Qiskit:Optimize1qGateDecomp,22.0,62.0,16.0,9.0,success,
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),3,TKet:CliffordSimp,11.0,30.0,10.0,6.0,success,
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),4,BQSKit:GroupSingleQuditGate,10.0,20.0,10.0,6.0,success,
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),5,Qiskit:CommutativeCancel,10.0,20.0,10.0,6.0,success,
+Graph State Circuit,10,Order_C (B-Q-T-B-Q-T),6,TKet:KAKDecomposition,6.0,10.0,10.0,6.0,success,

@@ -30,6 +30,8 @@ from common import (
     get_heavy_hex_backend,
     ensure_registry,
     save_results,
+    flush_results,
+    ENV_CONFIG_PATH,
     QPassContext,
     QPipeline,
     PresetInitPass,
@@ -94,7 +96,7 @@ def run_and_time(template, initial_qasm, backend_json, extra_fields=None):
     base = dict(extra_fields or {})
     try:
         ctx = QPassContext(qasm=initial_qasm, hardware=backend_json)
-        compiled_ctx = template.compile(ctx=ctx)
+        compiled_ctx = template.compile(ctx=ctx, env_config_path=ENV_CONFIG_PATH)
         timings = extract_timing(compiled_ctx)
 
         for pass_name, t in timings.items():
@@ -335,12 +337,18 @@ def run(args):
 
     if not args.skip_a:
         all_results.extend(run_part_a(args, backend_json))
+        if not args.no_save:
+            flush_results(all_results, "exp6_runtime.csv")
 
     if not args.skip_b:
         all_results.extend(run_part_b(args, backend_json))
+        if not args.no_save:
+            flush_results(all_results, "exp6_runtime.csv")
 
     if not args.skip_c:
         all_results.extend(run_part_c(args, backend_json))
+        if not args.no_save:
+            flush_results(all_results, "exp6_runtime.csv")
 
     df = pd.DataFrame(all_results)
 

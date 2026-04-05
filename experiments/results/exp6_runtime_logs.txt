@@ -1,0 +1,22 @@
+
+Part A — Layout: 17 passes
+
+Part A — Routing: 12 passes
+
+Part A — Optimization: 46 passes
+  Flushed 3738 rows → exp6_runtime.csv
+
+Part B — Full pipelines: 6
+  Flushed 3978 rows → exp6_runtime.csv
+
+Part C — Scaling: [5, 10, 15, 20, 25, 30]q
+  Flushed 4236 rows → exp6_runtime.csv
+
+--- Average total pipeline wall time by SDK type ---
+sdk_type
+single_sdk    13.56
+
+--- Average total wall time by pipeline (Part B) ---
+pipeline_name
+Qiskit (end-to-end)    13.56
+Saved /Users/abhishekshringi/Documents/Quantum Research/qlego/experiments/results/exp6_runtime.csv (4236 rows)

@@ -1,0 +1,115 @@
+circuit_type,num_qubits,ordering,baseline_depth,baseline_gates,baseline_2q,status,error,step0_sdk,step0_converged_iters,step0_depth,step0_gates,step0_2q,step1_sdk,step1_depth,step1_gates,step1_2q,step2_sdk,step2_depth,step2_gates,step2_2q,step1_residual_pct,step2_residual_pct
+DJ Circuit,5,Qiskit -> TKet -> BQSKit,19,43,7,success,,Qiskit,2,15,35,7,TKet,7.0,17.0,4.0,BQSKit,5.0,7.0,4.0,53.33,28.57
+DJ Circuit,5,Qiskit -> BQSKit -> TKet,19,43,7,success,,Qiskit,2,15,35,7,BQSKit,11.0,17.0,7.0,TKet,6.0,13.0,4.0,26.67,45.45
+DJ Circuit,5,TKet -> Qiskit -> BQSKit,19,43,7,success,,TKet,2,7,17,4,Qiskit,10.0,31.0,4.0,BQSKit,7.0,15.0,4.0,-42.86,30.0
+DJ Circuit,5,TKet -> BQSKit -> Qiskit,19,43,7,success,,TKet,2,7,17,4,BQSKit,5.0,7.0,4.0,Qiskit,4.0,4.0,4.0,28.57,20.0
+DJ Circuit,5,BQSKit -> Qiskit -> TKet,19,43,7,success,,BQSKit,3,12,20,7,Qiskit,12.0,22.0,7.0,TKet,6.0,13.0,4.0,0.0,50.0
+DJ Circuit,5,BQSKit -> TKet -> Qiskit,19,43,7,success,,BQSKit,3,12,20,7,TKet,6.0,13.0,4.0,Qiskit,6.0,13.0,4.0,50.0,0.0
+GHZ Circuit,5,Qiskit -> TKet -> BQSKit,8,12,4,success,,Qiskit,2,8,12,4,TKet,6.0,10.0,4.0,BQSKit,,,,25.0,
+GHZ Circuit,5,Qiskit -> BQSKit -> TKet,8,12,4,success,,Qiskit,2,8,12,4,BQSKit,,,,TKet,6.0,10.0,4.0,,
+GHZ Circuit,5,TKet -> Qiskit -> BQSKit,8,12,4,success,,TKet,2,6,10,4,Qiskit,8.0,12.0,4.0,BQSKit,5.0,5.0,4.0,-33.33,37.5
+GHZ Circuit,5,TKet -> BQSKit -> Qiskit,8,12,4,success,,TKet,2,6,10,4,BQSKit,4.0,4.0,4.0,Qiskit,4.0,4.0,4.0,33.33,0.0
+GHZ Circuit,5,BQSKit -> Qiskit -> TKet,8,12,4,success,,BQSKit,2,5,5,4,Qiskit,5.0,5.0,4.0,TKet,5.0,5.0,4.0,0.0,0.0
+GHZ Circuit,5,BQSKit -> TKet -> Qiskit,8,12,4,success,,BQSKit,10,8,12,4,TKet,6.0,10.0,4.0,Qiskit,8.0,12.0,4.0,25.0,-33.33
+Grover Circuit,5,Qiskit -> TKet -> BQSKit,624,816,390,success,,Qiskit,2,513,665,342,TKet,269.0,346.0,157.0,BQSKit,,,,47.56,
+Grover Circuit,5,Qiskit -> BQSKit -> TKet,624,816,390,success,,Qiskit,2,513,665,342,BQSKit,,,,TKet,269.0,346.0,157.0,,
+Grover Circuit,5,TKet -> Qiskit -> BQSKit,624,816,390,success,,TKet,2,270,359,164,Qiskit,397.0,557.0,164.0,BQSKit,,,,-47.04,
+Grover Circuit,5,TKet -> BQSKit -> Qiskit,624,816,390,success,,TKet,2,270,359,164,BQSKit,,,,Qiskit,397.0,557.0,164.0,,
+Grover Circuit,5,BQSKit -> Qiskit -> TKet,624,816,390,success,,BQSKit,10,624,816,390,Qiskit,513.0,665.0,342.0,TKet,269.0,346.0,157.0,17.79,47.56
+Grover Circuit,5,BQSKit -> TKet -> Qiskit,624,816,390,success,,BQSKit,10,624,816,390,TKet,270.0,359.0,164.0,Qiskit,397.0,557.0,164.0,56.73,-47.04
+QFT Circuit,5,Qiskit -> TKet -> BQSKit,53,82,32,success,,Qiskit,2,47,71,32,TKet,27.0,49.0,20.0,BQSKit,14.0,19.0,16.0,42.55,48.15
+QFT Circuit,5,Qiskit -> BQSKit -> TKet,53,82,32,success,,Qiskit,2,47,71,32,BQSKit,30.0,37.0,32.0,TKet,1.0,5.0,0.0,36.17,96.67
+QFT Circuit,5,TKet -> Qiskit -> BQSKit,53,82,32,success,,TKet,2,27,49,20,Qiskit,37.0,71.0,20.0,BQSKit,20.0,33.0,20.0,-37.04,45.95
+QFT Circuit,5,TKet -> BQSKit -> Qiskit,53,82,32,success,,TKet,2,27,49,20,BQSKit,16.0,25.0,18.0,Qiskit,4.0,4.0,4.0,40.74,75.0
+QFT Circuit,5,BQSKit -> Qiskit -> TKet,53,82,32,success,,BQSKit,10,53,82,32,Qiskit,47.0,71.0,32.0,TKet,27.0,49.0,20.0,11.32,42.55
+QFT Circuit,5,BQSKit -> TKet -> Qiskit,53,82,32,success,,BQSKit,2,30,37,32,TKet,1.0,5.0,0.0,Qiskit,1.0,5.0,0.0,96.67,0.0
+Amplitude Estimation Circuit,5,Qiskit -> TKet -> BQSKit,245,301,54,success,,Qiskit,2,187,214,50,TKet,37.0,58.0,20.0,BQSKit,22.0,30.0,17.0,80.21,40.54
+Amplitude Estimation Circuit,5,Qiskit -> BQSKit -> TKet,245,301,54,success,,Qiskit,2,187,214,50,BQSKit,116.0,121.0,50.0,TKet,1.0,5.0,0.0,37.97,99.14
+Amplitude Estimation Circuit,5,TKet -> Qiskit -> BQSKit,245,301,54,success,,TKet,2,36,58,20,Qiskit,52.0,85.0,20.0,BQSKit,33.0,44.0,20.0,-44.44,36.54
+Amplitude Estimation Circuit,5,TKet -> BQSKit -> Qiskit,245,301,54,success,,TKet,2,36,58,20,BQSKit,22.0,31.0,18.0,Qiskit,4.0,4.0,4.0,38.89,81.82
+Amplitude Estimation Circuit,5,BQSKit -> Qiskit -> TKet,245,301,54,success,,BQSKit,2,119,124,54,Qiskit,13.0,21.0,12.0,TKet,1.0,5.0,0.0,89.08,92.31
+Amplitude Estimation Circuit,5,BQSKit -> TKet -> Qiskit,245,301,54,success,,BQSKit,3,119,124,54,TKet,1.0,5.0,0.0,Qiskit,1.0,5.0,0.0,99.16,0.0
+Quantum Phase Estimation Circuit,5,Qiskit -> TKet -> BQSKit,68,91,32,success,,Qiskit,2,53,78,28,TKet,33.0,50.0,19.0,BQSKit,25.0,30.0,19.0,37.74,24.24
+Quantum Phase Estimation Circuit,5,Qiskit -> BQSKit -> TKet,68,91,32,success,,Qiskit,2,53,78,28,BQSKit,33.0,37.0,28.0,TKet,1.0,5.0,0.0,37.74,96.97
+Quantum Phase Estimation Circuit,5,TKet -> Qiskit -> BQSKit,68,91,32,success,,TKet,2,32,50,19,Qiskit,38.0,62.0,19.0,BQSKit,24.0,33.0,19.0,-18.75,36.84
+Quantum Phase Estimation Circuit,5,TKet -> BQSKit -> Qiskit,68,91,32,success,,TKet,2,32,50,19,BQSKit,20.0,25.0,19.0,Qiskit,3.0,3.0,3.0,37.5,85.0
+Quantum Phase Estimation Circuit,5,BQSKit -> Qiskit -> TKet,68,91,32,success,,BQSKit,2,37,41,32,Qiskit,13.0,21.0,12.0,TKet,1.0,5.0,0.0,64.86,92.31
+Quantum Phase Estimation Circuit,5,BQSKit -> TKet -> Qiskit,68,91,32,success,,BQSKit,2,37,41,32,TKet,1.0,5.0,0.0,Qiskit,1.0,5.0,0.0,97.3,0.0
+W State Circuit,5,Qiskit -> TKet -> BQSKit,46,78,8,success,,Qiskit,2,21,38,8,TKet,11.0,22.0,8.0,BQSKit,6.0,10.0,8.0,47.62,45.45
+W State Circuit,5,Qiskit -> BQSKit -> TKet,46,78,8,success,,Qiskit,2,21,38,8,BQSKit,15.0,25.0,8.0,TKet,5.0,5.0,4.0,28.57,66.67
+W State Circuit,5,TKet -> Qiskit -> BQSKit,46,78,8,success,,TKet,2,11,22,8,Qiskit,21.0,38.0,8.0,BQSKit,15.0,25.0,8.0,-90.91,28.57
+W State Circuit,5,TKet -> BQSKit -> Qiskit,46,78,8,success,,TKet,2,11,22,8,BQSKit,6.0,9.0,8.0,Qiskit,6.0,8.0,8.0,45.45,0.0
+W State Circuit,5,BQSKit -> Qiskit -> TKet,46,78,8,success,,BQSKit,2,20,33,8,Qiskit,20.0,33.0,8.0,TKet,5.0,9.0,4.0,0.0,75.0
+W State Circuit,5,BQSKit -> TKet -> Qiskit,46,78,8,success,,BQSKit,2,20,33,8,TKet,5.0,9.0,4.0,Qiskit,5.0,9.0,4.0,75.0,0.0
+Half Adder Circuit,5,Qiskit -> TKet -> BQSKit,58,72,34,success,,Qiskit,2,58,72,34,TKet,29.0,47.0,19.0,BQSKit,,,,50.0,
+Half Adder Circuit,5,Qiskit -> BQSKit -> TKet,58,72,34,success,,Qiskit,2,58,72,34,BQSKit,,,,TKet,29.0,47.0,19.0,,
+Half Adder Circuit,5,TKet -> Qiskit -> BQSKit,58,72,34,success,,TKet,2,29,47,19,Qiskit,35.0,57.0,19.0,BQSKit,,,,-20.69,
+Half Adder Circuit,5,TKet -> BQSKit -> Qiskit,58,72,34,success,,TKet,2,29,47,19,BQSKit,,,,Qiskit,35.0,57.0,19.0,,
+Half Adder Circuit,5,BQSKit -> Qiskit -> TKet,58,72,34,success,,BQSKit,10,58,72,34,Qiskit,58.0,72.0,34.0,TKet,29.0,47.0,19.0,0.0,50.0
+Half Adder Circuit,5,BQSKit -> TKet -> Qiskit,58,72,34,success,,BQSKit,10,58,72,34,TKet,29.0,47.0,19.0,Qiskit,35.0,57.0,19.0,50.0,-20.69
+BV Circuit,5,Qiskit -> TKet -> BQSKit,16,31,2,success,,Qiskit,2,8,22,2,TKet,5.0,12.0,2.0,BQSKit,,,,37.5,
+BV Circuit,5,Qiskit -> BQSKit -> TKet,16,31,2,success,,Qiskit,2,8,22,2,BQSKit,,,,TKet,5.0,12.0,2.0,,
+BV Circuit,5,TKet -> Qiskit -> BQSKit,16,31,2,success,,TKet,2,5,12,2,Qiskit,8.0,20.0,2.0,BQSKit,,,,-60.0,
+BV Circuit,5,TKet -> BQSKit -> Qiskit,16,31,2,success,,TKet,2,5,12,2,BQSKit,,,,Qiskit,8.0,20.0,2.0,,
+BV Circuit,5,BQSKit -> Qiskit -> TKet,16,31,2,success,,BQSKit,10,16,31,2,Qiskit,8.0,22.0,2.0,TKet,5.0,12.0,2.0,50.0,37.5
+BV Circuit,5,BQSKit -> TKet -> Qiskit,16,31,2,success,,BQSKit,10,16,31,2,TKet,5.0,12.0,2.0,Qiskit,8.0,20.0,2.0,68.75,-60.0
+Graph State Circuit,5,Qiskit -> TKet -> BQSKit,21,61,11,success,,Qiskit,2,18,37,11,TKet,6.0,15.0,5.0,BQSKit,4.0,6.0,5.0,66.67,33.33
+Graph State Circuit,5,Qiskit -> BQSKit -> TKet,21,61,11,success,,Qiskit,2,18,37,11,BQSKit,11.0,18.0,11.0,TKet,4.0,10.0,5.0,38.89,63.64
+Graph State Circuit,5,TKet -> Qiskit -> BQSKit,21,61,11,success,,TKet,2,6,15,5,Qiskit,12.0,25.0,5.0,BQSKit,5.0,10.0,5.0,-100.0,58.33
+Graph State Circuit,5,TKet -> BQSKit -> Qiskit,21,61,11,success,,TKet,2,6,15,5,BQSKit,4.0,8.0,5.0,Qiskit,3.0,5.0,5.0,33.33,25.0
+Graph State Circuit,5,BQSKit -> Qiskit -> TKet,21,61,11,success,,BQSKit,3,12,26,11,Qiskit,11.0,20.0,11.0,TKet,4.0,10.0,5.0,8.33,63.64
+Graph State Circuit,5,BQSKit -> TKet -> Qiskit,21,61,11,success,,BQSKit,2,12,26,11,TKet,4.0,10.0,5.0,Qiskit,5.0,12.0,5.0,66.67,-25.0
+DJ Circuit,10,Qiskit -> TKet -> BQSKit,39,103,24,success,,Qiskit,2,33,84,24,TKet,16.0,37.0,9.0,BQSKit,,,,51.52,
+DJ Circuit,10,Qiskit -> BQSKit -> TKet,39,103,24,success,,Qiskit,2,33,84,24,BQSKit,,,,TKet,16.0,37.0,9.0,,
+DJ Circuit,10,TKet -> Qiskit -> BQSKit,39,103,24,success,,TKet,2,16,37,9,Qiskit,24.0,65.0,9.0,BQSKit,,,,-50.0,
+DJ Circuit,10,TKet -> BQSKit -> Qiskit,39,103,24,success,,TKet,2,16,37,9,BQSKit,,,,Qiskit,24.0,65.0,9.0,,
+DJ Circuit,10,BQSKit -> Qiskit -> TKet,39,103,24,success,,BQSKit,10,39,103,24,Qiskit,33.0,84.0,24.0,TKet,16.0,37.0,9.0,15.38,51.52
+DJ Circuit,10,BQSKit -> TKet -> Qiskit,39,103,24,success,,BQSKit,10,39,103,24,TKet,16.0,37.0,9.0,Qiskit,24.0,65.0,9.0,58.97,-50.0
+GHZ Circuit,10,Qiskit -> TKet -> BQSKit,13,22,9,success,,Qiskit,2,13,22,9,TKet,11.0,20.0,9.0,BQSKit,9.0,9.0,9.0,15.38,18.18
+GHZ Circuit,10,Qiskit -> BQSKit -> TKet,13,22,9,success,,Qiskit,2,13,22,9,BQSKit,10.0,10.0,9.0,TKet,10.0,10.0,9.0,23.08,0.0
+GHZ Circuit,10,TKet -> Qiskit -> BQSKit,13,22,9,success,,TKet,2,11,20,9,Qiskit,13.0,22.0,9.0,BQSKit,10.0,10.0,9.0,-18.18,23.08
+GHZ Circuit,10,TKet -> BQSKit -> Qiskit,13,22,9,success,,TKet,2,11,20,9,BQSKit,9.0,9.0,9.0,Qiskit,9.0,9.0,9.0,18.18,0.0
+GHZ Circuit,10,BQSKit -> Qiskit -> TKet,13,22,9,success,,BQSKit,2,10,10,9,Qiskit,10.0,10.0,9.0,TKet,10.0,10.0,9.0,0.0,0.0
+GHZ Circuit,10,BQSKit -> TKet -> Qiskit,13,22,9,success,,BQSKit,2,10,10,9,TKet,10.0,10.0,9.0,Qiskit,10.0,10.0,9.0,0.0,0.0
+Grover Circuit,10,Qiskit -> TKet -> BQSKit,46168,59586,31923,success,,Qiskit,2,39480,51255,29239,TKet,20080.0,25845.0,12875.0,BQSKit,,,,49.14,
+Grover Circuit,10,Qiskit -> BQSKit -> TKet,46168,59586,31923,success,,Qiskit,2,39480,51255,29239,BQSKit,,,,TKet,20080.0,25845.0,12875.0,,
+Grover Circuit,10,TKet -> Qiskit -> BQSKit,46168,59586,31923,success,,TKet,2,19943,26075,13004,Qiskit,25975.0,34898.0,13004.0,BQSKit,,,,-30.25,
+Grover Circuit,10,TKet -> BQSKit -> Qiskit,46168,59586,31923,success,,TKet,2,19943,26075,13004,BQSKit,,,,Qiskit,25975.0,34898.0,13004.0,,
+Grover Circuit,10,BQSKit -> Qiskit -> TKet,46168,59586,31923,success,,BQSKit,10,46168,59586,31923,Qiskit,39480.0,51264.0,29239.0,TKet,20080.0,25845.0,12875.0,14.49,49.14
+Grover Circuit,10,BQSKit -> TKet -> Qiskit,46168,59586,31923,success,,BQSKit,10,46168,59586,31923,TKet,19943.0,26075.0,13004.0,Qiskit,25975.0,34898.0,13004.0,56.8,-30.25
+QFT Circuit,10,Qiskit -> TKet -> BQSKit,184,364,189,success,,Qiskit,2,164,326,181,TKet,79.0,217.0,90.0,BQSKit,,,,51.83,
+QFT Circuit,10,Qiskit -> BQSKit -> TKet,184,364,189,success,,Qiskit,2,164,326,181,BQSKit,,,,TKet,79.0,217.0,90.0,,
+QFT Circuit,10,TKet -> Qiskit -> BQSKit,184,364,189,success,,TKet,2,79,216,90,Qiskit,104.0,309.0,90.0,BQSKit,,,,-31.65,
+QFT Circuit,10,TKet -> BQSKit -> Qiskit,184,364,189,success,,TKet,2,79,216,90,BQSKit,,,,Qiskit,104.0,309.0,90.0,,
+QFT Circuit,10,BQSKit -> Qiskit -> TKet,184,364,189,success,,BQSKit,10,184,364,189,Qiskit,164.0,326.0,181.0,TKet,79.0,217.0,90.0,10.87,51.83
+QFT Circuit,10,BQSKit -> TKet -> Qiskit,184,364,189,success,,BQSKit,10,184,364,189,TKet,79.0,216.0,90.0,Qiskit,104.0,309.0,90.0,57.07,-31.65
+Amplitude Estimation Circuit,10,Qiskit -> TKet -> BQSKit,6818,8013,1193,success,,Qiskit,2,5275,5432,1189,TKet,93.0,228.0,90.0,BQSKit,,,,98.24,
+Amplitude Estimation Circuit,10,Qiskit -> BQSKit -> TKet,6818,8013,1193,success,,Qiskit,2,5275,5432,1189,BQSKit,,,,TKet,93.0,228.0,90.0,,
+Amplitude Estimation Circuit,10,TKet -> Qiskit -> BQSKit,6818,8013,1193,success,,TKet,2,92,228,90,Qiskit,149.0,361.0,90.0,BQSKit,,,,-61.96,
+Amplitude Estimation Circuit,10,TKet -> BQSKit -> Qiskit,6818,8013,1193,success,,TKet,2,92,228,90,BQSKit,,,,Qiskit,149.0,361.0,90.0,,
+Amplitude Estimation Circuit,10,BQSKit -> Qiskit -> TKet,6818,8013,1193,success,,BQSKit,10,6818,8013,1193,Qiskit,5275.0,5432.0,1189.0,TKet,93.0,228.0,90.0,22.63,98.24
+Amplitude Estimation Circuit,10,BQSKit -> TKet -> Qiskit,6818,8013,1193,success,,BQSKit,10,6818,8013,1193,TKet,92.0,228.0,90.0,Qiskit,149.0,361.0,90.0,98.65,-61.96
+Quantum Phase Estimation Circuit,10,Qiskit -> TKet -> BQSKit,187,369,182,success,,Qiskit,2,173,336,176,TKet,74.0,214.0,85.0,BQSKit,,,,57.23,
+Quantum Phase Estimation Circuit,10,Qiskit -> BQSKit -> TKet,187,369,182,success,,Qiskit,2,173,336,176,BQSKit,,,,TKet,74.0,214.0,85.0,,
+Quantum Phase Estimation Circuit,10,TKet -> Qiskit -> BQSKit,187,369,182,success,,TKet,2,74,214,85,Qiskit,107.0,298.0,85.0,BQSKit,,,,-44.59,
+Quantum Phase Estimation Circuit,10,TKet -> BQSKit -> Qiskit,187,369,182,success,,TKet,2,74,214,85,BQSKit,,,,Qiskit,107.0,298.0,85.0,,
+Quantum Phase Estimation Circuit,10,BQSKit -> Qiskit -> TKet,187,369,182,success,,BQSKit,10,187,369,182,Qiskit,173.0,336.0,176.0,TKet,74.0,214.0,85.0,7.49,57.23
+Quantum Phase Estimation Circuit,10,BQSKit -> TKet -> Qiskit,187,369,182,success,,BQSKit,10,187,369,182,TKet,74.0,214.0,85.0,Qiskit,107.0,298.0,85.0,60.43,-44.59
+W State Circuit,10,Qiskit -> TKet -> BQSKit,91,173,18,success,,Qiskit,2,41,83,18,TKet,21.0,47.0,18.0,BQSKit,,,,48.78,
+W State Circuit,10,Qiskit -> BQSKit -> TKet,91,173,18,success,,Qiskit,2,41,83,18,BQSKit,,,,TKet,21.0,47.0,18.0,,
+W State Circuit,10,TKet -> Qiskit -> BQSKit,91,173,18,success,,TKet,2,21,47,18,Qiskit,41.0,83.0,18.0,BQSKit,,,,-95.24,
+W State Circuit,10,TKet -> BQSKit -> Qiskit,91,173,18,success,,TKet,2,21,47,18,BQSKit,,,,Qiskit,41.0,83.0,18.0,,
+W State Circuit,10,BQSKit -> Qiskit -> TKet,91,173,18,success,,BQSKit,10,91,173,18,Qiskit,41.0,83.0,18.0,TKet,21.0,47.0,18.0,54.95,48.78
+W State Circuit,10,BQSKit -> TKet -> Qiskit,91,173,18,success,,BQSKit,10,91,173,18,TKet,21.0,47.0,18.0,Qiskit,41.0,83.0,18.0,76.92,-95.24
+BV Circuit,10,Qiskit -> TKet -> BQSKit,33,65,7,success,,Qiskit,2,20,49,7,TKet,7.0,23.0,4.0,BQSKit,5.0,7.0,4.0,65.0,28.57
+BV Circuit,10,Qiskit -> BQSKit -> TKet,33,65,7,success,,Qiskit,2,20,49,7,BQSKit,11.0,20.0,7.0,TKet,6.0,12.0,4.0,45.0,45.45
+BV Circuit,10,TKet -> Qiskit -> BQSKit,33,65,7,success,,TKet,2,7,23,4,Qiskit,11.0,39.0,4.0,BQSKit,7.0,15.0,4.0,-57.14,36.36
+BV Circuit,10,TKet -> BQSKit -> Qiskit,33,65,7,success,,TKet,2,7,23,4,BQSKit,5.0,7.0,4.0,Qiskit,4.0,4.0,4.0,28.57,20.0
+BV Circuit,10,BQSKit -> Qiskit -> TKet,33,65,7,success,,BQSKit,3,15,23,7,Qiskit,11.0,19.0,7.0,TKet,6.0,12.0,4.0,26.67,45.45
+BV Circuit,10,BQSKit -> TKet -> Qiskit,33,65,7,success,,BQSKit,3,15,23,7,TKet,6.0,12.0,4.0,Qiskit,6.0,12.0,4.0,60.0,0.0
+Graph State Circuit,10,Qiskit -> TKet -> BQSKit,34,125,25,success,,Qiskit,2,31,89,25,TKet,11.0,32.0,10.0,BQSKit,,,,64.52,
+Graph State Circuit,10,Qiskit -> BQSKit -> TKet,34,125,25,success,,Qiskit,2,31,89,25,BQSKit,,,,TKet,11.0,32.0,10.0,,
+Graph State Circuit,10,TKet -> Qiskit -> BQSKit,34,125,25,success,,TKet,2,11,32,10,Qiskit,20.0,55.0,10.0,BQSKit,,,,-81.82,
+Graph State Circuit,10,TKet -> BQSKit -> Qiskit,34,125,25,success,,TKet,2,11,32,10,BQSKit,,,,Qiskit,20.0,55.0,10.0,,
+Graph State Circuit,10,BQSKit -> Qiskit -> TKet,34,125,25,success,,BQSKit,10,34,125,25,Qiskit,31.0,89.0,25.0,TKet,11.0,32.0,10.0,8.82,64.52
+Graph State Circuit,10,BQSKit -> TKet -> Qiskit,34,125,25,success,,BQSKit,10,34,125,25,TKet,11.0,32.0,10.0,Qiskit,20.0,55.0,10.0,67.65,-81.82

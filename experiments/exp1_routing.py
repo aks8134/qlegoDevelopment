@@ -22,6 +22,7 @@ from common import (
     ensure_registry,
     safe_run_pipeline,
     save_results,
+    flush_results,
     PresetInitPass,
     PresetLayoutPass,
     PresetTranslationPass,
@@ -102,6 +103,9 @@ def run(args):
                 )
                 results.append(result)
                 pbar.update(1)
+
+        if not args.no_save:
+            flush_results(results, f"exp1_routing{('_' + args.sdk) if args.sdk else ''}.csv", pbar)
 
     pbar.close()
     df = pd.DataFrame(results)
